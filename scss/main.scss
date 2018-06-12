@@ -1,0 +1,417 @@
+@import "normalize";
+
+$focus: #1E78DD;
+$muted: rgba(0,0,0,.6);
+$soft: rgba(0,0,0,.2);
+$titatium: #394042;
+$eftaDeepBlue: #0B3F72;
+$eftaRed: #DB4745;
+
+
+:root {
+  font-family: 'Open sans', sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.4rem;
+  color: $titatium;
+}
+
+
+// Layout
+.container,
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+@media (min-width: 600px) {
+  .row {
+    display: flex;
+    align-items: center;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .col {
+    flex: 1;
+    padding: 0 2rem;
+  }
+  .col-left {
+    order: 1
+  }
+  .col-right {
+    order: 2;
+  }
+}
+
+
+
+%no-list {
+  list-style: none;
+  padding-left: 0;
+}
+.no-list {
+  @extend %no-list;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $soft;
+  margin: 4rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+// Character and Paragraph styles
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: $eftaDeepBlue;
+}
+
+
+
+
+
+
+
+
+
+
+
+.text-center {
+  text-align: center;
+}
+
+
+
+// Media
+.media {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.loud {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.article-cover {
+  margin-bottom: -3rem;
+  img {
+    display: block;
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  }
+
+  @media (min-width: 900px) {
+    margin-bottom: -5rem;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+.article-heading {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5rem;
+  color: $eftaDeepBlue;
+  text-align: center;
+}
+
+
+.main-nav {
+  // position: sticky;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 10000;
+  top: 0;
+  text-align: center;
+  font-size: 1.6rem;
+
+  transition: background .3s;
+
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $soft;
+    max-width: 88rem;
+    margin: 0 auto;
+    transform: scale(0, 1);
+    transition: transform .3s;
+  }
+
+  &.is_sticky {
+    background: rgba(#fff,.9);
+    &::after {
+      transform: scale(1, 1);
+    }
+  }
+
+
+  a {
+    display: inline-block;
+    padding: .8em .8em;
+    color: $muted;
+    &:hover {
+      color: $titatium;
+    }
+  }
+
+  .is-selected {
+    color: $eftaRed!important;
+    font-weight: 600;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.toc {
+  counter-reset: tocStage tocStep;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-left: solid $focus;
+  padding-left: 2em;
+  padding-right: 2em;
+  overflow: hidden;
+  margin-bottom: 1em;
+
+  &.is_hidden {
+    ol {
+      display: none;
+    }
+  }
+
+
+  a {
+    color: inherit;
+    &:hover {
+      color: $focus;
+    }
+  }
+
+  ol {
+    font-size: 1.2rem;
+  }
+  li {
+    margin: .5rem 0;
+  }
+}
+
+.toc-heading {
+  display: inline-block;  
+}
+.toc button {
+  appearance: none;
+  padding: .2em .6em;
+  font-size: 1.2rem;
+  color: $focus;
+  border: 0;
+  background: transparent;
+  &::before {
+    content: '·';
+    display: inline-block;
+    color: $muted;
+    margin-right: .5em;
+  }
+}
+
+.toc-stages,
+.toc-steps {
+  list-style: none;
+  padding-left: 0;
+  & > li {
+    padding-left: 2.5em;
+    position: relative;
+  }
+  & > li::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 2em;
+  }
+}
+
+.toc-stages {
+  & > li {
+    counter-increment: tocStage;
+
+    &::before {
+      content: counter(tocStage, upper-roman) '.';
+    }
+  }
+}
+.toc-steps {
+  & > li {
+    counter-increment: tocStep;
+
+    &::before {
+      content: counter(tocStage, upper-roman) '.' counter(tocStep) '.';
+    }
+  }
+}
+
+
+
+article {
+  counter-reset: stage step;
+
+
+  a {
+    color: $eftaRed;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.section-step {
+  .step-heading,
+  p {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .media {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-stage {
+  counter-increment: stage;
+  &::before {
+    // content: 'Stage ' counter(stage, upper-roman);
+    // display: block;
+
+    // color: $eftaRed;
+    // font-size: 2.5rem;
+    // text-align: center;
+    content: url('../images/efta_separator360x120-justiceScales.svg');
+    text-align: center;
+    display: block;
+  }
+}
+
+
+.step-heading {
+  margin-top: 2em;
+  counter-increment: step;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  &::before {
+    content: counter(step) '. ';
+  }
+}
+
+
+.section-stage {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.stage-heading {
+  @extend .section-title;
+
+  &::before {
+    content: 'Stage ' counter(stage, upper-roman);
+    display: block;
+
+    color: $eftaRed;
+    font-family: 'Open sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+// Sections
+.section-benefits {
+  border-top: 1px solid $soft;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 80vh;
+}
+
+
+
+
+
+
+
+// Numbers
+.number {
+  margin: 4rem 0;
+  text-align: center;
+
+  strong {
+    font-size: 4rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    display: block;
+    line-height: 1.2;
+  }
+
+  &-description {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 600px) {
+  .numbers {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .number {
+    flex: 1 1 auto;
+    padding: 0 2rem;
+  }
+}
