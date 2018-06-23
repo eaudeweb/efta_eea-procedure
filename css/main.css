@@ -299,7 +299,7 @@ template {
   display: none; }
 
 :root {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 10px;
   line-height: 1.5; }
 
@@ -333,6 +333,16 @@ main {
   list-style: none;
   padding-left: 0; }
 
+.no-btn, .step-details button {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: transparent; }
+
 hr {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -345,11 +355,23 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 3.6rem;
   color: #0B3F72; }
+
+.muted {
+  color: rgba(0, 0, 0, 0.6); }
+
+.italic {
+  font-style: italic; }
+
+.serif {
+  font-family: "Libre Baskerville", serif; }
+
+.sans-serif {
+  font-family: "Open sans", sans-serif; }
 
 .text-center {
   text-align: center; }
@@ -384,7 +406,7 @@ a {
       display: block; } }
 
 .article-heading {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   font-weight: 400;
   line-height: 5rem;
@@ -469,7 +491,7 @@ article {
   content: "Stage " counter(stage,upper-roman);
   display: block;
   color: #DB4745;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
@@ -487,7 +509,7 @@ article {
   text-align: center; }
   .number strong {
     font-size: 4rem;
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-weight: 400;
     display: block;
     line-height: 1.2; }
@@ -546,5 +568,38 @@ article {
 
 .cursor-scrollDown, .article-cover {
   cursor: url("../images/efta_cursor64x64-scrollDown.png") 32 32, auto; }
+
+.step-details p {
+  font-size: 1.2rem;
+  font-style: italic; }
+.step-details h5 {
+  margin-bottom: .5em; }
+
+.step-detail {
+  display: none;
+  margin-left: 1rem;
+  border-left: 1px solid #5082BC;
+  padding-left: 1.5rem; }
+  .step-detail.is-active {
+    display: block; }
+
+.sr,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal; }
 
 /*# sourceMappingURL=main.css.map */

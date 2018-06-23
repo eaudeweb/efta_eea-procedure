@@ -8,9 +8,12 @@ $eftaDeepBlue: #0B3F72;
 $eftaRed: #DB4745;
 $eftaBlue: #5082BC;
 
+$sans-serif: 'Open sans', sans-serif;
+$serif: 'Libre Baskerville', serif;
+
 
 :root {
-  font-family: 'Open sans', sans-serif;
+  font-family: $sans-serif;
   font-size: 10px;
   line-height: 1.5;
 }
@@ -51,12 +54,19 @@ main {
 
 
 
-%no-list {
+.no-list {
   list-style: none;
   padding-left: 0;
 }
-.no-list {
-  @extend %no-list;
+.no-btn {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: transparent;
 }
 
 hr {
@@ -81,16 +91,25 @@ a {
   margin-right: auto;
   text-align: center;
 
-  font-family: 'Libre Baskerville', serif;
+  font-family: $serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 3.6rem;
   color: $eftaDeepBlue;
 }
 
-
-
-
+.muted {
+  color: $muted;
+}
+.italic {
+  font-style: italic;
+}
+.serif {
+  font-family: $serif;
+}
+.sans-serif {
+  font-family: $sans-serif;
+}
 
 
 
@@ -147,7 +166,7 @@ a {
   }
 }
 .article-heading {
-  font-family: 'Libre Baskerville', serif;
+  font-family: $serif;
   font-size: 4rem;
   font-weight: 400;
   line-height: 5rem;
@@ -280,7 +299,7 @@ article {
     display: block;
 
     color: $eftaRed;
-    font-family: 'Open sans', sans-serif;
+    font-family: $sans-serif;
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
@@ -313,7 +332,7 @@ article {
 
   strong {
     font-size: 4rem;
-    font-family: 'Libre Baskerville', serif;
+    font-family: $serif;
     font-weight: 400;
     display: block;
     line-height: 1.2;
@@ -394,4 +413,62 @@ article {
 }
 .cursor-scrollDown {
   cursor: url('../images/efta_cursor64x64-scrollDown.png') 32 32, auto;
+}
+
+
+
+// Step details
+.step-details {
+  p {
+    // font-family: $serif;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  h5 {
+    margin-bottom: .5em;
+  }
+
+  button {
+    @extend .no-btn;
+  }
+}
+
+.step-detail {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+
+  margin-left: 1rem;
+  border-left: 1px solid $eftaBlue;
+  padding-left: 1.5rem;
+  
+}
+
+.step-detail {
+}
+
+
+
+
+.sr,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
 }
