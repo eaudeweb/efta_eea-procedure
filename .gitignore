@@ -1,3 +1,10 @@
+# Sass
 .sass-cache/
 *.scssc
 
+# Jekyll
+_site
+.jekyll-metadata
+
+# Design files
+*.afdesign

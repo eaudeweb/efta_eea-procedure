@@ -6,6 +6,7 @@ $soft: rgba(0,0,0,.2);
 $titatium: #394042;
 $eftaDeepBlue: #0B3F72;
 $eftaRed: #DB4745;
+$eftaBlue: #5082BC;
 
 
 :root {
@@ -125,7 +126,11 @@ a {
 
 
 .article-cover {
+  @extend .cursor-scrollDown;
   margin-bottom: -3rem;
+  position: relative;
+  z-index: 999;
+
   img {
     display: block;
     width: 100%;
@@ -134,7 +139,6 @@ a {
   }
 
   @media (min-width: 900px) {
-    margin-bottom: -5rem;
     img {
       width: 100%;
       height: auto;
@@ -153,15 +157,16 @@ a {
 
 
 .main-nav {
-  // position: sticky;
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: 10000;
   top: 0;
   text-align: center;
   font-size: 1.6rem;
+  transition: opacity .3s;
 
-  transition: background .3s;
+  white-space: nowrap;
+  overflow: auto;
 
   &::after {
     content: "";
@@ -169,17 +174,7 @@ a {
     border-bottom: 1px solid $soft;
     max-width: 88rem;
     margin: 0 auto;
-    transform: scale(0, 1);
-    transition: transform .3s;
   }
-
-  &.is_sticky {
-    background: rgba(#fff,.9);
-    &::after {
-      transform: scale(1, 1);
-    }
-  }
-
 
   a {
     display: inline-block;
@@ -197,9 +192,21 @@ a {
     pointer-events: none;
   }
 
-  white-space: nowrap;
-  overflow: auto;
+  .page-home & {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    a {
+      color: #fff;
+    }
+  }
 }
+
+
+
 
 article {
   counter-reset: stage step;
@@ -211,6 +218,10 @@ article {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  a[target="_blank"] {
+    @extend .cursor-newWindow;
   }
 }
 
@@ -325,4 +336,62 @@ article {
     flex: 1 1 auto;
     padding: 0 2rem;
   }
+}
+
+
+// Glossary
+.glossary {
+  dt {
+    float: left;
+    font-weight: 600;
+    &::after {
+      content: " — ";
+    }
+  }
+  dd {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+  dd + dd {
+    margin-bottom: 0;
+  }
+}
+
+// Tips
+.tip-glossary {
+  @extend .cursor-help;
+  border-bottom: 1px dotted rgba($eftaRed, 1);
+  transition: border .5s;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+}
+
+.tippy-tooltip.efta-theme {
+  /* Your styling here. Example: */
+  background: #fff;
+  padding: 1em;
+  color: $titatium;
+  text-align: left;
+  line-height: inherit;
+  font-size: 1.4rem;
+  border-radius: 0;
+  border: 1px solid $eftaBlue;
+  box-shadow: .5rem .5rem 0 0 rgba($eftaBlue, .4);
+  opacity: 1!important;
+}
+
+// Cursors
+.cursor-help {
+  cursor: url('../images/efta_cursor64x64-help.png') 32 32, help;
+}
+.cursor-download {
+  cursor: url('../images/efta_cursor64x64-download.png') 32 32, auto;
+}
+.cursor-newWindow {
+  cursor: url('../images/efta_cursor64x64-newWindow.png') 32 32, auto;
+}
+.cursor-scrollDown {
+  cursor: url('../images/efta_cursor64x64-scrollDown.png') 32 32, auto;
 }

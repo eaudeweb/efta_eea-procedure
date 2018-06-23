@@ -1,0 +1,34 @@
+{
+  "EEA Agreement": {
+    "definition": "The Agreement on the European Economic Area, which entered into force on 1 January 1994, brings together the EU Member States and the three EEA EFTA States — Iceland, Liechtenstein and Norway — in a single market, referred to as the \"Internal Market\".",
+    "more": "http://www.efta.int/eea/eea-agreement"
+  },
+
+  "EEA Joint Committee": {
+    "definition": "The EEA Joint Committee (EEA JC) is responsible for the management of the EEA Agreement and typically meets six to eight times a year. It is a forum in which views are exchanged and decisions are taken by consensus to incorporate EU legislation into the EEA Agreement.",
+    "more": "http://www.efta.int/eea/eea-institutions/eea-joint-committee" 
+  },
+
+  "EFTA": {
+    "definition": "The European Free Trade Association (EFTA) is the intergovernmental organisation of Iceland, Liechtenstein, Norway and Switzerland.",
+    "more": "http://www.efta.int/about-efta"
+  },
+
+  "EEAS": {
+    "definition": "The European External Action Service (EEAS) is the European Union's diplomatic service. It helps the EU's foreign affairs chief – the High Representative for Foreign Affairs and Security Policy – carry out the Union's Common Foreign and Security Policy.",
+    "more": "https://eeas.europa.eu/headquarters/headquarters-homepage/82/about-the-european-external-action-service-eeas_en"    
+  },
+
+  "ESA": {
+    "definition": "The European External Action Service (EEAS) is the European Union's diplomatic service. It helps the EU's foreign affairs chief – the High Representative for Foreign Affairs and Security Policy – carry out the Union's Common Foreign and Security Policy.",
+    "more": "https://eeas.europa.eu/headquarters/headquarters-homepage/82/about-the-european-external-action-service-eeas_en"
+  },
+
+  "JCD": {
+    "definition": "Joint Committee Decision"
+  },
+
+  "MFA": {
+    "definition": "Ministry of Foreign Affairs"
+  }
+}
