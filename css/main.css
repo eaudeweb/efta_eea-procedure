@@ -307,6 +307,9 @@ body {
   font-size: 1.4rem;
   color: #394042; }
 
+button {
+  cursor: pointer; }
+
 .container,
 main {
   max-width: 880px;
@@ -569,11 +572,18 @@ article {
 .cursor-scrollDown, .article-cover {
   cursor: url("../images/efta_cursor64x64-scrollDown.png") 32 32, auto; }
 
-.step-details p {
+.step-details p,
+.step-details li {
   font-size: 1.2rem;
   font-style: italic; }
 .step-details h5 {
   margin-bottom: .5em; }
+.step-details button {
+  filter: opacity(50%) grayscale(100%);
+  transition: filter .3s; }
+  .step-details button:focus, .step-details button:hover, .step-details button.is-active {
+    filter: opacity(100%) grayscale(0%);
+    outline: none; }
 
 .step-detail {
   display: none;
@@ -601,5 +611,43 @@ article {
   overflow: visible;
   clip: auto;
   white-space: normal; }
+
+.sprite {
+  display: inline-block;
+  height: 3.6rem;
+  width: 5rem;
+  vertical-align: middle;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/efta_spritesheet.png"); }
+
+.sprite-iceland {
+  background-position: 0 0; }
+
+.sprite-liechtenstein {
+  background-position: 15.5% 0; }
+
+.sprite-norway {
+  background-position: 31% 0; }
+
+.sprite-secretariat {
+  width: 6rem;
+  background-position: 48% 0; }
+
+.sprite-eu {
+  width: 5.4rem;
+  background-position: 66% 0; }
+
+.sprite-general {
+  width: 3.6rem;
+  background-position: 78.5% 0; }
+
+.sprite-timeline {
+  width: 3.6rem;
+  background-position: 89.25% 0; }
+
+.sprite-translation {
+  width: 3.6rem;
+  background-position: 100% 0; }
 
 /*# sourceMappingURL=main.css.map */
