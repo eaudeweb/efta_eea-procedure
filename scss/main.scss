@@ -531,3 +531,135 @@ article {
   width: 3.6rem;
   background-position: 100% 0;
 }
+
+
+
+
+
+
+// Details
+
+
+.page-details {
+  article {
+    counter-reset: section paragraph;
+    font-family: $serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      position: relative;
+      &::before {
+        content: '-';
+        position: absolute;
+        left: -2rem;
+      }
+    }
+  }
+
+  a[href^="#ref"] {
+    &::before { content: '['; }
+    &::after  { content: ']'; }
+  }
+
+
+  section {
+    counter-increment: section;
+    counter-reset: subsection;
+  }
+
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 4rem;
+
+    &::before {
+      content: counter(section)'.';
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+    }
+  }
+
+  h3 {
+    counter-increment: subsection;
+    position: relative;
+    margin-left: 8rem;
+    &::before {
+      content: counter(section)'.'counter(subsection);
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+    }
+  }
+
+  section p {
+    counter-increment: paragraph;
+    position: relative;
+    margin-left: 4rem;
+    &::before {
+      content: counter(paragraph)'.';
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+    } 
+  }
+
+
+  footer {
+    ol {
+      font-size: 1.2rem;
+      // columns: 2;
+      column-gap: 8rem;
+      li {
+        break-inside: avoid-column;
+        &:target {
+          color: $eftaBlue;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  h1 + p {
+    text-align: center;
+    font-style: italic;
+  }
+
+  h1, h2, h3 {
+    margin-top: 2em;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: inherit;
+  }
+
+  header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+}
+
+
+.document-owner {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.document-revision {
+  margin-left: auto;
+  margin-right: 0;
+  width: 12rem;
+}

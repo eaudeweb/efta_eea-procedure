@@ -650,4 +650,84 @@ article {
   width: 3.6rem;
   background-position: 100% 0; }
 
+.page-details article {
+  counter-reset: section paragraph;
+  font-family: "Libre Baskerville", serif; }
+.page-details h1 {
+  text-align: center; }
+.page-details ul {
+  list-style: none; }
+  .page-details ul li {
+    position: relative; }
+    .page-details ul li::before {
+      content: '-';
+      position: absolute;
+      left: -2rem; }
+.page-details a[href^="#ref"]::before {
+  content: '['; }
+.page-details a[href^="#ref"]::after {
+  content: ']'; }
+.page-details section {
+  counter-increment: section;
+  counter-reset: subsection; }
+.page-details h2 {
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 4rem; }
+  .page-details h2::before {
+    content: counter(section) ".";
+    display: inline-block;
+    position: absolute;
+    left: -4rem; }
+.page-details h3 {
+  counter-increment: subsection;
+  position: relative;
+  margin-left: 8rem; }
+  .page-details h3::before {
+    content: counter(section) "." counter(subsection);
+    display: inline-block;
+    position: absolute;
+    left: -4rem; }
+.page-details section p {
+  counter-increment: paragraph;
+  position: relative;
+  margin-left: 4rem; }
+  .page-details section p::before {
+    content: counter(paragraph) ".";
+    display: inline-block;
+    position: absolute;
+    left: -4rem; }
+.page-details footer ol {
+  font-size: 1.2rem;
+  column-gap: 8rem; }
+  .page-details footer ol li {
+    break-inside: avoid-column; }
+    .page-details footer ol li:target {
+      color: #5082BC; }
+.page-details h1 {
+  font-size: 1.8rem;
+  font-weight: bold; }
+.page-details h1 + p {
+  text-align: center;
+  font-style: italic; }
+.page-details h1, .page-details h2, .page-details h3 {
+  margin-top: 2em; }
+.page-details h2 {
+  font-size: 1.8rem; }
+.page-details h3 {
+  font-size: inherit; }
+.page-details header {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.document-owner {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.document-revision {
+  margin-left: auto;
+  margin-right: 0;
+  width: 12rem; }
+
 /*# sourceMappingURL=main.css.map */
