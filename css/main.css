@@ -373,6 +373,10 @@ a {
   font-size: 3rem;
   line-height: 3.6rem;
   color: #0B3F72; }
+  @media (max-width: 599px) {
+    .section-title, .stage-heading {
+      font-size: 2.1rem;
+      line-height: 2.8rem; } }
 
 .muted {
   color: rgba(0, 0, 0, 0.6); }
@@ -411,7 +415,6 @@ small {
   margin-right: auto; }
 
 .article-cover {
-  margin-bottom: -3rem;
   position: relative;
   z-index: 999; }
   .article-cover img {
@@ -432,6 +435,10 @@ small {
   line-height: 5rem;
   color: #0B3F72;
   text-align: center; }
+  @media (max-width: 599px) {
+    .article-heading {
+      font-size: 3rem;
+      line-height: 3.6rem; } }
 
 .main-nav {
   padding-left: 2rem;
@@ -488,9 +495,18 @@ article {
 .section-stage {
   counter-increment: stage; }
   .section-stage::before {
-    content: url("../images/efta_separator360x120-justiceScales.svg");
-    text-align: center;
-    display: block; }
+    display: block;
+    content: '';
+    width: 36rem;
+    height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../images/efta_separator360x120-justiceScales.svg");
+    background-size: 100%; }
+  @media (max-width: 599px) {
+    .section-stage::before {
+      width: 24rem;
+      height: 8rem; } }
 
 .step-heading {
   margin-top: 2em;
@@ -514,6 +530,9 @@ article {
   font-weight: 400;
   text-align: center;
   margin-bottom: 2rem; }
+  @media (max-width: 599px) {
+    .stage-heading::before {
+      font-size: 1.6rem; } }
 
 .section-benefits {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -599,6 +618,13 @@ article {
   .step-details button:focus, .step-details button:hover, .step-details button.is-active {
     filter: opacity(100%) grayscale(0%);
     outline: none; }
+@media (max-width: 599px) {
+  .step-details {
+    text-align: center; }
+    .step-details small {
+      display: none; }
+    .step-details .step-detail {
+      text-align: left; } }
 
 .step-detail {
   display: none;
