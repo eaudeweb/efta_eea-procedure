@@ -353,6 +353,9 @@ hr {
 
 a {
   text-decoration: none; }
+  @media print {
+    a {
+      color: inherit; } }
 
 .section-title, .stage-heading {
   margin-left: auto;
@@ -451,6 +454,9 @@ a {
     z-index: 1000; }
     .page-home .main-nav a {
       color: #fff; }
+  @media print {
+    .main-nav {
+      display: none; } }
 
 article {
   counter-reset: stage step; }
@@ -670,20 +676,20 @@ article {
 .page-details section {
   counter-increment: section;
   counter-reset: subsection; }
-.page-details h2 {
+.page-details section h2 {
   position: relative;
   text-transform: uppercase;
   margin-left: 4rem; }
-  .page-details h2::before {
+  .page-details section h2::before {
     content: counter(section) ".";
     display: inline-block;
     position: absolute;
     left: -4rem; }
-.page-details h3 {
+.page-details section h3 {
   counter-increment: subsection;
   position: relative;
   margin-left: 8rem; }
-  .page-details h3::before {
+  .page-details section h3::before {
     content: counter(section) "." counter(subsection);
     display: inline-block;
     position: absolute;
@@ -719,6 +725,11 @@ article {
 .page-details header {
   padding-top: 4rem;
   padding-bottom: 4rem; }
+@media print {
+  .page-details {
+    font-family: sans-serif; } }
+.page-details a {
+  word-break: break-word; }
 
 .document-owner {
   text-align: center;
