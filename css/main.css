@@ -302,6 +302,9 @@ template {
   font-family: "Open sans", sans-serif;
   font-size: 10px;
   line-height: 1.5; }
+  @media (min-width: 1800px) {
+    :root {
+      font-size: 16px; } }
 
 body {
   font-size: 1.4rem;
@@ -312,7 +315,7 @@ button {
 
 .container,
 main {
-  max-width: 880px;
+  max-width: 88rem;
   margin: 0 auto;
   padding: 0 2rem; }
 
@@ -352,7 +355,11 @@ hr {
   margin: 4rem 0; }
 
 a {
-  text-decoration: none; }
+  color: #DB4745;
+  text-decoration: none;
+  word-break: break-word; }
+  a:hover {
+    text-decoration: underline; }
   @media print {
     a {
       color: inherit; } }
@@ -370,6 +377,9 @@ a {
 .muted {
   color: rgba(0, 0, 0, 0.6); }
 
+.roman {
+  font-style: normal; }
+
 .italic {
   font-style: italic; }
 
@@ -381,6 +391,10 @@ a {
 
 .text-center {
   text-align: center; }
+
+.small,
+small {
+  font-size: 85.7143%; }
 
 .media img {
   width: 100%;
@@ -460,11 +474,6 @@ a {
 
 article {
   counter-reset: stage step; }
-  article a {
-    color: #DB4745;
-    text-decoration: none; }
-    article a:hover {
-      text-decoration: underline; }
 
 .section-step .step-heading,
 .section-step p {
@@ -572,7 +581,7 @@ article {
 .cursor-download {
   cursor: url("../images/efta_cursor64x64-download.png") 32 32, auto; }
 
-.cursor-newWindow, article a[target="_blank"] {
+.cursor-newWindow, a[target="_blank"] {
   cursor: url("../images/efta_cursor64x64-newWindow.png") 32 32, auto; }
 
 .cursor-scrollDown, .article-cover {
@@ -728,8 +737,6 @@ article {
 @media print {
   .page-details {
     font-family: sans-serif; } }
-.page-details a {
-  word-break: break-word; }
 
 .document-owner {
   text-align: center;

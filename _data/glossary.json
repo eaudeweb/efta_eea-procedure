@@ -1,38 +1,133 @@
-{
-  "EEA Agreement": {
-    "definition": "The Agreement on the European Economic Area, which entered into force on 1 January 1994, brings together the EU Member States and the three EEA EFTA States — Iceland, Liechtenstein and Norway — in a single market, referred to as the \"Internal Market\".",
-    "more": "http://www.efta.int/eea/eea-agreement"
+[
+  {
+    "name": "Adaptations to EU acts",
+    "definition": "An adaptation to an act implies that the relevant provisions of that act shall be read in a specific way for the purposes of the EEA. Adaptations are most commonly used to make an act fit within the framework of the EEA Agreement or to specify the legal position of the EEA EFTA States, but an adaptation may also concern the rights and obligations of authorities in the EU Member States or the EU institutions or set out cooperation mechanisms between the EU and EFTA pillars of the EEA."
   },
 
-  "EEA Joint Committee": {
-    "definition": "The EEA Joint Committee (EEA JC) is responsible for the management of the EEA Agreement and typically meets six to eight times a year. It is a forum in which views are exchanged and decisions are taken by consensus to incorporate EU legislation into the EEA Agreement.",
-    "more": "http://www.efta.int/eea/eea-institutions/eea-joint-committee" 
+  {
+    "name": "Agreement on the European Economic Area (EEA Agreement)",
+    "short-name": "EEA Agreement",
+    "definition": "The European Economic Area brings together the Member States of the European Union and three EFTA countries – Iceland, Liechtenstein, and Norway - in a single market with free movement of goods, services, capital and persons.  The EEA Agreement guarantees equal rights and obligations within the Internal Market for individuals and economic operators in the EEA. It was signed in May 1992 and entered into force in January 1994.",
+    "more": "http://www.efta.int/eea/eea-agreement" 
   },
 
-  "EFTA": {
-    "definition": "The European Free Trade Association (EFTA) is the intergovernmental organisation of Iceland, Liechtenstein, Norway and Switzerland.",
-    "more": "http://www.efta.int/about-efta"
+  {
+    "name": "Annexes to the EEA Agreement",
+    "definition": "The legal texts of EEA Agreement consist of 129 articles, <a href=\"http://www.efta.int/legal-texts/eea/annexes-to-the-agreement\">22 annexes</a>, 49 protocols and a final act. The annexes list the EU acts applicable to the EEA, including adaptations."
   },
 
-  "EEAS": {
-    "definition": "The European External Action Service (EEAS) is the European Union's diplomatic service. It helps the EU's foreign affairs chief – the High Representative for Foreign Affairs and Security Policy – carry out the Union's Common Foreign and Security Policy.",
-    "more": "https://eeas.europa.eu/headquarters/headquarters-homepage/82/about-the-european-external-action-service-eeas_en"    
+  {
+    "name": "Clearing Committee (Norway)",
+    "definition": "A special Clearing Committee (“spesialutvalg”) for EEA matters ensures cooperation between ministries in Norway."
   },
 
-  "ESA": {
-    "definition": "The European External Action Service (EEAS) is the European Union's diplomatic service. It helps the EU's foreign affairs chief – the High Representative for Foreign Affairs and Security Policy – carry out the Union's Common Foreign and Security Policy.",
-    "more": "https://eeas.europa.eu/headquarters/headquarters-homepage/82/about-the-european-external-action-service-eeas_en"
+  {
+    "name": "Commission Directorate-General",
+    "definition": "Within the European Commission, a Directorate-General (DG) is a branch of the institution responsible for a specific policy area."
   },
 
-  "JCD": {
-    "definition": "Joint Committee Decision"
+  {
+    "name": "Constitutional requirements",
+    "definition": "If a Joint Committee Decision incorporates an act that calls for amendments to national legislation in any of the EEA EFTA States (i.e. new laws or change to existing laws), the national parliament needs to approve it before it can enter into force. This is the meaning of the “constitutional requirements” notified when incorporating an act."
   },
 
-  "MFA": {
-    "definition": "Ministry of Foreign Affairs"
+  {
+    "name": "EEA Coordination Unit (Liechtenstein)",
+    "definition": "The EEA Coordination Unit administers EEA matters on a daily basis, particularly regarding legal questions. It coordinates the incorporation and implementation of EEA acts. The Unit reports to the Prime Minister."
   },
 
-  "OJ": {
-    "definition": "Official Journal"
+  {
+    "name": "EEA EFTA Comments",
+    "definition": "One of the ways in which the EEA EFTA States participate in shaping EU legislation is by submitting comments to a European institution on important policy issues. A typical EEA EFTA comment provides a brief commentary and suggestions regarding Commission initiatives such as green papers or legislative proposals."
+  },
+
+  {
+    "name": "EEA EFTA States",
+    "definition": "EEA EFTA States refers to three countries of the four countries in EFTA – Iceland, Liechtenstein, and Norway – which participate in the EEA Agreement. Switzerland is the fourth member of EFTA, but it does not take part in the EEA. Instead, several bilateral agreements regulate Swiss-EU relations."
+  },
+
+  {
+    "name": "EEA Horizontal Challenges",
+    "definition": "EEA horizontal challenges may arise when a provision in an act or proposal has an impact on EEA law or the EEA institutional framework. Horizontal challenges may occur, for example, in relation to fines to be imposed by an EU institution or body, reference to criminal sanctions or provisions with third-country elements."
+  },
+
+  {
+    "name": "EEA Joint Committee",
+    "definition": "The EEA Joint Committee, which typically meets 6-8 times per year, is responsible for managing the EEA Agreement and ensuring its effective operation. It is a forum in which views are exchanged and decisions made (by consensus) on the extension of EU legislation into the EEA Agreement. It consists of representatives from the European Commission (the European External Action Service (EEAS) and its services), the three EEA EFTA States (usually at ambassadorial level) and an observer from the EFTA Surveillance Authority (ESA)"
+  },
+
+  {
+    "name": "EEA Joint Committee Decision (JCD)",
+    "definition": "EEA-relevant acts are incorporated into the EEA Agreement through Joint Committee Decisions (JCDs). <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 102(1) EEA</a> provides that as soon as an EEA-relevant EU legal act has been adopted in the EU, the EEA Joint Committee shall take a decision concerning the appropriate amendment of the EEA Agreement with a view to permitting simultaneous application of the legislation in the whole of the EEA."
+  },
+
+  {
+    "name": "EEA Supplement to the Official Journal of the European Union (OJ)",
+    "definition": "A weekly legal gazette containing EEA related texts from EFTA and EU bodies, published in Icelandic and Norwegian on the <a href=\"http://www.efta.int/publications/eea-supplements\">EFTA Secretariat’s website</a>."
+  },
+
+  {
+    "name": "EFTA",
+    "definition": "The European Free Trade Association (EFTA) is the intergovernmental organisation of Iceland, Liechtenstein, Norway and Switzerland set up for the promotion of free trade and economic integration.  One of the main responsibilities of EFTA is to manage the EEA Agreement."
+  },
+
+  {
+    "name": "EFTA Secretariat",
+    "definition": "The headquarters of the EFTA Secretariat are located in Geneva, with offices in Brussels and Luxembourg. In Brussels, the Secretariat provides support for the management of the EEA Agreement, including preparation of new legislation for integration into the EEA Agreement and assistance in the elaboration of input into EU decision making."
+  },
+
+  {
+    "name": "EFTA Surveillance Authority (ESA)",
+    "definition": "Monitors compliance with the EEA Agreement in Iceland, Liechtenstein and Norway, enabling those States to participate in the Internal Market of the European Union. <a href=\"http://www.eftasurv.int/\">http://www.eftasurv.int/</a>"
+  },
+
+  {
+    "name": "EFTA Working Group or Expert Group",
+    "definition": "Working Groups and Expert Groups are set up under the Standing Committee structure in the various policy fields and are made up of experts from the EEA EFTA States. They are responsible for processing all EU legislation to be incorporated into the EEA Agreement."
+  },
+
+  {
+    "name": "EU Commission Expert Groups",
+    "definition": "Groups composed of experts from the EU Member States, which advise the Commission in the preparation of legislative proposals, policy initiatives and delegated acts (legally binding acts that enable the Commission to supplement or amend non-essential parts of EU legislative acts, for example, in order to define detailed measures). See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 99(1) EEA</a>."
+  },
+
+  {
+    "name": "EU Comitology Committees",
+    "definition": "Committees composed of representatives of the EU Member States, which assist the Commission in the preparation of implementing acts (legally binding acts that enable the Commission – under the supervision of committees consisting of EU countries’ representatives – to set conditions that ensure that EU laws are applied uniformly). See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 100 EEA</a>."
+  },
+
+  {
+    "name": "EU Programme Committees",
+    "definition": "are responsible for the development and management of the Community programmes outside the four freedoms. See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 81 EEA</a>."
+  },
+
+  {
+    "name": "European External Action Service (EEAS)",
+    "definition": "The EEAS is the European Union´s diplomatic service and helps the EU's foreign affairs chief – the High Representative for Foreign Affairs and Security Policy – carry out the Union's Common Foreign and Security Policy. The EEAS coordinates the EEA incorporation process on behalf of the European Union."
+  },
+
+  {
+    "name": "Fast-track procedure",
+    "definition": "An incorporation procedure that applies to acts that do not raise EEA horizontal challenges, do not need adaptations and do not call for constitutional requirements. The EEA EFTA States have identified a list of categories of acts that are considered suitable for this procedure. The EFTA Secretariat can also initiate the fast-track procedure for acts that do not fall under the predefined categories, if it considers that the acts fulfil the criteria."
+  },
+
+  {
+    "name": "List of draft Joint Committee Decisions ready for approval (“Long list”)",
+    "definition": "The list includes all draft Joint Committee Decisions already sent to the European External Action Service (EEAS) for processing and comments, regardless of whether they are ready for adoption or not."
+  },
+
+  {
+    "name": "Seconded National Experts",
+    "definition": "Experts from the EEA EFTA States are seconded to the Commission and some of its agencies for periods of 2-4 years, either through the EEA EFTA participation in EU programmes and agencies, or through bilateral agreements. The experts work for the EU institutions during their secondment and contribute to the legislative process with their expertise and knowledge about the EEA Agreement and the specific conditions in the EEA EFTA States. (More details: <a href=\"http://www.efta.int/EEA/EFTA-National-Experts-753\">http://www.efta.int/EEA/EFTA-National-Experts-753</a>)"
+  },
+
+  {
+    "name": "Standard procedure",
+    "definition": "The standard incorporation procedure applies to all acts that do not fall under the fast-track procedure or the simplified procedure (the latter only applies to some areas in the field of the EFTA Working Group on the Food Chain)."
+  },
+
+  {
+    "name": "Substantive adaptations",
+    "definition": "Substantive adaptations entail a deviation from or an amendment of the system or rules laid down in the act. For example, substantive adaptations may be necessary to make an act compatible with the constitutional boundaries of the EEA EFTA States and the two-pillar structure of the EEA Agreement. They differ from technical adaptations, which ensure that the participation of the EEA EFTA States in the Internal Market is reflected, but without substantive bearing on the legislation."
   }
-}
+]

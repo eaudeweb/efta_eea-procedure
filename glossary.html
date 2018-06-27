@@ -13,11 +13,11 @@ permalink: /glossary/
 
     <dl class="glossary">
       {% for term in site.data.glossary %}
-        <dt>{{ term[0] }}</dt>
+        <dt id="{{ term.name | slugify}}">{{ term.name }}</dt>
         <dd>
-          {{ term[1].definition | md }}
-          {% if term[1].more %}
-            <a href="{{ term[1].more }}">{{ term[1].more }}</a>
+          {{ term.definition | md }}
+          {% if term.more %}
+            <a href="{{ term.more }}">{{ term.more }}</a>
           {% endif %}
         </dd>
       {% endfor %}

@@ -28,6 +28,10 @@ $serif: 'Libre Baskerville', serif;
   font-family: $sans-serif;
   font-size: 10px;
   line-height: 1.5;
+  
+  @media (min-width: 1800px) {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -44,7 +48,7 @@ button {
 // Layout
 .container,
 main {
-  max-width: 880px;
+  max-width: 88rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -93,7 +97,17 @@ hr {
 }
 
 a {
+  color: $eftaRed;
   text-decoration: none;
+  word-break: break-word;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &[target="_blank"] {
+    @extend .cursor-newWindow;
+  }
 
   @media print {
     color: inherit;
@@ -102,11 +116,6 @@ a {
     // }
   }
 }
-
-
-
-
-
 
 
 // Character and Paragraph styles
@@ -125,6 +134,9 @@ a {
 .muted {
   color: $muted;
 }
+.roman {
+  font-style: normal;
+}
 .italic {
   font-style: italic;
 }
@@ -136,13 +148,15 @@ a {
 }
 
 
-
-
-
-
-
 .text-center {
   text-align: center;
+}
+
+
+
+.small,
+small {
+  font-size: 85.7143%;
 }
 
 
@@ -257,19 +271,6 @@ a {
 
 article {
   counter-reset: stage step;
-
-
-  a {
-    color: $eftaRed;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  a[target="_blank"] {
-    @extend .cursor-newWindow;
-  }
 }
 
 .section-step {
@@ -676,11 +677,6 @@ article {
   @media print {
     font-family: sans-serif;
   }
-
-  a {
-    word-break: break-word;
-  }
-
 }
 
 
