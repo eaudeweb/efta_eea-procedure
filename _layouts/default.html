@@ -40,7 +40,50 @@
 </head>
 <body>
 
+  <header class="site-header">
+    <h1 class="site-title">How EU Law becomes EEA Law</h1>
+  </header>
+
   {{ content }}
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <a href="http://www.efta.int/" target="_blank">
+          <img src="{{ site.baseurl }}/images/efta_logo.png" 
+               width=""
+               alt="EFTA Logo"> 
+          <br>
+          www.efta.int
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+
+      var navbar = document.querySelector('.navbar');
+
+      function offsetScroll() {
+        var view = document.scrollingElement || document.body;
+        view.scrollTop = view.scrollTop - navbar.clientHeight - 15;
+      }
+      function scrollHandle() {
+        window.removeEventListener('scroll', scrollHandle, false);
+        offsetScroll();
+      }
+      function hashHandle(event) {
+        window.addEventListener('scroll', scrollHandle, false);
+      }
+
+      window.addEventListener('DOMContentLoaded', hashHandle, false);
+      window.addEventListener('hashchange', function(event) {
+        offsetScroll();
+      }, false);
+
+    }())
+  </script>
 
 </body>
 </html>
