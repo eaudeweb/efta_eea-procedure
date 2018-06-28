@@ -1,27 +1,30 @@
-<nav class="main-nav">
+<nav class="navbar">
   <div class="container">
+    <div class="navbar-inner">
+      <button type="button" id="backButton" class="no-btn" hidden>
+        &larr;
+        <span class="sr">Back</span>
+      </button>
+      <script>
+        var lastLocation = localStorage.getItem('lastLocation');
+        if (lastLocation && lastLocation !== window.location.href && window.location.hash) {
+          var backButton = document.querySelector('#backButton');
+          backButton.removeAttribute('hidden');
+          backButton.onclick = function() { window.history.back() };
+        }
+        localStorage.setItem('lastLocation', window.location.href);
+      </script>
 
 
-    <button type="button" id="btn-back" class="no-btn btn-back" style="color: #fff;" hidden>
-      &larr;
-      <span class="sr">Back</span>
-    </button>
-
-    <script>
-      var lastLocation = localStorage.getItem('lastLocation');
-      console.log(lastLocation);
-      if (lastLocation && lastLocation !== window.location.href && window.history.hash) {
-        var backButton = document.querySelector('#btn-back');
-        backButton.removeAttribute('hidden');
-        backButton.onclick = window.history.back;
-      }
-      localStorage.setItem('lastLocation', window.location.href);
-    </script>
+      <!-- <div class="navbar-title">
+        <strong>How EU Law becomes EEA Law</strong>
+      </div> -->
 
 
-    <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>Overview</a>
-    <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>The procedure in detail</a>
-    <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>Glossary</a>
-    <a href="{{ site.baseurl }}/efta_presentation-howEULawBecomesEEALaw-v1.0.pdf" class="cursor-download">Download PDF</a>
+      <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>Overview</a>
+      <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>The procedure in detail</a>
+      <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>Glossary</a>
+      <a href="{{ site.baseurl }}/efta_presentation-howEULawBecomesEEALaw-v1.0.pdf" class="cursor-download">Download PDF</a>
+    </div>
   </div>
 </nav>

@@ -313,9 +313,16 @@ body {
 button {
   cursor: pointer; }
 
+.hash-offset::before {
+  content: ' ';
+  display: block;
+  height: 5.6rem;
+  margin-top: -5.6rem;
+  visibility: hidden; }
+
 .container,
 main {
-  max-width: 88rem;
+  max-width: 86rem;
   margin: 0 auto;
   padding: 0 2rem; }
 
@@ -440,13 +447,11 @@ small {
       font-size: 3rem;
       line-height: 3.6rem; } }
 
-.main-nav {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
   z-index: 10000;
   top: 0;
   text-align: center;
@@ -455,35 +460,64 @@ small {
   background: #fff;
   white-space: nowrap;
   overflow: auto; }
-  .main-nav::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    max-width: 88rem;
-    margin: 0 auto; }
-  .main-nav a {
+  .navbar a {
     display: inline-block;
-    padding: .8em .8em;
+    padding: 1.6rem;
     color: rgba(0, 0, 0, 0.6); }
-    .main-nav a:hover {
+    .navbar a:hover {
       color: #394042; }
-  .main-nav .is-selected {
+  .navbar .is-selected {
     color: #DB4745 !important;
     font-weight: 600;
     cursor: default;
     pointer-events: none; }
-  .page-home .main-nav {
+  .page-home .navbar {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     background: transparent; }
-    .page-home .main-nav a {
+    .page-home .navbar a {
       color: #fff; }
+  .navbar strong {
+    font-weight: normal;
+    font-size: 80%;
+    line-height: 1.2;
+    font-family: "Libre Baskerville", serif;
+    display: inline-block;
+    vertical-align: middle; }
   @media print {
-    .main-nav {
+    .navbar {
       display: none; } }
+  @media (max-width: 899px) {
+    .navbar {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+
+.navbar-inner {
+  position: relative; }
+  @media (min-width: 900px) {
+    .navbar-inner {
+      padding-left: 5.6rem;
+      padding-right: 5.6rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+
+.page-home .navbar-title {
+  display: none; }
+
+#backButton {
+  padding: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 1;
+  vertical-align: 1px;
+  font-family: 'Arial', sans-serif;
+  color: rgba(0, 0, 0, 0.6); }
+  #backButton:hover {
+    color: #000; }
+  @media (min-width: 900px) {
+    #backButton {
+      position: absolute;
+      left: 0; } }
 
 :root:not(.page-home) {
   padding-top: 4rem; }
@@ -708,6 +742,7 @@ article {
 .sprite-norway {
   background-position: 31% 0; }
 
+.sprite-efta,
 .sprite-secretariat {
   width: 6rem;
   background-position: 48% 0; }
