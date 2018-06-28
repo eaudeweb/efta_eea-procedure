@@ -1,5 +1,24 @@
 <nav class="main-nav">
   <div class="container">
+
+
+    <button type="button" id="btn-back" class="no-btn btn-back" style="color: #fff;" hidden>
+      &larr;
+      <span class="sr">Back</span>
+    </button>
+
+    <script>
+      var lastLocation = localStorage.getItem('lastLocation');
+      console.log(lastLocation);
+      if (lastLocation && lastLocation !== window.location.href && window.history.hash) {
+        var backButton = document.querySelector('#btn-back');
+        backButton.removeAttribute('hidden');
+        backButton.onclick = window.history.back;
+      }
+      localStorage.setItem('lastLocation', window.location.href);
+    </script>
+
+
     <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>Overview</a>
     <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>The procedure in detail</a>
     <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>Glossary</a>

@@ -441,6 +441,10 @@ small {
       line-height: 3.6rem; } }
 
 .main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: 10000;
@@ -448,6 +452,7 @@ small {
   text-align: center;
   font-size: 1.6rem;
   transition: opacity .3s;
+  background: #fff;
   white-space: nowrap;
   overflow: auto; }
   .main-nav::after {
@@ -472,12 +477,16 @@ small {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; }
+    z-index: 1000;
+    background: transparent; }
     .page-home .main-nav a {
       color: #fff; }
   @media print {
     .main-nav {
       display: none; } }
+
+:root:not(.page-home) {
+  padding-top: 4rem; }
 
 article {
   counter-reset: stage step; }
@@ -575,11 +584,33 @@ article {
 .glossary dd + dd {
   margin-bottom: 0; }
 
+.tooltip {
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  margin: 1rem;
+  width: 38rem;
+  max-width: 90%;
+  padding: 1rem;
+  background: #fff;
+  padding: 1em;
+  color: #394042;
+  text-align: left;
+  line-height: inherit;
+  font-size: 1.4rem;
+  border-radius: 0;
+  border: 1px solid #5082BC;
+  box-shadow: 0.5rem 0.5rem 0 0 rgba(80, 130, 188, 0.4);
+  opacity: 1 !important; }
+
 .tip-glossary {
   border-bottom: 1px dotted #db4745;
-  transition: border .5s; }
+  transition: border .5s;
+  color: inherit; }
   .tip-glossary:hover {
-    border-bottom-style: solid; }
+    border-bottom-style: solid;
+    text-decoration: none; }
 
 .tippy-tooltip.efta-theme {
   /* Your styling here. Example: */
@@ -606,25 +637,31 @@ article {
 .cursor-scrollDown, .article-cover {
   cursor: url("../images/efta_cursor64x64-scrollDown.png") 32 32, auto; }
 
-.step-details p,
-.step-details li {
-  font-size: 1.2rem;
-  font-style: italic; }
-.step-details h5 {
-  margin-bottom: .5em; }
-.step-details button {
-  filter: opacity(50%) grayscale(100%);
-  transition: filter .3s; }
-  .step-details button:focus, .step-details button:hover, .step-details button.is-active {
-    filter: opacity(100%) grayscale(0%);
-    outline: none; }
-@media (max-width: 599px) {
-  .step-details {
-    text-align: center; }
-    .step-details small {
-      display: none; }
-    .step-details .step-detail {
-      text-align: left; } }
+.cursor-paragraph {
+  cursor: url("../images/efta_cursor64x64-pilcrow.png") 32 32, auto; }
+
+.step-details {
+  text-align: center; }
+  .step-details p,
+  .step-details li {
+    font-size: 1.2rem;
+    font-style: italic; }
+  .step-details h5 {
+    margin-bottom: .5em; }
+  .step-details button {
+    border: 1px solid transparent;
+    border-radius: .2rem; }
+    .step-details button.btn-round {
+      border-radius: 50%; }
+    .step-details button:hover {
+      border-color: rgba(80, 130, 188, 0.4); }
+    .step-details button:focus, .step-details button.is-active {
+      border-color: #5082bc;
+      outline: none; }
+  .step-details small {
+    display: none; }
+  .step-details .step-detail {
+    text-align: left; }
 
 .step-detail {
   display: none;
@@ -753,16 +790,9 @@ article {
   font-style: italic; }
 .page-details h1, .page-details h2, .page-details h3 {
   margin-top: 2em; }
-.page-details h2 {
-  font-size: 1.8rem; }
-.page-details h3 {
-  font-size: inherit; }
 .page-details header {
   padding-top: 4rem;
   padding-bottom: 4rem; }
-@media print {
-  .page-details {
-    font-family: sans-serif; } }
 
 .document-owner {
   text-align: center;

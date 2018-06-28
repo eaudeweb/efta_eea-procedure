@@ -223,6 +223,10 @@ small {
 
 
 .main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: 10000;
@@ -230,6 +234,7 @@ small {
   text-align: center;
   font-size: 1.6rem;
   transition: opacity .3s;
+  background: #fff;
 
   white-space: nowrap;
   overflow: auto;
@@ -264,6 +269,7 @@ small {
     left: 0;
     right: 0;
     z-index: 1000;
+    background: transparent;
 
     a {
       color: #fff;
@@ -275,7 +281,9 @@ small {
   }
 }
 
-
+:root:not(.page-home) {
+  padding-top: 4rem;
+}
 
 
 article {
@@ -430,14 +438,39 @@ article {
   }
 }
 
+.tooltip {
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+
+  z-index: 10000;
+
+  margin: 1rem;
+  width: 38rem;
+  max-width: 90%;
+  padding: 1rem;
+  background: #fff;
+  padding: 1em;
+  color: $titatium;
+  text-align: left;
+  line-height: inherit;
+  font-size: 1.4rem;
+  border-radius: 0;
+  border: 1px solid $eftaBlue;
+  box-shadow: .5rem .5rem 0 0 rgba($eftaBlue, .4);
+  opacity: 1!important;
+}
+
 // Tips
 .tip-glossary {
   @extend .cursor-help;
   border-bottom: 1px dotted rgba($eftaRed, 1);
   transition: border .5s;
+  color: inherit;
 
   &:hover {
     border-bottom-style: solid;
+    text-decoration: none;
   }
 }
 
@@ -468,7 +501,9 @@ article {
 .cursor-scrollDown {
   cursor: url('../images/efta_cursor64x64-scrollDown.png') 32 32, auto;
 }
-
+.cursor-paragraph {
+  cursor: url('../images/efta_cursor64x64-pilcrow.png') 32 32, auto;
+}
 
 
 // Step details
@@ -485,18 +520,22 @@ article {
 
   button {
     @extend .no-btn;
-
-    filter: opacity(50%) grayscale(100%);
-    transition: filter .3s;
+    border: 1px solid transparent;
+    border-radius: .2rem;
+    &.btn-round {
+      border-radius: 50%;
+    }
+    &:hover {
+      border-color: rgba($eftaBlue, .4);
+    }
     &:focus,
-    &:hover,
     &.is-active {
-      filter: opacity(100%) grayscale(0%);
+      border-color: rgba($eftaBlue, 1);
       outline: none;
     }
   }
-  
-  @media (max-width: 599px) {
+
+  // @media (max-width: 599px) {
     text-align: center;
     small {
       display: none;
@@ -504,7 +543,7 @@ article {
     .step-detail {
       text-align: left; 
     }
-  }
+  // }
 }
 
 .step-detail {
@@ -697,20 +736,10 @@ article {
     margin-top: 2em;
   }
 
-  h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
-    font-size: inherit;
-  }
 
   header {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  @media print {
-    font-family: sans-serif;
   }
 }
 
