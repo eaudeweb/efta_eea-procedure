@@ -476,7 +476,8 @@ main {
   color: inherit;
   background: transparent; }
 
-.media img {
+.media img,
+.media video {
   width: 100%;
   height: auto;
   display: block;

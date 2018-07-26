@@ -578,8 +578,12 @@ class: home
 
       <section class="section-step" id="4-9-the-eea-joint-committee-adopts-the-decision">
 
-        <div class="media">
-          <img src="images/efta_illustration1440x900-JCD.png" alt="EEA Joint Committee Decision">
+        <div class="media media-video">
+          <video width="720" height="450"
+                     poster="images/efta_illustration1440x900-JCD.png">
+            <source src="videos/efta_animation-jcd.mp4" type="video/mp4">
+            <img src="images/efta_illustration1440x900-JCD.png" alt="EEA Joint Committee Decision">
+          </video>
         </div>
         
         <h3 class="step-heading">The EEA Joint Committee adopts the Decision</h3>
@@ -598,7 +602,13 @@ class: home
       <section class="section-step" id="5-10-some-decisions-must-be-approved-by-the-national-parliaments">
         <div class="row">
           <div class="col col-right">
-            <div class="media"><img src="images/efta_illustration900x600-parliament.png" alt="EFTA MS National Parliaments"></div>
+            <div class="media media-video">
+              <video width="480" height="320"
+                     poster="images/efta_illustration900x600-parliament.png">
+                <source src="videos/efta_animation-parliament.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-parliament.png" alt="EFTA MS National Parliaments">
+              </video>
+            </div>
           </div>
           <div class="col">
             <h3 class="step-heading">Some decisions must be approved by the national Parliaments</h3>
@@ -677,8 +687,12 @@ class: home
       <section class="section-step" id="5-11-the-eea-efta-states-are-obliged-to-implement-incorporated-acts">
         <div class="row">
           <div class="col col-right">
-            <div class="media">
-              <img src="images/efta_illustration900x600-constitutions.png" alt="EFTA MS Books of law">
+            <div class="media media-video">
+              <video width="480" height="320"
+                     poster="images/efta_illustration900x600-constitutions.png">
+                <source src="videos/efta_animation-constitutions.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-constitutions.png" alt="EFTA MS Books of law">
+              </video>
             </div>
           </div>
           <div class="col">
@@ -933,3 +947,19 @@ class: home
 
 </script>
 <script src="{{ site.baseurl }}/js/easy-toggle-state.ie.min.js"></script>
+<script src="{{ site.baseurl }}/js/in-view.min.js"></script>
+<script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', function() {
+
+      inView('video').on('enter', function(video) {
+        console.log(video);
+        if (!video.getAttribute('data-played')) {
+          video.setAttribute('data-played', 'true');
+          video.play();
+        }
+      });
+
+    });
+  }())
+</script>
