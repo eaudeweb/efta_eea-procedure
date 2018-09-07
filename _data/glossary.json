@@ -32,6 +32,17 @@
   },
 
   {
+    "name": "Decision shaping",
+    "definition": "The EEA EFTA States’ possibility to participate directly in the continuous development of the EU Internal Market is an essential, and unique, feature of the EEA Agreement. These mechanisms are particularly important for the EEA EFTA States, as they do not participate in the decision-making stage in the EU."
+  },
+
+
+  {
+    "name": "EEA Challenges",
+    "definition": "often referred to as \"EEA horizontal challenges\", may arise when a provision in an act or proposal has an impact on EEA law or the EEA institutional framework. EEA challenges may occur, for example, in relation to fines to be imposed by an EU institution or body, reference to criminal sanctions or provisions with third-country elements."
+  },
+
+  {
     "name": "EEA Coordination Unit (Liechtenstein)",
     "definition": "The EEA Coordination Unit administers EEA matters on a daily basis, particularly regarding legal questions. It coordinates the incorporation and implementation of EEA acts. The Unit reports to the Prime Minister."
   },
@@ -41,24 +52,30 @@
     "definition": "One of the ways in which the EEA EFTA States participate in shaping EU legislation is by submitting comments to a European institution on important policy issues. A typical EEA EFTA comment provides a brief commentary and suggestions regarding Commission initiatives such as green papers or legislative proposals."
   },
 
+
+  {
+    "name": "EEA EFTA Experts",
+    "definition": "Experts from the EEA EFTA States who are members of an EFTA Working Group or Expert Group and thus contribute to the process of incorporating EU acts into the EEA Agreement."
+  },
+
   {
     "name": "EEA EFTA States",
     "definition": "EEA EFTA States refers to three countries of the four countries in EFTA – Iceland, Liechtenstein, and Norway – which participate in the EEA Agreement. Switzerland is the fourth member of EFTA, but it does not take part in the EEA. Instead, several bilateral agreements regulate Swiss-EU relations."
   },
 
   {
-    "name": "EEA Horizontal Challenges",
-    "definition": "EEA horizontal challenges may arise when a provision in an act or proposal has an impact on EEA law or the EEA institutional framework. Horizontal challenges may occur, for example, in relation to fines to be imposed by an EU institution or body, reference to criminal sanctions or provisions with third-country elements."
-  },
-
-  {
     "name": "EEA Joint Committee",
-    "definition": "The EEA Joint Committee, which typically meets 6-8 times per year, is responsible for managing the EEA Agreement and ensuring its effective operation. It is a forum in which views are exchanged and decisions made (by consensus) on the extension of EU legislation into the EEA Agreement. It consists of representatives from the European Commission (the European External Action Service (EEAS) and its services), the three EEA EFTA States (usually at ambassadorial level) and an observer from the EFTA Surveillance Authority (ESA)"
+    "definition": "The EEA Joint Committee, which typically meets 6-8 times per year, is responsible for managing the EEA Agreement and ensuring its effective operation. It is a forum in which views are exchanged and decisions made (by consensus) on the extension of EU legislation into the EEA Agreement. It consists of representatives from the European Commission (the European External Action Service (EEAS) and its services), the three EEA EFTA States (usually at ambassadorial level) and an observer from the EFTA Surveillance Authority (ESA)."
   },
 
   {
     "name": "EEA Joint Committee Decision (JCD)",
     "definition": "EEA-relevant acts are incorporated into the EEA Agreement through Joint Committee Decisions (JCDs). <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 102(1) EEA</a> provides that as soon as an EEA-relevant EU legal act has been adopted in the EU, the EEA Joint Committee shall take a decision concerning the appropriate amendment of the EEA Agreement with a view to permitting simultaneous application of the legislation in the whole of the EEA."
+  },
+
+  {
+    "name": "EEA Relevance",
+    "definition": "EU acts are considered to be EEA-relevant if they contribute to fulfilling the aim of Article 1 of the <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">EEA Agreement</a>, that is if they are tied to the EU internal market and equal conditions of competition."
   },
 
   {
@@ -69,6 +86,11 @@
   {
     "name": "EFTA",
     "definition": "The European Free Trade Association (EFTA) is the intergovernmental organisation of Iceland, Liechtenstein, Norway and Switzerland set up for the promotion of free trade and economic integration.  One of the main responsibilities of EFTA is to manage the EEA Agreement."
+  },
+
+  {
+    "name": "EFTA Court",
+    "definition": "The EFTA Court in Luxembourg has jurisdiction regarding the three EEA EFTA States. The jurisdiction of the EFTA Court largely corresponds to the jurisdiction of the Court of Justice of the European Union over EU States. It is competent to deal with infringement actions brought by the EFTA Surveillance Authority against an EEA EFTA State regarding the implementation, application or interpretation of EEA law rules, for giving advisory opinions to courts in EEA EFTA States on the interpretation of EEA rules and for appeals concerning decisions taken by the EFTA Surveillance Authority."
   },
 
   {
