@@ -3,8 +3,7 @@ title: How EU Law becomes EEA Law
 description: >-
   The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas.
 # baseurl: "http://design.eaudeweb.ro/efta" # the subpath of your site, e.g. /blog
-baseurl: "/efta_eea-procedure" # the subpath of your site, e.g. /blog
+baseurl: "https://eaudeweb.github.io/efta_eea-procedure" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://eaudeweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # theme: needed by GitHub pages
 theme: jekyll-theme-minimal
