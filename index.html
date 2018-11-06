@@ -774,7 +774,7 @@ class: home
 
     glossary = document.createElement('html');
     var request = new XMLHttpRequest();
-    request.open('GET', '{{ site.baseurl }}/glossary', true);
+    request.open('GET', '{{ site.baseurl }}/glossary/', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
