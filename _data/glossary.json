@@ -12,8 +12,8 @@
   },
 
   {
-    "name": "Annexes to the EEA Agreement",
-    "definition": "The legal texts of EEA Agreement consist of 129 articles, <a href=\"http://www.efta.int/legal-texts/eea/annexes-to-the-agreement\">22&nbsp;annexes</a>, <a href=\"http://www.efta.int/legal-texts/eea/protocols-to-the-agreement\">49&nbsp;protocols</a> and a final act. The annexes list the EU acts applicable to the EEA, including adaptations."
+    "name": "Annexes and Protocols to the EEA Agreement",
+    "definition": "The legal texts of EEA Agreement consist of 129 articles, <a href=\"http://www.efta.int/legal-texts/eea/annexes-to-the-agreement\">22&nbsp;annexes</a>, <a href=\"http://www.efta.int/legal-texts/eea/protocols-to-the-agreement\">49&nbsp;protocols</a> and a final act. The annexes list the EU acts applicable to the EEA, including adaptations. Some of the protocols include provisions on specific areas such as rules on the origin of goods, cooperation outside the four freedoms (participation in EU programmes) and simplified customs procedures. Protocol 1 contains horizontal adaptations, which apply to all acts referred to in the annexes to the EEA Agreement."
   },
 
   {
@@ -120,7 +120,7 @@
 
   {
     "name": "EU Programme Committees",
-    "definition": "are responsible for the development and management of the Community programmes outside the four freedoms. See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 81 EEA</a>."
+    "definition": "are responsible for the development and management of the EU programmes outside the four freedoms. See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 81 EEA</a>."
   },
 
   {
@@ -146,6 +146,11 @@
   {
     "name": "Standard procedure",
     "definition": "The standard incorporation procedure applies to all acts that do not fall under the fast-track procedure or the simplified procedure (the latter only applies to some areas in the field of the EFTA Working Group on the Food Chain)."
+  },
+
+  {
+    "name": "Standing Committee",
+    "definition": "The Standing Committee of the EFTA States serves as a forum in which the EEA EFTA States consult one another and arrive at a common position before meeting with the EU in the EEA Joint Committee. It consists of the Ambassadors to the EU of Iceland, Liechtenstein and Norway, and observers from Switzerland and the EFTA Surveillance Authority. The Committee’s substructure consists of five subcommittees, under which there are several working groups. See: <a href=\"http://www.efta.int/eea/eea-institutions/standing-committee\">http://www.efta.int/eea/eea-institutions/standing-committee</a>."
   },
 
   {
