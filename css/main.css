@@ -921,3 +921,27 @@ article {
   width: 12rem; }
 
 /*# sourceMappingURL=main.css.map */
+
+#languagePicker {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#languagePicker:focus {
+  outline: none;
+}
+
+.page-home #languagePicker {
+  color: white;
+}
+
+.page-home #languagePicker option {
+  color: black;
+}
+

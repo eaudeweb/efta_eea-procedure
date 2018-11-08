@@ -1,0 +1,11 @@
+global:
+  tagline: English
+  overview: Overview
+  procedure: The procedure in detail
+  download: Download PDF
+  documentOwner: <strong>EUROPEAN ECONOMIC AREA</strong> <br> STANDING COMMITTEE OF THE EFTA STATES
+langs:
+  en: English
+  de: Deutsch
+  is: Islenska
+  no: Norsk

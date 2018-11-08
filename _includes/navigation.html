@@ -19,12 +19,18 @@
       <!-- <div class="navbar-title">
         <strong>How EU Law becomes EEA Law</strong>
       </div> -->
-
-
-      <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>Overview</a>
-      <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>The procedure in detail</a>
+      
+      <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
+      <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
       <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>Glossary</a>
-      <a href="{{ site.baseurl }}/efta_presentation-howEULawBecomesEEALaw-v1.0.pdf" class="cursor-download">Download PDF</a>
+      <a href="{{ site.baseurl }}/efta_presentation-howEULawBecomesEEALaw-v1.0.pdf" class="cursor-download">{% translate global.download %}</a>
+      
+      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
+          <option {% if site.lang == "en" %} selected {% endif %} value="{{site.baseurl_root}}{{page.url}}">English</option>
+          <option {% if site.lang == "de" %} selected {% endif %} value="{{site.baseurl_root}}/de{{page.url}}">Deutsch</option>
+          <option {% if site.lang == "is" %} selected {% endif %} value="{{site.baseurl_root}}/is{{page.url}}">Islenska</option>
+          <option {% if site.lang == "no" %} selected {% endif %} value="{{site.baseurl_root}}/no{{page.url}}">Norsk</option>
+      </select>
     </div>
   </div>
 </nav>
