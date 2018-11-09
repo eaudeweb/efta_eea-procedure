@@ -5,22 +5,4 @@ description: Acronyms, abbreviations and definitions of terms used to describe t
 permalink: /glossary/
 ---
 
-{% include navigation.html %}
-
-<main>
-  <div class="container">
-    <h1>Glossary</h1>
-
-    <dl class="glossary">
-      {% for term in site.data.glossary %}
-        <dt id="{{ term.name | slugify}}">{{ term.name }}</dt>
-        <dd>
-          {{ term.definition | md }}
-          {% if term.more %}
-            <a href="{{ term.more }}">{{ term.more }}</a>
-          {% endif %}
-        </dd>
-      {% endfor %}
-    </dl>
-  </div>
-</main>
+{% translate_file glossary.html %}

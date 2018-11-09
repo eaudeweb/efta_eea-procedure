@@ -1,0 +1,19 @@
+{% include navigation.html %}
+
+<main>
+  <div class="container">
+    <h1>Glossar</h1>
+
+    <dl class="glossary">
+      {% for term in site.data.glossary %}
+        <dt id="{{ term.name | slugify}}">{{ term.name }}</dt>
+        <dd>
+          {{ term.definition | md }}
+          {% if term.more %}
+            <a href="{{ term.more }}">{{ term.more }}</a>
+          {% endif %}
+        </dd>
+      {% endfor %}
+    </dl>
+  </div>
+</main>

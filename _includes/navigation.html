@@ -22,7 +22,7 @@
       
       <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
       <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
-      <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>Glossary</a>
+      <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>{% translate global.glossary %}</a>
       <a href="{{ site.baseurl }}/efta_presentation-howEULawBecomesEEALaw-v1.0.pdf" class="cursor-download">{% translate global.download %}</a>
       
       <select name="languagePicker" id="languagePicker" onchange="location = this.value">
