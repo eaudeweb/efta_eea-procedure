@@ -6,7 +6,7 @@ description: >-
 # GitHub Pages
 url: "https://eaudeweb.github.io"
 baseurl: "/efta_eea-procedure"
-#theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
 
 # design.eaudeweb.ro
 # url: "http://design.eaudeweb.ro"
