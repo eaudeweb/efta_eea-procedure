@@ -8,12 +8,12 @@
     "name": "Agreement on the European Economic Area (EEA Agreement)",
     "short-name": "EEA Agreement",
     "definition": "The European Economic Area brings together the Member States of the European Union and three EFTA countries – Iceland, Liechtenstein, and Norway - in a single market with free movement of goods, services, capital and persons.  The EEA Agreement guarantees equal rights and obligations within the Internal Market for individuals and economic operators in the EEA. It was signed in May 1992 and entered into force in January 1994.",
-    "more": "http://www.efta.int/eea/eea-agreement" 
+    "link": "http://www.efta.int/eea/eea-agreement"
   },
 
   {
     "name": "Annexes and Protocols to the EEA Agreement",
-    "definition": "The legal texts of EEA Agreement consist of 129 articles, <a href=\"http://www.efta.int/legal-texts/eea/annexes-to-the-agreement\">22&nbsp;annexes</a>, <a href=\"http://www.efta.int/legal-texts/eea/protocols-to-the-agreement\">49&nbsp;protocols</a> and a final act. The annexes list the EU acts applicable to the EEA, including adaptations. Some of the protocols include provisions on specific areas such as rules on the origin of goods, cooperation outside the four freedoms (participation in EU programmes) and simplified customs procedures. Protocol 1 contains horizontal adaptations, which apply to all acts referred to in the annexes to the EEA Agreement."
+    "definition": "The legal texts of EEA Agreement consist of 129 articles, <a target=\"_blank\" href=\"http://www.efta.int/legal-texts/eea/annexes-to-the-agreement\">22&nbsp;annexes</a>, <a target=\"_blank\" href=\"http://www.efta.int/legal-texts/eea/protocols-to-the-agreement\">49&nbsp;protocols</a> and a final act. The annexes list the EU acts applicable to the EEA, including adaptations. Some of the protocols include provisions on specific areas such as rules on the origin of goods, cooperation outside the four freedoms (participation in EU programmes) and simplified customs procedures. Protocol 1 contains horizontal adaptations, which apply to all acts referred to in the annexes to the EEA Agreement."
   },
 
   {
@@ -39,7 +39,7 @@
 
   {
     "name": "EEA Challenges",
-    "definition": "often referred to as \"EEA horizontal challenges\", may arise when a provision in an act or proposal has an impact on EEA law or the EEA institutional framework. EEA challenges may occur, for example, in relation to fines to be imposed by an EU institution or body, reference to criminal sanctions or provisions with third-country elements."
+    "definition": "often referred to as \"EEA horizontal challenges\", may arise when a provision in an act or proposal has a material and/or structural impact on EEA law or the EEA institutional framework. EEA challenges may occur, for example, in relation to fines to be imposed by an EU institution or body, reference to criminal sanctions or provisions with third-country elements."
   },
 
   {
@@ -70,17 +70,17 @@
 
   {
     "name": "EEA Joint Committee Decision (JCD)",
-    "definition": "EEA-relevant acts are incorporated into the EEA Agreement through Joint Committee Decisions (JCDs). <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 102(1) EEA</a> provides that as soon as an EEA-relevant EU legal act has been adopted in the EU, the EEA Joint Committee shall take a decision concerning the appropriate amendment of the EEA Agreement with a view to permitting simultaneous application of the legislation in the whole of the EEA."
+    "definition": "EEA-relevant acts are incorporated into the EEA Agreement through Joint Committee Decisions (JCDs). <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 102(1) EEA</a> provides that as soon as an EEA-relevant EU legal act has been adopted in the EU, the EEA Joint Committee shall take a decision concerning the appropriate amendment of the EEA Agreement with a view to permitting simultaneous application of the legislation in the whole of the EEA."
   },
 
   {
     "name": "EEA Relevance",
-    "definition": "EU acts are considered to be EEA-relevant if they contribute to fulfilling the aim of Article 1 of the <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">EEA Agreement</a>, that is if they are tied to the EU internal market and equal conditions of competition."
+    "definition": "EU acts are considered to be EEA-relevant if they contribute to fulfilling the aim of Article 1 of the <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">EEA Agreement</a>, that is if they are tied to the EU internal market and equal conditions of competition."
   },
 
   {
     "name": "EEA Supplement to the Official Journal of the European Union (OJ)",
-    "definition": "A weekly legal gazette containing EEA related texts from EFTA and EU bodies, published in Icelandic and Norwegian on the <a href=\"http://www.efta.int/publications/eea-supplements\">EFTA Secretariat’s website</a>."
+    "definition": "A weekly legal gazette containing EEA related texts from EFTA and EU bodies, published in Icelandic and Norwegian on the <a target=\"_blank\" href=\"http://www.efta.int/publications/eea-supplements\">EFTA Secretariat’s website</a>."
   },
 
   {
@@ -100,7 +100,8 @@
 
   {
     "name": "EFTA Surveillance Authority (ESA)",
-    "definition": "Monitors compliance with the EEA Agreement in Iceland, Liechtenstein and Norway, enabling those States to participate in the Internal Market of the European Union. <a href=\"http://www.eftasurv.int/\">http://www.eftasurv.int/</a>"
+    "definition": "Monitors compliance with the EEA Agreement in Iceland, Liechtenstein and Norway, and safeguards the right of individuals and undertakings under the EEA Agreement.",
+    "link": "http://www.eftasurv.int/"
   },
 
   {
@@ -110,17 +111,17 @@
 
   {
     "name": "EU Commission Expert Groups",
-    "definition": "Groups composed of experts from the EU Member States, which advise the Commission in the preparation of legislative proposals, policy initiatives and delegated acts (legally binding acts that enable the Commission to supplement or amend non-essential parts of EU legislative acts, for example, in order to define detailed measures). See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 99(1) EEA</a>."
+    "definition": "Groups composed of experts from the EU Member States, which advise the Commission in the preparation of legislative proposals, policy initiatives and delegated acts (legally binding acts that enable the Commission to supplement or amend non-essential parts of EU legislative acts, for example, in order to define detailed measures). See <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 99(1) EEA</a>."
   },
 
   {
     "name": "EU Comitology Committees",
-    "definition": "Committees composed of representatives of the EU Member States, which assist the Commission in the preparation of implementing acts (legally binding acts that enable the Commission – under the supervision of committees consisting of EU countries’ representatives – to set conditions that ensure that EU laws are applied uniformly). See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 100 EEA</a>."
+    "definition": "Committees composed of representatives of the EU Member States, which assist the Commission in the preparation of implementing acts (legally binding acts that enable the Commission – under the supervision of committees consisting of EU countries’ representatives – to set conditions that ensure that EU laws are applied uniformly). See <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 100 EEA</a>."
   },
 
   {
     "name": "EU Programme Committees",
-    "definition": "are responsible for the development and management of the EU programmes outside the four freedoms. See <a href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 81 EEA</a>."
+    "definition": "are responsible for the development and management of the EU programmes outside the four freedoms. See <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Article 81 EEA</a>."
   },
 
   {
@@ -134,13 +135,14 @@
   },
 
   {
-    "name": "List of draft Joint Committee Decisions ready for approval (“Long list”)",
-    "definition": "The list includes all draft Joint Committee Decisions already sent to the European External Action Service (EEAS) for processing and comments, regardless of whether they are ready for adoption or not."
+    "name": "List of draft Joint Committee Decisions ready for adoption (“Long list”)",
+    "definition": "The list includes draft Joint Committee Decisions already sent to the European External Action Service (EEAS) for processing and comments, that are considered ready for adoption."
   },
 
   {
     "name": "Seconded National Experts",
-    "definition": "Experts from the EEA EFTA States are seconded to the Commission and some of its agencies for periods of 2-4 years, either through the EEA EFTA participation in EU programmes and agencies, or through bilateral agreements. The experts work for the EU institutions during their secondment and contribute to the legislative process with their expertise and knowledge about the EEA Agreement and the specific conditions in the EEA EFTA States. (More details: <a href=\"http://www.efta.int/EEA/EFTA-National-Experts-753\">http://www.efta.int/EEA/EFTA-National-Experts-753</a>)"
+    "definition": "Experts from the EEA EFTA States are seconded to the Commission and some of its agencies for periods of 2-4 years, either through the EEA EFTA participation in EU programmes and agencies, or through bilateral agreements. The experts work for the EU institutions during their secondment and contribute to the legislative process with their expertise and knowledge about the EEA Agreement and the specific conditions in the EEA EFTA States.",
+    "link": "http://www.efta.int/EEA/EFTA-National-Experts-753"
   },
 
   {
@@ -150,7 +152,8 @@
 
   {
     "name": "Standing Committee",
-    "definition": "The Standing Committee of the EFTA States serves as a forum in which the EEA EFTA States consult one another and arrive at a common position before meeting with the EU in the EEA Joint Committee. It consists of the Ambassadors to the EU of Iceland, Liechtenstein and Norway, and observers from Switzerland and the EFTA Surveillance Authority. The Committee’s substructure consists of five subcommittees, under which there are several working groups. See: <a href=\"http://www.efta.int/eea/eea-institutions/standing-committee\">http://www.efta.int/eea/eea-institutions/standing-committee</a>."
+    "definition": "The Standing Committee of the EFTA States serves as a forum in which the EEA EFTA States consult one another and arrive at a common position before meeting with the EU in the EEA Joint Committee. It consists of the Ambassadors to the EU of Iceland, Liechtenstein and Norway, and observers from Switzerland and the EFTA Surveillance Authority. The Committee’s substructure consists of five subcommittees, under which there are several working groups.",
+    "link": "http://www.efta.int/eea/eea-institutions/standing-committee",
   },
 
   {
