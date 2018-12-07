@@ -537,15 +537,6 @@ main {
     font-weight: 600;
     cursor: default;
     pointer-events: none; }
-  .page-home .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: transparent; }
-    .page-home .navbar a {
-      color: #fff; }
   .navbar strong {
     font-weight: normal;
     font-size: 80%;
@@ -921,3 +912,23 @@ article {
   width: 12rem; }
 
 /*# sourceMappingURL=main.css.map */
+
+#languagePicker {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#languagePicker:focus {
+  outline: none;
+}
+
+.page-home #languagePicker option {
+  color: black;
+}
+

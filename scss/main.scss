@@ -383,19 +383,6 @@ main {
     pointer-events: none;
   }
 
-  .page-home & {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: transparent;
-
-    a {
-      color: #fff;
-    }
-  }
-
   strong {
     font-weight: normal;
     font-size: 80%;
