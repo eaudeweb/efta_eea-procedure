@@ -8,7 +8,8 @@
     "id": "agreement-on-the-european-economic-area-eea-agreement",
     "short-name": "EWR-Abkommen",
     "definition": "Der Europ\u00e4ische Wirtschaftsraum vereint die Mitgliedstaaten der Europ\u00e4ischen Union und der drei EFTA-Staaten \u2013 Island, Liechtenstein und Norwegen \u2013 in einem gemeinsamen Binnenmarkt, der den freien Waren-, Dienstleistungs-, Kapital- und Personenverkehr erm\u00f6glicht. Das EWR-Abkommen garantiert die Gleichbehandlung von Einzelpersonen und Marktteilnehmern in diesem Binnenmarkt. Es wurde im Mai 1992 unterzeichnet und ist im Januar 1994 in Kraft getreten.",
-    "name": "Abkommen \u00fcber den Europ\u00e4ischen Wirtschaftsraum (EWR-Abkommen)"
+    "name": "Abkommen \u00fcber den Europ\u00e4ischen Wirtschaftsraum (EWR-Abkommen)",
+    "link": "http://www.efta.int/eea/eea-agreement"
 },
 {
     "id": "annexes-and-protocols-to-the-eea-agreement",
@@ -67,7 +68,7 @@
 },
 {
     "id": "eea-joint-committee-decision-jcd",
-    "definition": "EWR-relevante Rechtsakte werden mittels Beschluss des Gemeinsamen EWR-Ausschusses in das EWR-Abkommen \u00fcbernommen. <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Artikel 102 Absatz 1 des EWR-Abkommens<a/> sieht vor, dass der Gemeinsame EWR-Ausschuss so bald wie m\u00f6glich nach Erlass eines EWR-relevanten EU-Rechtsakts einen Beschluss zur entsprechenden \u00c4nderung des EWR-Abkommens fasst, damit diese Vorschriften im gesamten EWR gleichzeitig angewendet werden k\u00f6nnen.",
+    "definition": "EWR-relevante Rechtsakte werden mittels Beschluss des Gemeinsamen EWR-Ausschusses in das EWR-Abkommen \u00fcbernommen. <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Artikel 102 Absatz 1 des EWR-Abkommens</a> sieht vor, dass der Gemeinsame EWR-Ausschuss so bald wie m\u00f6glich nach Erlass eines EWR-relevanten EU-Rechtsakts einen Beschluss zur entsprechenden \u00c4nderung des EWR-Abkommens fasst, damit diese Vorschriften im gesamten EWR gleichzeitig angewendet werden k\u00f6nnen.",
     "name": "Beschluss des Gemeinsamen EWR-Ausschusses"
 },
 {
@@ -154,6 +155,7 @@
     "name": "St\u00e4ndiger Ausschuss"
 },
 {
+    "id": "substantive-adaptations",
     "definition": "Bei substanziellen Anpassungen handelt es sich um Abweichungen vom bzw. \u00c4nderungen der im Rechtsakt festgehaltenen Systeme oder Regelungen. Beispielsweise k\u00f6nnen substanzielle Anpassungen erforderlich sein, um die Vereinbarkeit eines Rechtsakts mit den verfassungsrechtlichen Grenzen der EWR-EFTA-Staaten und der Zwei-Pfeiler-Struktur des EWR-Abkommens zu gew\u00e4hrleisten. Sie unterscheiden sich von technischen Anpassungen, durch die der Teilnahme der EWR-EFTA-Staaten am Binnenmarkt Rechnung getragen wird, ohne dass sich dies auf den materiellen Inhalt der Rechtsvorschriften auswirkt.",
     "name": "Substanzielle Anpassungen"
 }]
