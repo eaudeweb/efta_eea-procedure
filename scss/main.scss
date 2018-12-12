@@ -456,12 +456,6 @@ article {
 .section-stage {
   counter-increment: stage;
   &::before {
-    // content: 'Stage ' counter(stage, upper-roman);
-    // display: block;
-
-    // color: $eftaRed;
-    // font-size: 2.5rem;
-    // text-align: center;
     display: block;
     content: '';
     width: 36rem;
@@ -514,6 +508,22 @@ article {
     @media (max-width: 599px) {
       font-size: 1.6rem;
     }
+  }
+}
+
+:root[lang="de"] {
+  .stage-heading::before {
+    content: 'Phase ' counter(stage, upper-roman);
+  }
+}
+html[lang="is"] {
+  .stage-heading::before {
+    content: 'Stig ' counter(stage, upper-roman);
+  }
+}
+html[lang="no"] {
+  .stage-heading::before {
+    content: 'Fase ' counter(stage, upper-roman);
   }
 }
 

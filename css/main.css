@@ -631,6 +631,15 @@ article {
     .stage-heading::before {
       font-size: 1.6rem; } }
 
+:root[lang="de"] .stage-heading::before {
+  content: "Phase " counter(stage,upper-roman); }
+
+html[lang="is"] .stage-heading::before {
+  content: "Stig " counter(stage,upper-roman); }
+
+html[lang="no"] .stage-heading::before {
+  content: "Fase " counter(stage,upper-roman); }
+
 .section-facts {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
@@ -912,23 +921,3 @@ article {
   width: 12rem; }
 
 /*# sourceMappingURL=main.css.map */
-
-#languagePicker {
-  display: inline-block;
-  background-color: transparent;
-  border: none;
-  border-radius: 2px;
-  padding-left: 2rem;
-  padding-right: 1rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-#languagePicker:focus {
-  outline: none;
-}
-
-.page-home #languagePicker option {
-  color: black;
-}
-
