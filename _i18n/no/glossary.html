@@ -5,8 +5,8 @@
     <h1>Ordliste</h1>
 
     <dl class="glossary">
-      {% for term in site.data.glossary %}
-        <dt id="{{ term.name | slugify}}">{% if term.link %}<a href="{{ term.link }}" target="_blank" rel="external">{% endif %}{{ term.name }}{% if term.link %}</a>{% endif %}</dt>
+      {% for term in site.data.glossary_no %}
+        <dt id="{{ term.id }}">{% if term.link %}<a href="{{ term.link }}" target="_blank" rel="external">{% endif %}{{ term.name }}{% if term.link %}</a>{% endif %}</dt>
         <dd>
           {{ term.definition | md }}
           {% if term.more %}
