@@ -84,7 +84,7 @@
   {
     "id": "eea-joint-committee-decision-jcd",
     "name": "EØS-komitébeslutning",
-    "definition": "EØS-relevante rettsakter innlemmes i EØS-avtalen gjennom beslutninger i EØS-komiteen. <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">Artikkel 102 nr. 1 i EØS-avtalen</a> fastslår at så snart en EU-rettsakt med relevans for EØS er vedtatt i EU, skal EØS-komiteen treffe en beslutning om den nødvendige endringen av EØS-avtalen, med sikte på å gjøre det mulig med samtidig iverksettelse av regelverket i hele EØS."
+    "definition": "EØS-relevante rettsakter innlemmes i EØS-avtalen gjennom beslutninger i EØS-komiteen. <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf#page=33\">Artikkel 102 nr. 1 i EØS-avtalen</a> fastslår at så snart en EU-rettsakt med relevans for EØS er vedtatt i EU, skal EØS-komiteen treffe en beslutning om den nødvendige endringen av EØS-avtalen, med sikte på å gjøre det mulig med samtidig iverksettelse av regelverket i hele EØS."
   },
 
   {
@@ -108,6 +108,7 @@
   {
     "id": "efta-court",
     "name": "EFTA-domstolen",
+    "link": "http://www.eftacourt.int",
     "definition": "EFTA-domstolen i Luxembourg har domsmyndighet med hensyn til de tre EØS-EFTA-statene. EFTA-domstolens domsmyndighet tilsvarer i stor grad den domsmyndighet som Den europeiske unions domstol har i EU-medlemsstatene. Domstolen har myndighet til å håndtere traktatbruddsaker anlagt av EFTAs overvåkingsorgan mot en EØS-EFTA-stat med hensyn til gjennomføring, anvendelse eller fortolkning av EØS-regelverket, til å gi rådgivende uttalelser om fortolkningen av EØS-regelverk til domstoler i EØS-EFTA-statene og til å behandle klager på vedtak fra EFTAs overvåkingsorgan."
   },
 
@@ -133,19 +134,19 @@
   {
     "id": "eu-commission-expert-groups",
     "name": "Kommisjonens ekspertgrupper",
-    "definition": "Ekspertgruppene består av eksperter fra EU-medlemsstatene og gir råd til Kommisjonen i forberedelsen av regelverksforslag, politiske initiativer og delegerte rettsakter (juridisk bindende rettsakter som gir Kommisjonen mulighet til å supplere eller endre ikke-avgjørende deler av EU-regelverksakter, for eksempel for å definere detaljerte tiltak). Se <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">artikkel 99 nr. 1) i EØS-avtalen</a>."
+    "definition": "Ekspertgruppene består av eksperter fra EU-medlemsstatene og gir råd til Kommisjonen i forberedelsen av regelverksforslag, politiske initiativer og delegerte rettsakter (juridisk bindende rettsakter som gir Kommisjonen mulighet til å supplere eller endre ikke-avgjørende deler av EU-regelverksakter, for eksempel for å definere detaljerte tiltak). Se <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf#page=32\">artikkel 99 nr. 1) i EØS-avtalen</a>."
   },
 
   {
     "id": "eu-comitology-committees",
     "name": "EUs komitologikomiteer",
-    "definition": "Komitologikomiteene består av representanter fra EU-medlemsstatene og bistår Kommisjonen i forberedelsen av gjennomføringsrettsakter (juridisk bindende rettsakter som gir Kommisjonen, under ledelse av komiteer sammensatt av representanter fra EU-landene, mulighet til å fastsette vilkår som sørger for at EU-regelverket anvendes på en ensartet måte). Se <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">artikkel 100 i EØS-avtalen</a>."
+    "definition": "Komitologikomiteene består av representanter fra EU-medlemsstatene og bistår Kommisjonen i forberedelsen av gjennomføringsrettsakter (juridisk bindende rettsakter som gir Kommisjonen, under ledelse av komiteer sammensatt av representanter fra EU-landene, mulighet til å fastsette vilkår som sørger for at EU-regelverket anvendes på en ensartet måte). Se <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf#page=32\">artikkel 100 i EØS-avtalen</a>."
   },
 
   {
     "id": "eu-programme-committees",
     "name": "EUs programkomiteer",
-    "definition": "Programkomiteene er ansvarlige for utvikling og forvaltning av EU-programmer på områder utenfor de fire friheter. Se <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf\">artikkel 81 i EØS-avtalen</a>."
+    "definition": "Programkomiteene er ansvarlige for utvikling og forvaltning av EU-programmer på områder utenfor de fire friheter. Se <a target=\"_blank\" href=\"http://www.efta.int/media/documents/legal-texts/eea/the-eea-agreement/Main%20Text%20of%20the%20Agreement/EEAagreement.pdf#page=27\">artikkel 81 i EØS-avtalen</a>."
   },
 
   {

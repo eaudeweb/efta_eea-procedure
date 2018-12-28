@@ -1,5 +1,5 @@
 global:
-  tagline: Islenska
+  tagline: Íslenska
   overview: Yfirlit
   procedure: Nánar um málsmeðferðina
   download: Sækja PDF
@@ -8,5 +8,5 @@ global:
 langs:
   en: English
   de: Deutsch
-  is: Islenska
+  is: Íslenska
   no: Norsk
