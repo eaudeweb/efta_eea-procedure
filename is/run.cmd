@@ -1,0 +1,2 @@
+@rem docker run --rm --volume="c:/edw/projects/efta/src:/srv/jekyll" -it jekyll/jekyll:3.8 bundle update
+docker run --rm --volume="c:/edw/projects/efta/src:/srv/jekyll" -it jekyll/jekyll:3.8 jekyll build

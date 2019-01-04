@@ -1,0 +1,928 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="is" class="page-home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How EU Law becomes EEA Law</title>
+  <meta name="description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas.">
+
+  <!-- og -->
+  <!-- see http://ogp.me/ -->
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="https://website.example" /> --> <!-- absolute path -->
+  <meta property="og:title" content="How EU Law becomes EEA Law" />
+  <meta property="og:description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas." />
+  <meta property="og:image" content="https://website.example/cover.png" /> <!-- absolute path -->
+
+  <!-- Favicon -->
+  <!-- use https://realfavicongenerator.net/ -->
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffbb1b">
+  <meta name="theme-color" content="#302845">-->
+
+  <link rel="stylesheet" href="/efta_eea-procedure/is/css/main.css">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-title">How EU Law becomes EEA Law</h1>
+  </header>
+
+  <div class="article-cover" onclick="scrollPastCover(this)">
+  <img src="/efta_eea-procedure/is/images/efta_illustration900x550-freedomOfMovements-is.png"
+       srcset="/efta_eea-procedure/is/images/efta_illustration1200x733-freedomOfMovements-is.png 1200w,
+               /efta_eea-procedure/is/images/efta_illustration1800x1100-freedomOfMovements-is.png 1800w"
+       alt="The Freedom of Movement in the EEA">
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <button type="button" id="backButton" class="no-btn" hidden>
+        &larr;
+        <span class="sr">Back</span>
+      </button>
+      <script>
+        var lastLocation = localStorage.getItem('lastLocation');
+        if (lastLocation && lastLocation !== window.location.href && window.location.hash) {
+          var backButton = document.querySelector('#backButton');
+          backButton.removeAttribute('hidden');
+          backButton.onclick = function() { window.history.back() };
+        }
+        localStorage.setItem('lastLocation', window.location.href);
+      </script>
+
+      <!-- <div class="navbar-title">
+        <strong>How EU Law becomes EEA Law</strong>
+      </div> -->
+      <a href="/efta_eea-procedure/is/" class="is-selected">Yfirlit</a>
+      <a href="/efta_eea-procedure/is/details" >Nánar um málsmeðferðina</a>
+      <a href="/efta_eea-procedure/is/glossary" >Orðskýringar</a>
+      
+      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
+          <option  value="/efta_eea-procedure/">English</option>
+          <option  value="/efta_eea-procedure/de/">Deutsch</option>
+          <option  selected  value="/efta_eea-procedure/is/">Íslenska</option>
+          <option  value="/efta_eea-procedure/no/">Norsk</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+  <article>
+    <header>
+      <h1 class="article-heading">Þannig verða ESB-reglur að EES-reglum</h1>
+
+      <p class="loud"><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#agreement-on-the-european-economic-area-eea-agreement">Samningurinn um Evrópska efnahagssvæðið (EES-samningurinn)</a> gerir Íslandi, Liechtenstein og Noregi (<a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-efta-states">EES-EFTA-ríkin</a>) kleift að taka þátt í innri markaði ESB. Undir efnissvið samningsins falla frjálsir vöruflutningar, frjáls þjónustustarfsemi, frjálsir fjármagnsflutningar og frjáls för fólks, sem og reglur á sviði samkeppni og ríkisaðstoðar, ásamt samvinnu á tilteknum sviðum, m.a. á sviði neytendaverndar, umhverfismála, heilbrigðismála og menntunar, sem tryggir að innri markaðurinn starfi eðlilega.</p>
+      <p class="loud">Svo lagagerð sem ESB setur geti öðlast gildi í EES-EFTA-ríki þarf sameiginlega EES-nefndin að samþykkja ákvörðun um að taka hana upp í EES-samninginn. Markmiðið er að taka lagagerðir upp í EES-samninginn eins nálægt gildistökudegi þeirra í ESB og mögulegt er svo tryggt sé að sömu reglur gildi á öllu EES-svæðinu.</p>
+    </header>
+
+    <!-- <h1 id="eea-process">The EEA Process</h1> -->
+
+    <section class="section section-stage" id="1-the-eea-efta-states-contribute-to-eu-decision-shaping">
+      <h2 class="stage-heading">EES-EFTA-ríkin taka þátt í mótun löggjafar ESB</h2>
+      <p class="loud">Þegar framkvæmdastjórn ESB metur hvort þörf sé á nýrri löggjöf sem varðar innri markaðinn taka sérfræðingar frá EES-EFTA-ríkjunum þátt í ferlinu. Þeir leggja sitt af mörkum með tæknilegri sérþekkingu sinni og benda á hugsanleg álitamál fyrir EES-EFTA-ríkin.</p>
+
+      <div class="row">
+        <div class="col col-right">
+          <div class="media">
+            <img src="images/efta_illustration900x900-puzzle.png" alt="EFTA and EU fitting puzzle pieces">
+          </div>
+        </div>
+        <div class="col">
+          <section class="section-step" id="1-1-experts-from-eea-efta-states-influence-eu-decision-shaping">
+            <h3 class="step-heading">Þátttaka í starfi sérfræðingahópa og nefnda á vegum ESB</h3>
+            <p>Þegar framkvæmdastjórn ESB undirbýr lagasetningu eru drög að henni rædd innan sérfræðingahópa og nefnda þar sem EES-EFTA-ríkin taka þátt í umræðunni, þó án atkvæðisréttar.</p>
+
+            <div class="step-details" id="details-1-1">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#1-2-early-assessment-of-commission-proposals" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-general"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-general"></span>
+                      <span class="sr">Almennt</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-secretariat"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-iceland"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Ísland</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-liechtenstein"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-norway"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Noregur</span>
+              </button>
+
+              <div class="step-detail detail-general">
+                <h5 class="sr-only">Almennt</h5>
+                <p>EES-samningurinn veitir sérfræðingum EES-EFTA-ríkjanna rétt til að taka þátt í starfi <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eu-commission-expert-groups">sérfræðingahópa</a>, <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eu-comitology-committees">málsmeðferðarnefnda</a> og <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eu-programme-committees">áætlunarnefnda</a>. framkvæmdastjórnar ESB. EES-EFTA-ríkin geta komið <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-efta-comments">athugasemdum</a> sínum við tillögur að nýrri löggjöf og frumvörp á framfæri við stofnanir ESB. EES-EFTA-ríkin senda framkvæmdastjórn ESB líka <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#seconded-national-experts">innlenda sérfræðinga</a> til starfa.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>Þegar framkvæmdastjórnin leggur fram til umfjöllunar tillögur sem varða EES upplýsir EFTA-skrifstofan EES-EFTA-ríkin um það.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Ísland</h5>
+                <p>Á þessu stigi koma ráðuneytin sem bera ábyrgð á viðkomandi málefnasviði, utanríkisráðuneytið, skrifstofa forsætisráðherra og sendiráð  Íslands í Brussel að málsmeðferðinni á Íslandi. Utanríkisráðuneytið skipuleggur reglulega samráð við hagsmunaaðila og gerir grein fyrir álitaefnum fyrir utanríkismálanefnd Alþingis, ef óskað er eftir því. Á hverju hausti er settur saman forgangslisti yfir hagsmunamál sem ríkisstjórnin samþykkir.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Á þessu stigi kemur <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-coordination-unit-liechtenstein">samræmingardeild vegna EES í Liechtenstein</a> að málsmeðferðinni, viðkomandi EES-sérfræðingar innan stjórnsýslu Liechtenstein og EES-tengiliður sem hagsmunaaðilar tilnefna fyrir hvert málefnasvið. Tvisvar á ári upplýsir samræmingardeildin vegna EES ríkisstjórnina um mikilvægar tillögur ESB og álitamál sem varða EES.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Noregur</h5>
+                <p>Á þessu stigi koma ráðuneyti sem ábyrg eru fyrir viðkomandi málefnasviði, viðeigandi skrifstofur og stofnanir, utanríkisráðuneytið og <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#clearing-committee-norway">sérstök nefnd sem annast afgreiðslu EES-málefna (n. Spesialutvalg)</a> að málsmeðferðinni í Noregi. Tvisvar á ári upplýsir ríkisstjórnin norska þingið um mikilvægar tillögur ESB og álitamál sem varða EES.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s3p8" title="Procedure in detail; paragraphs 8-28">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </section>
+
+          <section class="section-step" 
+                   id="1-2-early-assessment-of-commission-proposals">
+            <h3 class="step-heading">Mat snemma í ferlinu og athugasemdir EES-EFTA-ríkjanna</h3>
+            <p>Þegar framkvæmdastjórnin hefur gefið út drög að nýrri löggjöf er það hlutverk <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-working-group-or-expert-group">EES-EFTA-vinnuhópanna eða -sérfræðingahópanna</a> að meta hvort þau feli í sér <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-challenges">sérstök viðfangsefni tengd EES (e. EEA challenges)</a>. Á meðan á lagasetningarferlinu stendur innan ESB geta þeir jafnframt látið í ljós stuðning og borið upp álitamál með <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-efta-comments">EES-EFTA-umsögn (e. EEA EFTA Comment)</a>.</p>
+
+            <div class="step-details" id="details-1-2">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#2-the-eea-efta-states-establish-a-common-position-on-the-incorporation-of-an-act-into-the-eea-agreement" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-timeline"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tímalína</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-secretariat"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-iceland"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Ísland</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-liechtenstein"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-norway"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Noregur</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tímalína</h5>
+                <p>Sérfræðingar í vinnuhópum eða sérfræðingahópum á vegum EFTA hafa sex vikna frest til að vinna snemmbúið mat á drögum ESB að nýrri löggjöf. Þurfa þeir að fylla út og skila EFTA-skrifstofunni sérstöku eyðublaði um viðkomandi drög framkvæmdastjórnarinnar.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>Þegar drög framkvæmdastjórnar ESB að nýrri löggjöf hafa verið gefin út metur EFTA-skrifstofan til bráðabirgða hvort hugsanlega sé um að ræða altæk viðfangsefni (e. horizontal challenges) sem varða EES-samninginn og sendir niðurstöðu matsins síðan til sérfræðinga EES-EFTA-ríkjanna.  Ákveði sérfræðingarnir að gera athugasemdir af hálfu EES-EFTA-ríkjanna sér EFTA-skrifstofan um að samræma drög að athugasemdum ríkjanna.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Ísland</h5>
+                <p>Að lokinni skráningu í EES-gagnagrunninn á Íslandi leggur ráðuneytið sem ber ábyrgð á viðkomandi málefnasviði mat á drögin að nýju löggjöfinni og upplýsir EFTA-skrifstofuna og hin  EES-EFTA-ríkin um niðurstöðuna. Lagagerðir sem kalla á tilkynningu um stjórnskipuleg skilyrði eru auðkenndar eins snemma og hægt er svo svigrúm skapist til að þýða viðkomandi gerðir og hafa samráð við Alþingi.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Í EES-gagnagrunni Liechtenstein er skráning og yfirlit yfir allt sem viðkemur málsmeðferðinni og lagasetningarferlinu, aðilana sem eru ábyrgir í hverju tilviki og tímaáætlanir. Sú skrifstofa sem um ræðir leggur mat á drög framkvæmdastjórnarinnar í samráði við samræmingardeild vegna EES og upplýsir EFTA-skrifstofuna um niðurstöðuna.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Noregur</h5>
+                <p>Öll drög að nýrri löggjöf sem varðar EES eru skráð í norska EES-gagnagrunninn. Ráðuneytið sem ber ábyrgð á viðkomandi málefnasviði annast matið á drögunum og upplýsir EFTA-skrifstofuna um niðurstöðuna.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s4p29" title="Procedure in detail; paragraphs 29-42">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-stage" id="2-the-eea-efta-states-establish-a-common-position-on-the-incorporation-of-an-act-into-the-eea-agreement">
+      <h2 class="stage-heading">EES-EFTA-ríkin samþykkja drög ákvörðunar sameiginlegu EES-nefndarinnar um að taka lagagerð upp í EES-samninginn</h2>
+
+
+      <p class="loud">Þegar ESB hefur samþykkt lagagerð sem fellur undir efnislegt gildissvið EES-samningsins byrjar EFTA-skrifstofan málsmeðferðina við upptöku hennar í samninginn.  EES-EFTA-ríkin komast að samkomulagi um drög ákvörðunar sem tekur lagagerðina upp í EES-samninginn, að loknu samráði við sérfræðinga.</p>
+
+      <section class="section-step" id="2-3-experts-assess-the-act">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media">
+              <img src="images/efta_illustration900x900-rubik.png" alt="EFTA Experts solve a rubik's cube">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Sérfræðingar leggja mat á lagagerðina</h3>
+            <p><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-working-group-or-expert-group">Vinnu- eða sérfræðingahópar EFTA</a> leggja mat á það hvort lagagerðin hafi <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-relevance">þýðingu að því er varðar efnislegt gildissvið EES-samningsins</a> og hvort í henni séu ákvæði sem kalla á <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#adaptations-to-eu-acts">aðlögun</a> vegna sérstakra innlendra aðstæðna eða með tilliti til  EES-samningsins.</p>
+
+            <div class="step-details" id="details-2-3">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#2-4-national-procedures-in-each-eea-efta-state-for-clearing-acts" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-2-3 .detail-timeline"
+                      data-toggle-group="details-2-3">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tímalína</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-3 .detail-secretariat"
+                      data-toggle-group="details-2-3">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tímalína</h5>
+                <ul>
+                  <li>Hjá EFTA-skrifstofunni annast sérstakur skrásetjari auðkenningu og skráningu birtra lagagerða innan <strong>1 viku</strong> frá birtingu þeirra.</li>
+                  <li><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#standard-procedure">Stöðluð málsmeðferð</a> – <strong>16 vikna frestur</strong> fyrir EES-EFTA-ríkin til að leggja fram staðalskjal.</li>
+                  <li><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#fast-track-procedure">Flýtimeðferð</a> – <strong>6 vikna</strong> þegjandi samþykki</li>
+                </ul>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>Þegar ESB hefur látið birta nýja lagagerð byrjar EFTA-skrifstofan málsmeðferðina við upptöku hennar í EES-samninginn. Málsmeðferðin er mismunandi eftir eðli og inntaki lagagerðarinnar. Í öllum tilvikum er um að ræða nákvæma yfirferð og samþykki af hálfu EES-EFTA-ríkjanna.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p43" title="Procedure in detail; paragraphs 43-50">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="2-4-national-procedures-in-each-eea-efta-state-for-clearing-acts">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media">
+              <img src="images/efta_illustration900x600-crowdFlags.png" alt="EFTA MS crowds of people">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Málsmeðferð í EES-EFTA-ríkjunum</h3>
+            <p>Þegar upptökuferlið er komið af stað byrja EES-EFTA-ríkin sína eigin málsmeðferð innanlands. Málsmeðferðin er mismunandi í ríkjunum þremur og veltur á eðli og inntaki lagagerðanna.</p>
+
+            <div class="step-details" id="details-2-4">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#2-5-the-eea-efta-states-consolidate-their-positions-into-a-draft-decision-incorporating-the-act" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-is-active
+                      data-toggle-target="#details-2-4 .detail-iceland"
+                      data-toggle-group="details-2-4">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Ísland</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-4 .detail-liechtenstein"
+                      data-toggle-group="details-2-4">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-4 .detail-norway"
+                      data-toggle-group="details-2-4">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Noregur</span>
+              </button>
+
+              <div class="step-detail detail-iceland">
+                <h5>Ísland</h5>
+                <p>Sérfræðingar leggja mat á hvort lagagerðin hafi þýðingu að því er varðar efnislegt gildissvið EES-samningsins og hvort Ísland þurfi að fara fram á aðlögun. Í sumum tilvikum þarf að hafa samráð við Alþingi.</p>
+                <p>
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p56" title="Procedure in detail; paragraphs 56-64">Nánari upplýsingar</a>
+                  <br>
+                  Þessi texti er einungis til á ensku
+                </p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Sérfræðingar leggja mat á, í samráði við <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-coordination-unit-liechtenstein">samræmingardeild vegna EES</a> hvort lagagerðin hafi þýðingu að því er varðar efnislegt gildissvið EES-samningsins og hvort Liechtenstein þurfi að fara fram á aðlögun.</p>
+                <p>
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p65" title="Procedure in detail; paragraphs 65-68">Nánari upplýsingar</a>
+                  <br>
+                  Þessi texti er einungis til á ensku
+                </p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Noregur</h5>
+                <p>Sérfræðingar leggja mat á hvort lagagerðin hafi þýðingu að því er varðar efnislegt gildissvið EES-samningsins og hvort Noregur þurfi að fara fram á aðlögun. <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#clearing-committee-norway">Sérstök nefnd sem annast afgreiðslu EES-málefna</a> tryggir samstarf á milli ráðuneyta. Viðeigandi stofnun eða skrifstofa annast samráðið við hagsmunaaðila.</p>
+                <p>
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p69" title="Procedure in detail; paragraphs 69-72">Nánari upplýsingar</a>
+                  <br>
+                  Þessi texti er einungis til á ensku
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="2-5-the-eea-efta-states-consolidate-their-positions-into-a-draft-decision-incorporating-the-act">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media">
+              <img src="images/efta_illustration900x900-standingCommittee.png" alt="EFTA States consolidate decision">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Drög að ákvörðun sameiginlegu EES-nefndarinnar samþykkt</h3>
+            <p>EFTA-skrifstofan útbýr drög að ákvörðunum um að taka lagagerðir upp í EES-samninginn, í samræmi við endurgjöf EES-EFTA-ríkjanna. EES-EFTA-ríkin fá drögin send til staðfestingar.</p>
+
+            <div class="step-details" id="details-2-5">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#3-the-eu-reviews-the-draft-decision" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                    class="btn-round"
+                    data-toggle-class
+                    data-toggle-target="#details-2-5 .detail-timeline"
+                    data-toggle-group="details-2-5">
+                    <span class="sprite sprite-timeline"></span>
+                    <span class="sr">Tímalína</span>
+              </button>
+              <button type="button"
+                    data-toggle-class
+                    data-toggle-target="#details-2-5 .detail-secretariat"
+                    data-toggle-group="details-2-5">
+                    <span class="sprite sprite-secretariat"></span>
+                    <span class="sr">EFTA-skrifstofan</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-5 .detail-iceland"
+                      data-toggle-group="details-2-5">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Ísland</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-5 .detail-liechtenstein"
+                      data-toggle-group="details-2-5">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-5 .detail-norway"
+                      data-toggle-group="details-2-5">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Noregur</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tímalína</h5>
+                <p>EFTA-skrifstofan hefur <strong>1 viku</strong> til að útbúa drög að ákvörðunum sameiginlegu EES-nefndarinnar sem ekki eru með aðlögunartexta og <strong>4 vikur</strong> til að útbúa drög ákvarðana sem innihalda aðlögunartexta.</p>
+                <p>Samþykkt sérfræðinga á drögum að ákvörðunum sameiginlegu EES-nefndarinnar (ef þörf er á) – frestur <strong>2 vikur</strong>.</p>
+                <p>Samþykkt undirnefnda á drögum að ákvörðunum sameiginlegu EES-nefndarinnar – <strong>frestur 2 vikur</strong>.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>EFTA-skrifstofan útbýr drög að <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-joint-committee-decision-jcd">ákvörðunum sameiginlegu EES-nefndarinnar</a> og er það gert á grundvelli viðbragða frá sérfræðingum í  ríkjunum þremur. Þegar öll þrjú EES-EFTA-ríkin hafa samþykkt drög viðkomandi ákvarðana eru þau send <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#european-external-action-service-eeas">utanríkisþjónustu ESB (EEAS)</a> svo ESB geti farið ítarlega yfir þau á sínum vettvangi. Ef EES-EFTA-ríkin hyggjast fara fram á <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#substantive-adaptations">efnislega aðlögun</a> geta sérfræðingar ráðfært sig óformlega við viðkomandi <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#commission-directorate-general">stjórnarsvið  framkvæmdastjórnarinnar (Directorate-General (DG))</a> áður en drög ákvarðananna eru send formlega.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Ísland</h5>
+                <p>Á þessu stigi hafa ráðuneyti sem bera ábyrgð á viðkomandi málefnasviði og utanríkisráðuneytið samstarf um að afgreiða ákvarðanir sameiginlegu EES-nefndarinnar.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Á þessu stigi hafa sérfræðingar og samræmingardeild vegna EES samráð um að afgreiða ákvarðanir sameiginlegu EES-nefndarinnar.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Noregur</h5>
+                <p>Á þessu stigi hefur <a class="tip tip-glossary" href="/glossary/#clearing-committee-norway">sérnefndin sem annast afgreiðslu EES-mála</a> þegar samþykkt drög að ákvörðunum sameiginlegu EES-nefndarinnar. Drögin þarfnast því einungis lokayfirferðar þess ráðuneytis sem ber ábyrgð á viðkomandi málefnasviði áður en utanríkisráðuneytið afgreiðir þau.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p51" title="Procedure in detail; paragraphs 51-55, 64, 68, 72">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </section>
+
+    <section class="section section-stage" id="3-the-eu-reviews-the-draft-decision">
+      <h2 class="stage-heading">ESB yfirfer og staðfestir drög ákvarðana sameiginlegu EES-nefndarinnar</h2>
+
+      <p class="loud">Þegar EES-EFTA-ríkin hafa samþykkt drög ákvarðana sameiginlegu EES-nefndarinnar sendir EFTA-skrifstofan þau til <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#european-external-action-service-eeas" title="See definition">utanríkisþjónustu ESB (EEAS)</a>. Utanríkisþjónusta ESB samræmir upptökuferlið vegna EES af hálfu ESB.</p>
+
+      <section class="section-step" id="3-6-the-commission-reviews-the-draft-decision">
+        <div class="row">
+          <div class="col">
+            <div class="media media-video">
+              <video width="480" height="480"
+                     poster="images/efta_illustration900x900-scale.png">
+                <source src="videos/efta_animation-scale.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x900-scale.png" alt="EFTA and EU equally balanced on a scale">
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Framkvæmdastjórn ESB</h3>
+            <p>Utanríkisþjónusta ESB hefur samráð við viðeigandi <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#commission-directorate-general">stjórnarsvið framkvæmdastjórnarinnar</a> um drög að ákvörðunum sameiginlegu EES-nefndarinnar. Sé ekki gert ráð fyrir <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#substantive-adaptations" title="See definition">efnislegri aðlögun</a> og drög ákvörðunar rýmkar einungis gildissvið ESB lagagerðar svo það taki líka til EES-svæðisins er utanríkisþjónustu ESB heimilt að samþykkja þau fyrir hönd ESB og lýkur umsagnarferlinu þar með á því stigi. Fari ESB fram á að breytingar verði gerðar á drögunum hefjast viðræður með það að markmiði að komast að sameiginlegri niðurstöðu.</p>
+
+            <div class="step-details" id="details-3-6">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#3-7-draft-decisions-that-contain-substantive-adaptations-or-budgetary-consequences-go-to-the-council-of-the-european-union" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-3-6 .detail-timeline"
+                      data-toggle-group="details-3-6">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tímalína</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-6 .detail-eu"
+                      data-toggle-group="details-3-6">
+                      <span class="sprite sprite-eu"></span>
+                      <span class="sr">ESB</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-6 .detail-secretariat"
+                      data-toggle-group="details-3-6">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tímalína</h5>
+                <p>Afgreiðsla á drögum að ákvörðunum sameiginlegu EES-nefndarinnar sem ekki fela í sér aðlögun tekur <strong>um það bil 3 vikur</strong>.</p>
+              </div>
+              <div class="step-detail detail-eu">
+                <h5>ESB</h5>
+                <p>Utanríkisþjónusta ESB samræmir upptökuferlið af hálfu ESB. Ef drög ákvarðana sameiginlegu EES-nefndarinnar rýmka einvörðungu gildissvið lagagerðar ESB svo hún taki til EES líka er utanríkisþjónustu ESB heimilt að samþykkja þau fyrir hönd ESB í <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-joint-committee">sameiginlegu EES-nefndinni</a>.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>Þegar EES-EFTA-ríkin hafa samþykkt drög að ákvörðunum sameiginlegu EES-nefndarinnar sendir EFTA-skrifstofan þau til utanríkisþjónustu ESB.</p>
+                <p>Þurfi að breyta drögum að ákvörðunum sameiginlegu EES-nefndarinnar, meðan á samráðsferlinu við ESB stendur, samræmir EFTA-skrifstofan samráðsferlið af hálfu EFTA og uppfærir drögin til samræmis við það. Utanríkisþjónusta ESB samræmir samráðsferlið af hálfu ESB.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s6p73" title="Procedure in detail; paragraphs 73-79">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="3-7-draft-decisions-that-contain-substantive-adaptations-or-budgetary-consequences-go-to-the-council-of-the-european-union">
+        <div class="row">
+          <div class="col">
+            <div class="media">
+              <img src="images/efta_illustration900x900-draftJCD.png" alt="EU Commission reviews draft JCD">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Ráð ESB</h3>
+            <p>Feli drög að ákvörðunum sameiginlegu EES-nefndarinnar í sér efnislega aðlögun eða fjárhagsleg áhrif, verður ráð Evrópu&shy;sam&shy;bands&shy;ins að veita utanríkisþjónustu ESB umboð til að samþykkja þau.</p>
+
+            <div class="step-details" id="details-3-7">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#4-the-eea-joint-committee-adopts-the-decision-incorporating-the-act" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-3-7 .detail-timeline"
+                      data-toggle-group="details-3-7">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tímalína</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-7 .detail-eu"
+                      data-toggle-group="details-3-7">
+                      <span class="sprite sprite-eu"></span>
+                      <span class="sr">ESB</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-7 .detail-secretariat"
+                      data-toggle-group="details-3-7">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tímalína</h5>
+                <p>Afgreiðsla á drögum að ákvörðun sameiginlegu EES-nefndarinnar sem felur í sér efnislega aðlögun tekur <strong>um það bil 3-6 mánuði</strong>.</p>
+              </div>
+              <div class="step-detail detail-eu">
+                <h5>ESB</h5>
+                <p>Feli drög að ákvörðun EES-nefndarinnar í sér efnislega aðlögun þarf ráðið að samþykkja afstöðu ESB varðandi drögin. Framkvæmdastjórnin leggur fram drög að ákvörðun ráðsins með drög að ákvörðun sameiginlegu EES-nefndarinnar í viðauka. Ráðið samþykkir þau og veitir utanríkiþjónustu ESB umboð, af hálfu ESB, til að samþykkja ákvörðun sameiginlegu EES-nefndarinnar ásamt EES-EFTA-ríkjunum í <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-joint-committee">sameiginlegu EES-nefndinni</a>.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>Þurfi að breyta drögum að ákvörðun sameiginlegu EES-nefndarinnar, meðan á samráðsferlinu við ESB stendur, samræmir EFTA-skrifstofan samráðsferlið af hálfu EFTA-ríkjanna og uppfærir drögin til samræmis við það. Utanríkisþjónusta ESB samræmir samráðsferlið af hálfu ESB.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s6p73" title="Procedure in detail; paragraphs 73-79">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section section-stage" id="4-the-eea-joint-committee-adopts-the-decision-incorporating-the-act">
+      <h2 class="stage-heading">Sameiginlega EES-nefndin samþykkir ákvörðun</h2>
+
+      <p class="loud">Þegar báðir aðilar hafa lokið samþykkisferlinu fyrir sitt leyti samþykkir <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#eea-joint-committee">sameiginlega EES-nefndin</a> ákvörðunina sem tekur viðkomandi lagagerð upp í EES-samninginn.</p>
+
+      <section class="section-step" id="4-8-list-of-acts-ready-to-be-incorporated">
+        <div class="row">
+          <div class="col">
+            <div class="media">
+              <img src="images/efta_illustration900x900-longList.png" alt="Draft JCD is added on the agenda of the next EEA Joint Committee meeting">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Listi yfir gerðir sem tilbúnar eru til upptöku</h3>
+            <p>EES-EFTA-ríkin og ESB koma sér saman um lista yfir <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">drög að ákvörðunum sameiginlegu EES-nefndarinnar</a> sem tilbúnar eru til samþykkis og setja þær á dagskrá næsta fundar sameiginlegu EES-nefndarinnar.</p>
+
+            <div class="step-details" id="details-4-8">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#4-9-the-eea-joint-committee-adopts-the-decision" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                    data-toggle-class
+                    data-toggle-target="#details-4-8 .detail-secretariat"
+                    data-toggle-group="details-4-8">
+                    <span class="sprite sprite-secretariat"></span>
+                    <span class="sr">EFTA-skrifstofan</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-4-8 .detail-iceland"
+                      data-toggle-group="details-4-8">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Ísland</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-4-8 .detail-liechtenstein"
+                      data-toggle-group="details-4-8">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-4-8 .detail-norway"
+                      data-toggle-group="details-4-8">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Noregur</span>
+              </button>
+
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>Fyrir hvern fund sameiginlegu EES-nefndarinnar samræmir EFTA-skrifstofan tilurð lista yfir lagagerðir sem tilbúnar eru til upptöku í EES-samninginn á fundinum. Í þessum hluta ferlisins eru utanríkisráðuneyti Íslands og Noregs, samræmingardeild vegna EES í Liechtenstein og utanríkisþjónusta ESB einnig með í ráðum.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Ísland</h5>
+                <p>Utanríkisráðuneytið hefur samráð við ráðuneyti sem bera ábyrgð á viðkomandi málefnasviði og sendir athugasemdir til EFTA-skrifstofunnar varðandi lista yfir lagagerðir sem eru tilbúnar til upptöku í EES-samninginn. Utanríkisráðuneytið tilkynnir ríkisstjórninni um lagagerðir sem eru tilbúnar til upptöku í EES-samninginn og ríkisstjórnin heimilar að samsvarandi ákvarðanir sameiginlegu EES-nefndarinnar verði samþykktar.  Mögulegt er að ákvarðanir sameiginlegu EES-nefndarinnar sem eru sérstaklega mikilvægar fari fyrir utanríkismálanefnd Alþingis til samráðs.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Samræmingardeild vegna EES sendir, í samráði við sérfræðinga í EFTA-vinnuhópunum, athugasemdir til EFTA-skrifstofunnar varðandi lista yfir gerðir sem tilbúnar eru til upptöku í EES-samninginn. Hún upplýsir einnig þingmannanefnd EES, sem fer ítarlega yfir allar ESB lagagerðir sem taka á upp í EES-samninginn.<p>
+                <p>Fyrir fund sameiginlegu EES-nefndarinnar samþykkir ríkisstjórnin fyrir sitt leyti ákvörðun sem hefur til hliðsjónar listann yfir ákvarðanir sameiginlegu EES-nefndarinnar sem tilbúnar eru til samþykktar.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Noregur</h5>
+                <p>Utanríkisráðuneytið sendir athugasemdir til EFTA-skrifstofunnar varðandi lista yfir lagagerðir sem eru tilbúnar til upptöku í EES-samninginn, að höfðu samráði við ráðuneyti sem bera ábyrgð á viðkomandi málefnasviðum. Fyrir hvern fund sameiginlegu EES-nefndarinnar heldur ráðherrann sem ber ábyrgð á EES málefnum fund með ráðgjafarnefnd Evrópumála á norska þinginu, sem gefur álit sitt á viðkomandi lista yfir lagagerðir. Ríkisstjórnin getur ekki samþykkt upptöku lagagerðar í EES-samninginn fyrr en nefndin hefur komið sjónarmiðum sínum á framfæri.</p>
+              </div>
+            </div>
+            <p class="text-center small step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s7p80" title="Procedure in detail; paragraphs 80-97">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="4-9-the-eea-joint-committee-adopts-the-decision">
+
+        <div class="media media-video">
+          <video width="720" height="450"
+                     poster="images/efta_illustration1440x900-JCD.png">
+            <source src="videos/efta_animation-JCD.mp4" type="video/mp4">
+            <img src="images/efta_illustration1440x900-JCD.png" alt="EEA Joint Committee Decision">
+          </video>
+        </div>
+
+        <h3 class="step-heading">Samþykkt ákvörðunar sameiginlegu EES-nefndarinnar</h3>
+        <p><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-joint-committee">Sameiginlegu EES-nefndinni</a> er ætlað að tryggja virka framkvæmd EES-samningsins og kemur hún saman sex til átta sinnum á ári. Hún er vettvangur skoðanaskipta ESB og EES-EFTA-ríkjanna sem taka ákvarðanir með samkomulagi, þar samningsaðilarnir mæla einum rómi, um að taka ESB lagagerðir upp í EES-samninginn.</p>
+
+        <p class="text-center small step-more">
+          <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s9p114" title="Procedure in detail; paragraphs 114-117">Nánari upplýsingar</a>
+          <br>
+          Þessi texti er einungis til á ensku
+        </p>
+      </section>
+    </section>
+
+    <section class="section section-stage" id="5-entry-into-force-of-a-joint-committee-decision">
+      <h2 class="stage-heading">Gildistaka ákvörðunar sameiginlegu EES-nefndarinnar</h2>
+      <p class="loud">Ákvarðanir sameiginlegu EES-nefndarinnar taka að jafnaði gildi einum degi eftir að þær eru samþykktar í sameiginlegu EES-nefndinni, nema tilkynnt hafi verið um <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#constitutional-requirements">stjórnskipuleg skilyrði</a>. Þegar ákvarðanirnar hafa öðlast gildi eru <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#annexes-and-protocols-to-the-eea-agreement">viðaukar eða bókanir við EES-samninginn</a> uppfærðar til samræmis við það og þá verður jafnframt að gera lagagerðirnar sem búið er að taka upp í samninginn hluta af réttarkerfi EES-EFTA-ríkjanna.</p>
+
+      <section class="section-step" id="5-10-some-decisions-must-be-approved-by-the-national-parliaments">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media media-video">
+              <video width="480" height="320"
+                     poster="images/efta_illustration900x600-parliament.png">
+                <source src="videos/efta_animation-parliament.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-parliament.png" alt="EFTA MS National Parliaments">
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Stjórnskipuleg skilyrði uppfyllt</h3>
+            <p>Samkvæmt stjórnarskrám EES-EFTA-ríkjanna þarf ákvörðun sem felur í sér breytingar á innlendri löggjöf að hljóta samþykki þjóð&shy;þing&shy;anna áður en hún tekur gildi. Ákvörðun sem tekin er með slíkum fyrirvara um uppfyllingu <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#constitutional-requirements">stjórnskipulegra skilyrða</a> tekur gildi um leið og skilyrðin hafa verið uppfyllt í öllum þremur EES-EFTA-ríkjunum.</p>
+
+            <div class="step-details" id="details-5-10">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#5-11-the-eea-efta-states-are-obliged-to-implement-incorporated-acts" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-general"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-general"></span>
+                      <span class="sr">Almennt</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-secretariat"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-iceland"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Ísland</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-liechtenstein"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-norway"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Noregur</span>
+              </button>
+
+              <div class="step-detail detail-general">
+                <h5 class="sr-only">Almennt</h5>
+                <p>Ef lagagerð sem kallar á breytingar á innlendri löggjöf er tekin upp í EES-samninginn er samþykki þjóðþings nauðsynlegt áður en hún getur tekið gildi og á það við um öll EES-EFTA-ríkin. Er þetta nefnt „stjórnskipuleg skilyrði“, eða fyrirvari um samþykki þjóðþingsins, og tilkynnt af hálfu EES-EFTA-ríkjanna í sameiginlegu EES-nefndinni þegar lagagerð er tekin upp í samninginn. EES-EFTA-ríkin hafa sex mánaða frest til fá samþykki viðkomandi þjóðþings.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-skrifstofan</h5>
+                <p>EFTA-skrifstofan hefur eftirlit með gildistöku lagagerða á EES-svæðinu og umsjón með tilkynningum um að stjórnskipuleg skilyrði hafi verið uppfyllt. Þegar samþykki viðkomandi þjóðþings liggur fyrir tilkynnir EES-EFTA-ríkið EFTA-skrifstofunni um það og sendir sú síðarnefnda upplýsingarnar þá til utanríkisþjónustu ESB, hinna EES-EFTA-ríkjanna og <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-surveillance-authority-esa">Eftirlitsstofnunar EFTA</a>. Þegar síðasta EES-EFTA-ríkið hefur tilkynnt að stjórnskipuleg skilyrði hafi verið uppfyllt getur viðkomandi ákvörðun sameiginlegu EES-nefndarinnar öðlast gildi.</p>
+                <p>EFTA-skrifstofan ber ábyrgð á þýðingu ákvarðana sameiginlegu EES-nefndarinnar yfir á íslensku og norsku og birtingu þeirra í EES-viðbætinum.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Ísland</h5>
+                <p>Á Íslandi samþykkir Alþingi gildistöku ákvörðunar sameiginlegu EES-nefndarinnar með þingsályktun.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Í Liechtenstein samþykkir þingið gildistöku ákvörðunar sameiginlegu EES-nefndarinnar á grundvelli sérstaks stjórnarfrumvarps. Þegar þingið hefur samþykkt frumvarpið fer fram þjóðaratkvæðagreiðsla sem stendur í 30 daga og að því búnu þarf undirritun furstans í Liechtenstein.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Noregur</h5>
+                <p>Í Noregi samþykkir þingið gildistöku ákvörðunar sameiginlegu EES-nefndarinnar með þingsályktun. Þingsályktunin er lögð fyrir þingið ásamt frumvarpi til laga um að taka viðkomandi lagagerð upp í norskan rétt. Staðfesta verður samþykkt þingsins með konungsúrskurði sem lagður er fram í ríkisráðinu.</p>
+              </div>
+            </div>
+
+            <p class="text-center small step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s8p98" title="Procedure in detail; paragraphs 98-107">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="5-11-the-eea-efta-states-are-obliged-to-implement-incorporated-acts">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media media-video">
+              <video width="480" height="320"
+                     poster="images/efta_illustration900x600-constitutions.png">
+                <source src="videos/efta_animation-constitutions.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-constitutions.png" alt="EFTA MS Books of law">
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">EES-EFTA-ríkjunum er skylt að innleiða gerðir sem hafa verið teknar upp í EES-samninginn</h3>
+            <p>Skylt er að innleiða gerðir, sem hafa verið teknar upp í EES-samninginn og hafa öðlast gildi, í innlendan rétt EES-EFTA-ríkjanna. <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-surveillance-authority-esa">Eftirlitsstofnun EFTA</a> hefur eftirlit með því að farið sé eftir löggjöf sem er tekin upp í EES-samninginn. <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-court">EFTA-dómstóllinn</a> í Lúxemborg hefur lögsögu til að dæma í samningsbrotamálum sem höfðuð eru gegn EES-EFTA-ríkjunum þremur vegna vanefnda þeirra á skuldbindingum sínum samkvæmt EES-samningnum.</p>
+
+            <div class="step-details" id="details-5-11">
+              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <a href="#facts" class="sr-only sr-only-focusable">Skip</a>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-11 .detail-secretariat"
+                      data-toggle-group="details-5-11">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-skrifstofan</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-11 .detail-translation"
+                      data-toggle-group="details-5-11">
+                      <span class="sprite sprite-translation"></span>
+                      <span class="sr">Translation</span>
+              </button>
+              <div class="step-detail detail-secretariat">
+              <h5>EFTA-skrifstofan</h5>
+                <p>Að loknum hverjum fundi sameiginlegu EES-nefndarinnar tilkynnir EFTA-skrifstofan Eftirlitsstofnun EFTA um þær ákvarðanir sameiginlegu EES-nefndarinnar sem hafa öðlast gildi.</p>
+              </div>
+              <div class="step-detail detail-translation">
+                <h5>Ísland, Liechtenstein og Noregur</h5>
+                <p>Stjórnvöld á Íslandi og í Noregi bera ábyrgð á þýðingu lagagerða sem hafa verið teknar upp í EES-samninginn yfir á íslensku og norsku. Liechtenstein notar þýsku útgáfuna sem ESB lætur í té.</p>
+              </div>
+            </div>
+            <p class="text-center small step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s2p4" title="Procedure in detail; paragraphs 4-7, 108">Nánari upplýsingar</a>
+              <br>
+              Þessi texti er einungis til á ensku
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <footer class="section section-facts" id="facts">
+      <h1 class="section-title">Helstu staðreyndir um Evrópska efnahagssvæðið</h1>
+
+      <div class="numbers">
+
+        <div class="number">
+          <strong>514 085 332</strong> íbúar
+          <div class="number-description">
+            sem búa, vinna, eru námsmenn á EES-svæðinu
+            (<a href="http://ec.europa.eu/eurostat/tgm/table.do?tab=table&plugin=1&language=en&pcode=tps00001" target="_blank" rel="external">Eurostat 2017</a>)
+          </div>
+        </div>
+
+        <div class="number">
+          <strong>31</strong> land
+          <div class="number-description">28 aðildarríki + Ísland, Liechtenstein & Noregur</div>
+        </div>
+
+        <div class="number">
+          <strong>€15.7 biljónir</strong> áætluð VLF árið 2015
+          <div class="number-description">Annað stærsta hagkerfi heims</div>
+        </div>
+      </div>
+    </footer>
+  </article>
+
+</main>
+
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js" async></script>
+
+<script src="/efta_eea-procedure/is/js/index.js"></script>
+<script src="/efta_eea-procedure/is/js/easy-toggle-state.ie.min.js"></script>
+<script src="/efta_eea-procedure/is/js/in-view.min.js"></script>
+<script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', function() {
+
+      inView('video').on('enter', function(video) {
+        console.log(video);
+        if (!video.getAttribute('data-played')) {
+          video.setAttribute('data-played', 'true');
+          video.play();
+        }
+      });
+
+    });
+  }())
+</script>
+
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <a href="http://www.efta.int/" target="_blank">
+          <img src="/efta_eea-procedure/is/images/efta_logo.png" 
+               width=""
+               alt="EFTA Logo"> 
+          <br>
+          www.efta.int
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+
+      var navbar = document.querySelector('.navbar');
+
+      function offsetScroll() {
+        var view = document.scrollingElement || document.body;
+        view.scrollTop = view.scrollTop - navbar.clientHeight - 15;
+      }
+      function scrollHandle() {
+        window.removeEventListener('scroll', scrollHandle, false);
+        offsetScroll();
+      }
+      function hashHandle(event) {
+        window.addEventListener('scroll', scrollHandle, false);
+      }
+
+      window.addEventListener('DOMContentLoaded', hashHandle, false);
+      window.addEventListener('hashchange', function(event) {
+        offsetScroll();
+      }, false);
+
+    }())
+  </script>
+
+</body>
+</html>

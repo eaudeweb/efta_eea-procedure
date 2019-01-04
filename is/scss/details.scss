@@ -1,0 +1,114 @@
+.document {
+  counter-reset: section paragraph;
+  font-family: $serif;
+
+  h1, h2, h3 {
+    margin-top: 2em;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      position: relative;
+      &::before {
+        content: '-';
+        position: absolute;
+        left: -2rem;
+      }
+    }
+  }
+
+  a[href^="#ref"] {
+    &::before { content: '['; }
+    &::after  { content: ']'; }
+  }
+
+  section {
+    counter-increment: section;
+    counter-reset: subsection;
+  }
+
+  section h2 {
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 4rem;
+
+    &::before {
+      content: counter(section)'.';
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+    }
+  }
+  section:target h2 {
+    animation: targetBlip 2s 1;
+  }
+
+  section h3 {
+    counter-increment: subsection;
+    position: relative;
+    margin-left: 8rem;
+    
+    &::before {
+      content: counter(section)'.'counter(subsection);
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+    }
+
+    &:target {
+      animation: targetBlip 2s 1;
+    }
+  }
+  
+
+  section p {
+    counter-increment: paragraph;
+    position: relative;
+    margin-left: 4rem;
+    
+    &::before {
+      content: counter(paragraph)'.';
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+    }
+
+    &:target {
+      animation: targetBlip 2s 1;
+    }
+  }
+}
+.document-header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.document-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.document-subtitle {
+  text-align: center;
+  font-style: italic;
+}
+.document-footer {
+  ol {
+    font-size: 1.2rem;
+    column-gap: 8rem;
+  }
+
+  li:target {
+    animation: targetBlip 2s 1;
+  }
+}
+.document-owner {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.document-revision {
+  margin-left: auto;
+  margin-right: 0;
+  width: 12rem;
+}
