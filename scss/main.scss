@@ -500,13 +500,11 @@ article {
   &::before {
     content: counter(step) '. ';
   }
-  /*
-  @media (max-width: 1199px) {
+  @media (max-width: 800px) {
     br {
       display: none;
     }
   }
-  */
 }
 
 
