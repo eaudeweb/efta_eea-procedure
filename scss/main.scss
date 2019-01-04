@@ -497,6 +497,11 @@ article {
   &::before {
     content: counter(step) '. ';
   }
+  @media (max-width: 1199px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 
