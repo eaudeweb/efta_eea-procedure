@@ -433,6 +433,19 @@ main {
   }
 }
 
+#languagePicker {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  &:focus {
+    outline: none;
+  }
+}
 
 article {
   counter-reset: stage step;
@@ -785,7 +798,8 @@ html[lang="no"] {
     float: left;
     font-weight: 600;
     &::after {
-      content: " — ";
+      content: "—";
+      margin: 0 .5rem;
     }
   }
   dt:target,
