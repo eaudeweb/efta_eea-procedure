@@ -24,3 +24,5 @@ exclude:
   - docker-compose.yml
   - efta_presentation-howEULawBecomesEEALaw-v1.0.pdf
   - README.md
+  - Gemfile
+  - Gemfile.lock
