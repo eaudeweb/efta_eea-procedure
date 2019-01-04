@@ -454,7 +454,7 @@ article {
 .section-step {
   .step-heading,
   p {
-    max-width: 42rem;
+    max-width: 44rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -491,12 +491,22 @@ article {
 .step-heading {
   margin-top: 2em;
   counter-increment: step;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
   font-size: 1.6rem;
+  @media (min-width: 800px) {
+    white-space: nowrap;
+  }
   &::before {
     content: counter(step) '. ';
   }
+  /*
+  @media (max-width: 1199px) {
+    br {
+      display: none;
+    }
+  }
+  */
 }
 
 
