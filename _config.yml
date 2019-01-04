@@ -6,7 +6,6 @@ description: >-
 # GitHub Pages
 url: "https://eaudeweb.github.io"
 baseurl: "/efta_eea-procedure"
-theme: jekyll-theme-minimal
 
 # design.eaudeweb.ro
 # url: "http://design.eaudeweb.ro"
@@ -20,3 +19,8 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 languages: ["en", "de", "is", "no"]
+
+exclude:
+  - docker-compose.yml
+  - efta_presentation-howEULawBecomesEEALaw-v1.0.pdf
+  - README.md

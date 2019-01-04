@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jekyll:
+    image: jekyll/jekyll:3.8
+    container_name: jekyll
+    #command: ["jekyll", "serve", "--watch"]
+    command: ["tail", "-f", "/dev/null"]
+    restart: "no"
+    ports:
+    - "4000:4000" 
+    volumes:
+      - ./:/srv/jekyll
