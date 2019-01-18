@@ -403,11 +403,25 @@ main {
 }
 .navbar-inner {
   position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+
+	.navbar-logo img {
+		width: 70px
+	}
 
   @media (min-width: 900px) {
     padding-left: 5.6rem;
     padding-right: 5.6rem;
     border-bottom: 1px solid $soft;
+  }
+
+	@media (max-width: 599px) {
+    .navbar-logo {
+			display: none;
+		}
   }
 }
 .navbar-title {
