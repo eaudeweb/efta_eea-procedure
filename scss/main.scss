@@ -409,7 +409,7 @@ main {
   align-items: center;
 
   .navbar-logo img {
-  width: 70px
+    width: 70px
   }
 
   @media (min-width: 900px) {
@@ -493,7 +493,7 @@ article {
     background-size: 100%;
   }
 
-  @media (max-width: 599px) {
+  @media (max-width: 800px) {
     &::before {
       width: 24rem;
       height: 8rem;
