@@ -418,11 +418,6 @@ main {
     border-bottom: 1px solid $soft;
   }
 
-  @media (max-width: 599px) {
-    .navbar-logo {
-      display: none;
-    }
-  }
 }
 .navbar-title {
   .page-home & { display: none; }
@@ -447,13 +442,12 @@ main {
   }
 }
 
-#languagePicker {
+.languagePicker {
   display: inline-block;
   background-color: transparent;
   border: none;
   border-radius: 2px;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding: 1.6rem 0;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   &:focus {
@@ -838,3 +832,5 @@ html[lang="no"] {
 }
 
 @import "details";
+@import "mobile";
+
