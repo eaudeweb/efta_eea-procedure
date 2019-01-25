@@ -248,7 +248,7 @@ button {
 main {
   max-width: 86rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   @media (min-width: 600px) {
     padding: 0 4rem;  
   }
@@ -369,7 +369,7 @@ main {
 
   a {
     display: inline-block;
-    padding: 1.6rem;
+    padding: 1.6rem 0.6rem;
     color: $muted;
     &:hover {
       color: $titatium;
@@ -403,12 +403,21 @@ main {
 }
 .navbar-inner {
   position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  .navbar-logo img {
+    width: 70px
+  }
 
   @media (min-width: 900px) {
     padding-left: 5.6rem;
     padding-right: 5.6rem;
     border-bottom: 1px solid $soft;
   }
+
 }
 .navbar-title {
   .page-home & { display: none; }
@@ -433,13 +442,12 @@ main {
   }
 }
 
-#languagePicker {
+.languagePicker {
   display: inline-block;
   background-color: transparent;
   border: none;
   border-radius: 2px;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding: 0 .6rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   &:focus {
@@ -479,7 +487,7 @@ article {
     background-size: 100%;
   }
 
-  @media (max-width: 599px) {
+  @media (max-width: 800px) {
     &::before {
       width: 24rem;
       height: 8rem;
@@ -824,3 +832,5 @@ html[lang="no"] {
 }
 
 @import "details";
+@import "mobile";
+

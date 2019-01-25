@@ -20,7 +20,7 @@
   <!-- <meta property="og:url" content="https://website.example" /> --> <!-- absolute path -->
   <meta property="og:title" content="How EU Law becomes EEA Law" />
   <meta property="og:description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas." />
-  <meta property="og:image" content="https://website.example/cover.png" /> <!-- absolute path -->
+  <meta property="og:image" content="https://eaudeweb.github.io/efta_eea-procedure/is/images/efta_illustration900x550-freedomOfMovements.png" /> <!-- absolute path -->
 
   <!-- Favicon -->
   <!-- use https://realfavicongenerator.net/ -->
@@ -67,16 +67,48 @@
       <!-- <div class="navbar-title">
         <strong>How EU Law becomes EEA Law</strong>
       </div> -->
-      <a href="/efta_eea-procedure/is/" class="is-selected">Yfirlit</a>
-      <a href="/efta_eea-procedure/is/details" >Nánar um málsmeðferðina</a>
-      <a href="/efta_eea-procedure/is/glossary" >Orðskýringar</a>
+			<a href="http://www.efta.int" class="navbar-logo">
+				<img src="/efta_eea-procedure/is/images/efta_logo_hq.png" alt="EFTA Logo">
+			</a>
       
-      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
+      <div class="mobile-selected-page">
+        <a href="/efta_eea-procedure/is/" class="highlight">Yfirlit</a>
+        <a href="/efta_eea-procedure/is/details" class="hidden">Nánar um málsmeðferðina</a>
+        <a href="/efta_eea-procedure/is/glossary" class="hidden">Orðskýringar</a>
+      </div>
+      
+
+      <div class="navbar-options">
+        <a href="/efta_eea-procedure/is/" class="is-selected">Yfirlit</a>
+        <a href="/efta_eea-procedure/is/details" >Nánar um málsmeðferðina</a>
+        <a href="/efta_eea-procedure/is/glossary" >Orðskýringar</a>
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
           <option  value="/efta_eea-procedure/">English</option>
           <option  value="/efta_eea-procedure/de/">Deutsch</option>
           <option  selected  value="/efta_eea-procedure/is/">Íslenska</option>
           <option  value="/efta_eea-procedure/no/">Norsk</option>
-      </select>
+        </select>
+      </div>
+
+      <div id="navbar-mobile">
+        <button id="menu-toggler">
+          <span>
+            MENU 
+          </span>
+          <svg height="16px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+          </svg>
+        </button>
+        
+        <span id="separator"></span>
+
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
+          <option  value="/efta_eea-procedure/">EN</option>
+          <option  value="/efta_eea-procedure/de/">DE</option>
+          <option  selected  value="/efta_eea-procedure/is/">IS</option>
+          <option  value="/efta_eea-procedure/no/">NO</option>
+        </select>
+      </div>
     </div>
   </div>
 </nav>
@@ -109,7 +141,7 @@
             <p>Þegar framkvæmdastjórn ESB undirbýr lagasetningu eru drög að henni rædd innan sérfræðingahópa og nefnda þar sem EES-EFTA-ríkin taka þátt í um&shy;ræð&shy;unni, þó án atkvæðisréttar.</p>
 
             <div class="step-details" id="details-1-1">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#1-2-early-assessment-of-commission-proposals" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       class="btn-round"
@@ -170,9 +202,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s3p8" title="Procedure in detail; paragraphs 8-28">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s3p8" title="Procedure in detail; paragraphs 8-28">Ítarefni á ensku</a>
             </p>
           </section>
 
@@ -182,7 +212,7 @@
             <p>Þegar framkvæmdastjórnin hefur gefið út drög að nýrri löggjöf er það hlutverk <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-working-group-or-expert-group">EES-EFTA-vinnuhópanna eða -sérfræðingahópanna</a> að meta hvort þau feli í sér <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-challenges">sérstök viðfangsefni tengd EES (e. EEA challenges)</a>. Á meðan á lagasetningarferlinu stendur innan ESB geta þeir jafn&shy;framt látið í ljós stuðning og borið upp álitamál með <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-efta-comments">EES-EFTA-umsögn (e. EEA EFTA Comment)</a>.</p>
 
             <div class="step-details" id="details-1-2">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#2-the-eea-efta-states-establish-a-common-position-on-the-incorporation-of-an-act-into-the-eea-agreement" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       class="btn-round"
@@ -243,9 +273,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s4p29" title="Procedure in detail; paragraphs 29-42">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s4p29" title="Procedure in detail; paragraphs 29-42">Ítarefni á ensku</a>
             </p>
           </section>
         </div>
@@ -270,7 +298,7 @@
             <p><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-working-group-or-expert-group">Vinnu- eða sérfræðingahópar EFTA</a> leggja mat á það hvort lagagerðin hafi <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-relevance">þýðingu að því er varðar efn&shy;is&shy;legt gildissvið EES-samningsins</a> og hvort í henni séu ákvæði sem kalla á <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#adaptations-to-eu-acts">aðlögun</a> vegna sérstakra inn&shy;lendra aðstæðna eða með tilliti til  EES-samningsins.</p>
 
             <div class="step-details" id="details-2-3">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#2-4-national-procedures-in-each-eea-efta-state-for-clearing-acts" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       class="btn-round"
@@ -302,9 +330,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p43" title="Procedure in detail; paragraphs 43-50">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p43" title="Procedure in detail; paragraphs 43-50">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -322,7 +348,7 @@
             <p>Þegar upptökuferlið er komið af stað byrja EES-EFTA-ríkin sína eigin málsmeðferð innanlands. Málsmeðferðin er mismunandi í ríkjunum þremur og veltur á eðli og inntaki lagagerðanna.</p>
 
             <div class="step-details" id="details-2-4">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#2-5-the-eea-efta-states-consolidate-their-positions-into-a-draft-decision-incorporating-the-act" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       data-toggle-class
@@ -351,27 +377,21 @@
                 <h5>Ísland</h5>
                 <p>Sérfræðingar leggja mat á hvort lagagerðin hafi þýðingu að því er varðar efn&shy;is&shy;legt gildissvið EES-samningsins og hvort Ísland þurfi að fara fram á aðlögun. Í sumum tilvikum þarf að hafa samráð við Alþingi.</p>
                 <p>
-                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p56" title="Procedure in detail; paragraphs 56-64">Nánari upplýsingar</a>
-                  <br>
-                  Þessi texti er einungis til á ensku
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p56" title="Procedure in detail; paragraphs 56-64">Ítarefni á ensku</a>
                 </p>
               </div>
               <div class="step-detail detail-liechtenstein">
                 <h5>Liechtenstein</h5>
                 <p>Sérfræðingar leggja mat á, í samráði við <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-coordination-unit-liechtenstein">samræmingardeild vegna EES</a> hvort lagagerðin hafi þýðingu að því er varðar efn&shy;is&shy;legt gildissvið EES-samningsins og hvort Liechtenstein þurfi að fara fram á aðlögun.</p>
                 <p>
-                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p65" title="Procedure in detail; paragraphs 65-68">Nánari upplýsingar</a>
-                  <br>
-                  Þessi texti er einungis til á ensku
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p65" title="Procedure in detail; paragraphs 65-68">Ítarefni á ensku</a>
                 </p>
               </div>
               <div class="step-detail detail-norway">
                 <h5>Noregur</h5>
                 <p>Sérfræðingar leggja mat á hvort lagagerðin hafi þýðingu að því er varðar efn&shy;is&shy;legt gildissvið EES-samningsins og hvort Noregur þurfi að fara fram á aðlögun. <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#clearing-committee-norway">Sérstök nefnd sem annast afgreiðslu EES-málefna</a> tryggir samstarf á milli ráðuneyta. Viðeigandi stofnun eða skrifstofa annast samráðið við hagsmunaaðila.</p>
                 <p>
-                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p69" title="Procedure in detail; paragraphs 69-72">Nánari upplýsingar</a>
-                  <br>
-                  Þessi texti er einungis til á ensku
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p69" title="Procedure in detail; paragraphs 69-72">Ítarefni á ensku</a>
                 </p>
               </div>
             </div>
@@ -391,7 +411,7 @@
             <p>EFTA-skrifstofan útbýr drög að ákvörðunum um að taka lagagerðir upp í EES-samninginn, í samræmi við endurgjöf EES-EFTA-ríkjanna. EES-EFTA-ríkin fá drögin send til staðfestingar.</p>
 
             <div class="step-details" id="details-2-5">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#3-the-eu-reviews-the-draft-decision" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                     class="btn-round"
@@ -454,9 +474,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p51" title="Procedure in detail; paragraphs 51-55, 64, 68, 72">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s5p51" title="Procedure in detail; paragraphs 51-55, 64, 68, 72">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -466,7 +484,7 @@
     </section>
 
     <section class="section section-stage" id="3-the-eu-reviews-the-draft-decision">
-      <h2 class="stage-heading">ESB yfirfer og staðfestir drög ákvarðana sameiginlegu EES-nefndar&shy;inn&shy;ar</h2>
+      <h2 class="stage-heading">ESB yfirfer og staðfestir drög ákvarðana <br>sameiginlegu EES-nefndar&shy;inn&shy;ar</h2>
 
       <p class="loud">Þegar EES-EFTA-ríkin hafa samþykkt drög ákvarðana sameiginlegu EES-nefndar&shy;inn&shy;ar sendir EFTA-skrifstofan þau til <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#european-external-action-service-eeas" title="See definition">utan&shy;ríkis&shy;þjón&shy;ustu ESB (EEAS)</a>. Utan&shy;ríkis&shy;þjón&shy;usta ESB samræmir upptökuferlið vegna EES af hálfu ESB.</p>
 
@@ -486,7 +504,7 @@
             <p>Utanríkisþjónusta ESB hefur samráð við viðeigandi <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#commission-directorate-general">stjórnarsvið framkvæmdastjórnarinnar</a> um drög að ákvörðunum sameiginlegu EES-nefndar&shy;inn&shy;ar. Sé ekki gert ráð fyrir <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary#substantive-adaptations" title="See definition">efnislegri aðlögun</a> og drög ákvörðunar rýmkar einungis gildissvið ESB lagagerðar svo það taki líka til EES-svæðisins er utan&shy;ríkis&shy;þjón&shy;ustu ESB heimilt að samþykkja þau fyrir hönd ESB og lýkur umsagnarferlinu þar með á því stigi. Fari ESB fram á að breytingar verði gerðar á drögunum hefjast við&shy;ræð&shy;ur með það að markmiði að komast að sameiginlegri niðurstöðu.</p>
 
             <div class="step-details" id="details-3-6">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#3-7-draft-decisions-that-contain-substantive-adaptations-or-budgetary-consequences-go-to-the-council-of-the-european-union" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       class="btn-round"
@@ -526,9 +544,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s6p73" title="Procedure in detail; paragraphs 73-79">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s6p73" title="Procedure in detail; paragraphs 73-79">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -546,7 +562,7 @@
             <p>Feli drög að ákvörðunum sameiginlegu EES-nefndar&shy;inn&shy;ar í sér efnislega aðlögun eða fjárhagsleg áhrif, verður ráð Evrópu&shy;sam&shy;bands&shy;ins að veita utan&shy;ríkis&shy;þjón&shy;ustu ESB umboð til að samþykkja þau.</p>
 
             <div class="step-details" id="details-3-7">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#4-the-eea-joint-committee-adopts-the-decision-incorporating-the-act" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       class="btn-round"
@@ -585,9 +601,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s6p73" title="Procedure in detail; paragraphs 73-79">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s6p73" title="Procedure in detail; paragraphs 73-79">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -611,7 +625,7 @@
             <p>EES-EFTA-ríkin og ESB koma sér saman um lista yfir <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">drög að ákvörðunum sameiginlegu EES-nefndar&shy;inn&shy;ar</a> sem tilbúnar eru til samþykkis og setja þær á dagskrá næsta fundar sameiginlegu EES-nefndar&shy;inn&shy;ar.</p>
 
             <div class="step-details" id="details-4-8">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#4-9-the-eea-joint-committee-adopts-the-decision" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                     data-toggle-class
@@ -661,9 +675,7 @@
               </div>
             </div>
             <p class="text-center small step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s7p80" title="Procedure in detail; paragraphs 80-97">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s7p80" title="Procedure in detail; paragraphs 80-97">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -683,9 +695,7 @@
         <p><a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#eea-joint-committee">Sameiginlegu EES-nefndinni</a> er ætlað að tryggja virka framkvæmd EES-samningsins og kemur hún saman sex til átta sinnum á ári. Hún er vettvangur skoð&shy;ana&shy;skipta ESB og EES-EFTA-ríkjanna sem taka ákvarð&shy;an&shy;ir með samkomulagi, þar samn&shy;ings&shy;að&shy;il&shy;arn&shy;ir mæla einum rómi, um að taka ESB lagagerðir upp í EES-samninginn.</p>
 
         <p class="text-center small step-more">
-          <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s9p114" title="Procedure in detail; paragraphs 114-117">Nánari upplýsingar</a>
-          <br>
-          Þessi texti er einungis til á ensku
+          <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s9p114" title="Procedure in detail; paragraphs 114-117">Ítarefni á ensku</a>
         </p>
       </section>
     </section>
@@ -706,11 +716,11 @@
             </div>
           </div>
           <div class="col">
-            <h3 class="step-heading">Stjórnskipuleg skil&shy;yrði uppfyllt</h3>
+            <h3 class="step-heading" style="position:relative">Stjórnskipuleg skil&shy;yrði uppfyllt</h3>
             <p>Samkvæmt stjórnarskrám EES-EFTA-ríkjanna þarf ákvörðun sem felur í sér breytingar á innlendri löggjöf að hljóta samþykki þjóð&shy;þing&shy;anna áður en hún tekur gildi. Ákvörðun sem tekin er með slíkum fyrirvara um uppfyllingu <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#constitutional-requirements">stjórnskipulegra skilyrða</a> tekur gildi um leið og skil&shy;yrðin hafa verið uppfyllt í öllum þremur EES-EFTA-ríkjunum.</p>
 
             <div class="step-details" id="details-5-10">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#5-11-the-eea-efta-states-are-obliged-to-implement-incorporated-acts" class="sr-only sr-only-focusable">Skip to next step</a>
               <button type="button"
                       class="btn-round"
@@ -773,9 +783,7 @@
             </div>
 
             <p class="text-center small step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s8p98" title="Procedure in detail; paragraphs 98-107">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s8p98" title="Procedure in detail; paragraphs 98-107">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -797,7 +805,7 @@
             <p>Skylt er að innleiða gerðir, sem hafa verið teknar upp í EES-samninginn og hafa öðlast gildi, í innlendan rétt EES-EFTA-ríkjanna. <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-surveillance-authority-esa">Eftirlitsstofnun EFTA</a> hefur eftirlit með því að farið sé eftir löggjöf sem er tekin upp í EES-samninginn. <a class="tip tip-glossary" href="/efta_eea-procedure/is/glossary/#efta-court">EFTA-dómstóllinn</a> í Lúxemborg hefur lögsögu til að dæma í samningsbrotamálum sem höfðuð eru gegn EES-EFTA-ríkjunum þremur vegna vanefnda þeirra á skuldbindingum sínum samkvæmt EES-samningnum.</p>
 
             <div class="step-details" id="details-5-11">
-              <small class="sr-only muted italic serif">Nánari upplýsingar:</small>
+              <small class="sr-only muted italic serif">Ítarefni á ensku:</small>
               <a href="#facts" class="sr-only sr-only-focusable">Skip</a>
               <button type="button"
                       data-toggle-class
@@ -823,9 +831,7 @@
               </div>
             </div>
             <p class="text-center small step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s2p4" title="Procedure in detail; paragraphs 4-7, 108">Nánari upplýsingar</a>
-              <br>
-              Þessi texti er einungis til á ensku
+              <a class="cursor-paragraph" href="/efta_eea-procedure/is/details#s2p4" title="Procedure in detail; paragraphs 4-7, 108">Ítarefni á ensku</a>
             </p>
           </div>
         </div>
@@ -839,21 +845,21 @@
       <div class="numbers">
 
         <div class="number">
-          <strong>514 085 332</strong> íbúar
+          <strong>517 774 665</strong> íbúar
           <div class="number-description">
             sem búa, vinna, eru námsmenn á EES-svæðinu
-            (<a href="http://ec.europa.eu/eurostat/tgm/table.do?tab=table&plugin=1&language=en&pcode=tps00001" target="_blank" rel="external">Eurostat 2017</a>)
+            (Eurostat 2019)
           </div>
         </div>
 
         <div class="number">
           <strong>31</strong> land
-          <div class="number-description">28 aðildarríki + Ísland, Liechtenstein & Noregur</div>
+          <div class="number-description">28 EU-aðildarríki + Ísland, Liechtenstein & Noregur</div>
         </div>
 
         <div class="number">
-          <strong>€15.7 biljónir</strong> áætluð VLF árið 2015
-          <div class="number-description">Annað stærsta hagkerfi heims</div>
+          <strong>€15,8 biljónir</strong> áætluð VLF árið 2017
+          <div class="number-description">Annað stærsta hagkerfi heims (Eurostat 2019)</div>
         </div>
       </div>
     </footer>
@@ -898,7 +904,8 @@
       </div>
     </div>
   </footer>
-
+  
+  <script src="/efta_eea-procedure/is/js/burger-menu.js"></script>
   <script>
     (function() {
 

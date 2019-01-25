@@ -20,7 +20,7 @@
   <!-- <meta property="og:url" content="https://website.example" /> --> <!-- absolute path -->
   <meta property="og:title" content="How EU Law becomes EEA Law | Detailed description of the EEA Process" />
   <meta property="og:description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas." />
-  <meta property="og:image" content="https://website.example/cover.png" /> <!-- absolute path -->
+  <meta property="og:image" content="https://eaudeweb.github.io/efta_eea-procedure/is/images/efta_illustration900x550-freedomOfMovements.png" /> <!-- absolute path -->
 
   <!-- Favicon -->
   <!-- use https://realfavicongenerator.net/ -->
@@ -60,16 +60,48 @@
       <!-- <div class="navbar-title">
         <strong>How EU Law becomes EEA Law</strong>
       </div> -->
-      <a href="/efta_eea-procedure/is/" >Yfirlit</a>
-      <a href="/efta_eea-procedure/is/details" class="is-selected">Nánar um málsmeðferðina</a>
-      <a href="/efta_eea-procedure/is/glossary" >Orðskýringar</a>
+			<a href="http://www.efta.int" class="navbar-logo">
+				<img src="/efta_eea-procedure/is/images/efta_logo_hq.png" alt="EFTA Logo">
+			</a>
       
-      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
+      <div class="mobile-selected-page">
+        <a href="/efta_eea-procedure/is/" class="hidden">Yfirlit</a>
+        <a href="/efta_eea-procedure/is/details" class="highlight">Nánar um málsmeðferðina</a>
+        <a href="/efta_eea-procedure/is/glossary" class="hidden">Orðskýringar</a>
+      </div>
+      
+
+      <div class="navbar-options">
+        <a href="/efta_eea-procedure/is/" >Yfirlit</a>
+        <a href="/efta_eea-procedure/is/details" class="is-selected">Nánar um málsmeðferðina</a>
+        <a href="/efta_eea-procedure/is/glossary" >Orðskýringar</a>
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
           <option  value="/efta_eea-procedure/details/">English</option>
           <option  value="/efta_eea-procedure/de/details/">Deutsch</option>
           <option  selected  value="/efta_eea-procedure/is/details/">Íslenska</option>
           <option  value="/efta_eea-procedure/no/details/">Norsk</option>
-      </select>
+        </select>
+      </div>
+
+      <div id="navbar-mobile">
+        <button id="menu-toggler">
+          <span>
+            MENU 
+          </span>
+          <svg height="16px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+          </svg>
+        </button>
+        
+        <span id="separator"></span>
+
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
+          <option  value="/efta_eea-procedure/details/">EN</option>
+          <option  value="/efta_eea-procedure/de/details/">DE</option>
+          <option  selected  value="/efta_eea-procedure/is/details/">IS</option>
+          <option  value="/efta_eea-procedure/no/details/">NO</option>
+        </select>
+      </div>
     </div>
   </div>
 </nav>
@@ -239,7 +271,7 @@ Committee and then submitted to the EU side by the Secretariat</li>
 
   <p id="s5p52">When EEA EFTA States request no adaptations, the Secretariat sends the draft JCD directly to the relevant Subcommittee for approval, with the WG/EG in copy. When adaptations are needed, the Secretariat first sends the draft JCD to the relevant WG/EG, with a two-week deadline to provide feedback. Once approved by the WG/EG, the draft JCD is sent to the relevant Subcommittee for approval, with a two-week deadline to provide feedback.</p>
   <p id="s5p53">When the draft JCD has been approved by all three EEA EFTA States, it is ready to be sent to the EEAS.</p>
-  <p id="s5p54">The EFTA Secretariat sends “packages” of approved draft JCDs twice a month to the EEAS. This is normally done around the 1st and 15th of each month. When JCDs that have already been sent to the EEAS are further discussed by EFTA and Commission experts, the revised draft JCD can be sent outside of these fortnightly packages<sup><a href="#ref-24">24</a></sup>.</p>
+  <p id="s5p54">The EFTA Secretariat sends “packages” of approved draft JCDs to the EEAS on a weekly basis. This is normally done around the 1st and 15th of each month. When JCDs that have already been sent to the EEAS are further discussed by EFTA and Commission experts, the revised draft JCD can be sent outside of these fortnightly packages<sup><a href="#ref-24">24</a></sup>.</p>
   <p id="s5p55">In special cases, usually when the EEA EFTA States intend to request substantive adaptations, the WG/EG may prefer to informally consult with the relevant DG before formally sending a draft JCD to the EEAS. The idea is to agree on solutions to potential issues before formal submission, and to avoid substantial discussions at the next level of the procedure, <a href="#s6-eu-incorporation-procedures-once-a-draft-jcd-has-been-agreed-on-by-the-eea-efta-states">see section 6</a>.</p>
 
 
@@ -495,7 +527,8 @@ Committee and then submitted to the EU side by the Secretariat</li>
       </div>
     </div>
   </footer>
-
+  
+  <script src="/efta_eea-procedure/is/js/burger-menu.js"></script>
   <script>
     (function() {
 
