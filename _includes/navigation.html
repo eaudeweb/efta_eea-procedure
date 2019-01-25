@@ -29,11 +29,10 @@
       </div>
       
 
-      <div class="navbar-obtions">
+      <div class="navbar-options">
         <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
         <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
         <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>{% translate global.glossary %}</a>
-
         <select name="languagePicker" class="languagePicker" onchange="location = this.value">
           <option {% if site.lang == "en" %} selected {% endif %} value="{{site.baseurl_root}}{{page.url}}">English</option>
           <option {% if site.lang == "de" %} selected {% endif %} value="{{site.baseurl_root}}/de{{page.url}}">Deutsch</option>
@@ -58,7 +57,7 @@
           <option {% if site.lang == "en" %} selected {% endif %} value="{{site.baseurl_root}}{{page.url}}">EN</option>
           <option {% if site.lang == "de" %} selected {% endif %} value="{{site.baseurl_root}}/de{{page.url}}">DE</option>
           <option {% if site.lang == "is" %} selected {% endif %} value="{{site.baseurl_root}}/is{{page.url}}">IS</option>
-          <option {% if site.lang == "no" %} selected {% endif %} value="{{site.baseurl_root}}/no{{page.url}}">NR</option>
+          <option {% if site.lang == "no" %} selected {% endif %} value="{{site.baseurl_root}}/no{{page.url}}">NO</option>
         </select>
       </div>
     </div>

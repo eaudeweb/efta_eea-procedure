@@ -6,18 +6,18 @@
 			
 			justify-content: space-between;
 
-			.navbar-obtions {
+			.navbar-options {
 
 				display: none;
 
-				a.is-selected,
+/*				a.is-selected,*/
 				.languagePicker {
 					display: none !important;
 				}
 
 				a,
 				.languagePicker {
-					padding: 0.6rem !important;
+					padding: 0.2rem 1.6rem !important;
 				}
 			}
 
@@ -29,8 +29,16 @@
 			}
 
 			.navbar-logo {
-				display: initial !important;
-				width: 60px;
+				.page-glossary & {
+					display: none;
+				}
+				.page-details & {
+					display: none;
+				}
+				.page-overview & {
+					display: initial !important;
+					width: 60px;
+				}
 			}
 
 			.languagePicker  {
@@ -39,10 +47,9 @@
 
 			.mobile-selected-page {
 			    display: block;
-			    width: 55%;
 			    word-break: break-all;
 			    overflow-wrap: break-word;
-			    overflow: hidden;
+/*			    overflow: hidden;*/
 			    text-align: left;
 			}
 		}
@@ -96,6 +103,9 @@ body {
 	align-items: center;
 	background: transparent;
 	border: none;
+	.page-details & > span {
+		display: none;
+	}
 }
 
 #menu-toggler:focus {

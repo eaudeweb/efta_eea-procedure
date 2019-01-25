@@ -248,7 +248,7 @@ button {
 main {
   max-width: 86rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   @media (min-width: 600px) {
     padding: 0 4rem;  
   }
@@ -369,7 +369,7 @@ main {
 
   a {
     display: inline-block;
-    padding: 1.6rem;
+    padding: 1.6rem 0.6rem;
     color: $muted;
     &:hover {
       color: $titatium;
@@ -447,7 +447,7 @@ main {
   background-color: transparent;
   border: none;
   border-radius: 2px;
-  padding: 1.6rem 0;
+  padding: 0 .6rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   &:focus {
