@@ -15,6 +15,10 @@ baseurl: "/efta_eea-procedure"
 # url: ""
 # baseurl: ""
 
+# EFTA production website
+# url: "http://eealaw.efta.int"
+# baseurl: ""
+
 plugins:
   - jekyll-multiple-languages-plugin
 
