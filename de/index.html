@@ -20,7 +20,7 @@
   <!-- <meta property="og:url" content="https://website.example" /> --> <!-- absolute path -->
   <meta property="og:title" content="How EU Law becomes EEA Law" />
   <meta property="og:description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas." />
-  <meta property="og:image" content="https://website.example/cover.png" /> <!-- absolute path -->
+  <meta property="og:image" content="http://eealaw.efta.int/de/images/efta_illustration900x550-freedomOfMovements.png" /> <!-- absolute path -->
 
   <!-- Favicon -->
   <!-- use https://realfavicongenerator.net/ -->
@@ -31,7 +31,7 @@
   <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffbb1b">
   <meta name="theme-color" content="#302845">-->
 
-  <link rel="stylesheet" href="/efta_eea-procedure/de/css/main.css">
+  <link rel="stylesheet" href="/de/css/main.css">
 
 </head>
 <body>
@@ -41,9 +41,9 @@
   </header>
 
   <div class="article-cover" onclick="scrollPastCover(this)">
-  <img src="/efta_eea-procedure/de/images/efta_illustration900x550-freedomOfMovements-de.png" 
-       srcset="/efta_eea-procedure/de/images/efta_illustration1200x733-freedomOfMovements-de.png 1200w,
-               /efta_eea-procedure/de/images/efta_illustration1800x1100-freedomOfMovements-de.png 1800w"
+  <img src="/de/images/efta_illustration900x550-freedomOfMovements-de.png" 
+       srcset="/de/images/efta_illustration1200x733-freedomOfMovements-de.png 1200w,
+               /de/images/efta_illustration1800x1100-freedomOfMovements-de.png 1800w"
        alt="The Freedom of Movement in the EEA">
 </div>
 
@@ -68,20 +68,54 @@
         <strong>How EU Law becomes EEA Law</strong>
       </div> -->
 			<a href="http://www.efta.int" class="navbar-logo">
-				<img src="/efta_eea-procedure/de/images/efta_logo_hq.png" alt="EFTA Logo">
+				<img src="/de/images/efta_logo_hq.png" alt="EFTA Logo">
 			</a>
-      <a href="/efta_eea-procedure/de/" class="is-selected">Überblick</a>
-      <a href="/efta_eea-procedure/de/details" >Die Verfahrensschritte im Einzelnen</a>
-      <a href="/efta_eea-procedure/de/glossary" >Glossar</a>
       
-      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
-          <option  value="/efta_eea-procedure/">English</option>
-          <option  selected  value="/efta_eea-procedure/de/">Deutsch</option>
-          <option  value="/efta_eea-procedure/is/">Íslenska</option>
-          <option  value="/efta_eea-procedure/no/">Norsk</option>
-      </select>
+      <div class="mobile-selected-page">
+        <a href="/de/" class="highlight">Überblick</a>
+        <a href="/de/details" class="hidden">Die Verfahrensschritte im Einzelnen</a>
+        <a href="/de/glossary" class="hidden">Glossar</a>
+      </div>
+      
+
+      <div class="navbar-options">
+        <a href="/de/" class="is-selected">Überblick</a>
+        <a href="/de/details" >Die Verfahrensschritte im Einzelnen</a>
+        <a href="/de/glossary" >Glossar</a>
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
+          <option  value="/">English</option>
+          <option  selected  value="/de/">Deutsch</option>
+          <option  value="/is/">Íslenska</option>
+          <option  value="/no/">Norsk</option>
+        </select>
+      </div>
+
+      <div id="navbar-mobile">
+        <button id="menu-toggler">
+          <span>
+            MENU 
+          </span>
+          <svg height="16px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+          </svg>
+        </button>
+        
+        <span id="separator"></span>
+
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
+          <option  value="/">EN</option>
+          <option  selected  value="/de/">DE</option>
+          <option  value="/is/">IS</option>
+          <option  value="/no/">NO</option>
+        </select>
+      </div>
     </div>
   </div>
+	  	<div class="navbar-options-mobile container">
+					<a href="/de/" class="is-selected">Überblick</a>
+					<a href="/de/details" >Die Verfahrensschritte im Einzelnen</a>
+					<a href="/de/glossary" >Glossar</a>
+      </div>
 </nav>
 
 
@@ -90,7 +124,7 @@
     <header>
       <h1 class="article-heading">So wird EU-Recht zu EWR-Recht</h1>
 
-      <p class="loud"><a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#agreement-on-the-european-economic-area-eea-agreement">Das Abkommen über den Europäischen Wirtschaftsraum (EWR)</a> erlaubt Island, Liechtenstein und Norwegen (<a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-efta-states">EWR-EFTA-Staaten</a>) die Teilnahme am EU-Binnenmarkt. Vom EWR-Abkommen abgedeckt sind der freie Waren-, Dienstleistungs-, Kapital- und Personenverkehr, Vorschriften über den Wettbewerb und staatliche Beihilfen sowie bestimmte Kooperationsbereiche wie Verbraucherschutz, Umwelt, Gesundheitswesen und Bildung, die ein reibungsloses Funktionieren des Binnenmarkts gewährleisten.</p>
+      <p class="loud"><a class="tip tip-glossary" href="/de/glossary/#agreement-on-the-european-economic-area-eea-agreement">Das Abkommen über den Europäischen Wirtschaftsraum (EWR)</a> erlaubt Island, Liechtenstein und Norwegen (<a class="tip tip-glossary" href="/de/glossary/#eea-efta-states">EWR-EFTA-Staaten</a>) die Teilnahme am EU-Binnenmarkt. Vom EWR-Abkommen abgedeckt sind der freie Waren-, Dienstleistungs-, Kapital- und Personenverkehr, Vorschriften über den Wettbewerb und staatliche Beihilfen sowie bestimmte Kooperationsbereiche wie Verbraucherschutz, Umwelt, Gesundheitswesen und Bildung, die ein reibungsloses Funktionieren des Binnenmarkts gewährleisten.</p>
       <p class="loud">Damit ein EU-Rechtsakt auf die EWR-EFTA-Staaten angewendet werden kann, muss der Gemeinsame EWR-Ausschuss diesen durch Beschluss in das EWR-Abkommen übernehmen. Dabei wird das Ziel verfolgt, EU-Rechtsakte möglichst zeitnah zu deren Inkrafttreten in das EWR-Abkommen zu übernehmen, um sicherzustellen, dass im gesamten EWR dieselben Vorschriften gelten.</p>
     </header>
 
@@ -155,7 +189,7 @@
 
               <div class="step-detail detail-general">
                 <h5 class="sr-only">Allgemeines</h5>
-                <p>Das EWR-Abkommen sieht vor, dass Experten aus den EWR-EFTA-Staaten an <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eu-commission-expert-groups">Expertengruppen der Europäischen Kommission</a>, <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eu-comitology-committees">Komitologieausschüssen</a> und <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eu-programme-committees">Programmausschüssen</a> teilnehmen können. Zudem können die EWR-EFTA-Staaten den Institutionen der <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-efta-comments">EU Stellungnahmen</a> zu Gesetzgebungsinitiativen und Gesetzgebungs-vorschlägen übermitteln und <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#seconded-national-experts">abgeordnete nationale Experten</a> in die Europäische Kommission entsenden.</p>
+                <p>Das EWR-Abkommen sieht vor, dass Experten aus den EWR-EFTA-Staaten an <a class="tip tip-glossary" href="/de/glossary/#eu-commission-expert-groups">Expertengruppen der Europäischen Kommission</a>, <a class="tip tip-glossary" href="/de/glossary/#eu-comitology-committees">Komitologieausschüssen</a> und <a class="tip tip-glossary" href="/de/glossary/#eu-programme-committees">Programmausschüssen</a> teilnehmen können. Zudem können die EWR-EFTA-Staaten den Institutionen der <a class="tip tip-glossary" href="/de/glossary/#eea-efta-comments">EU Stellungnahmen</a> zu Gesetzgebungsinitiativen und Gesetzgebungs-vorschlägen übermitteln und <a class="tip tip-glossary" href="/de/glossary/#seconded-national-experts">abgeordnete nationale Experten</a> in die Europäische Kommission entsenden.</p>
               </div>
               <div class="step-detail detail-secretariat">
                 <h5>EFTA-Sekretariat</h5>
@@ -167,22 +201,22 @@
               </div>
               <div class="step-detail detail-liechtenstein">
                 <h5>Liechtenstein</h5>
-                <p>In dieser Phase sind am nationalen Verfahren in Liechtenstein die Stabsstelle EWR – die für EWR-Angelegenheiten zuständige Behörde –, die entsprechenden EWR-Experten der liechtensteinischen Landesverwaltung und ein von den Interessengruppen für jeden Politikbereich benannte EWR-Kontaktperson beteiligt. Zweimal jährlich setzt die <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-coordination-unit-liechtenstein">Stabsstelle EWR</a> die Regierung über wichtige EU-Initiativen und -Themen mit Bedeutung für den EWR in Kenntnis.</p>
+                <p>In dieser Phase sind am nationalen Verfahren in Liechtenstein die Stabsstelle EWR – die für EWR-Angelegenheiten zuständige Behörde –, die entsprechenden EWR-Experten der liechtensteinischen Landesverwaltung und ein von den Interessengruppen für jeden Politikbereich benannte EWR-Kontaktperson beteiligt. Zweimal jährlich setzt die <a class="tip tip-glossary" href="/de/glossary/#eea-coordination-unit-liechtenstein">Stabsstelle EWR</a> die Regierung über wichtige EU-Initiativen und -Themen mit Bedeutung für den EWR in Kenntnis.</p>
               </div>
               <div class="step-detail detail-norway">
                 <h5>Norwegen</h5>
-                <p>In dieser Phase sind am nationalen Verfahren in Norwegen die fachlich zuständigen Ministerien, die entsprechenden Direktionen und Einrichtungen, das Aussenministerium und eine eigene <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary#clearing-committee-norway">Clearingstelle</a> beteiligt. Zweimal jährlich setzt die Regierung das norwegische Parlament über wichtige EU-Initiativen und -Themen mit Bedeutung für den EWR in Kenntnis.</p>
+                <p>In dieser Phase sind am nationalen Verfahren in Norwegen die fachlich zuständigen Ministerien, die entsprechenden Direktionen und Einrichtungen, das Aussenministerium und eine eigene <a class="tip tip-glossary" href="/de/glossary#clearing-committee-norway">Clearingstelle</a> beteiligt. Zweimal jährlich setzt die Regierung das norwegische Parlament über wichtige EU-Initiativen und -Themen mit Bedeutung für den EWR in Kenntnis.</p>
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s3p8" title="Verweise auf Dokument; Abschnitt 8-28">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s3p8" title="Verweise auf Dokument; Abschnitt 8-28">Weitere Informationen auf Englisch</a>
             </p>
           </section>
 
           <section class="section-step" 
                    id="1-2-early-assessment-of-commission-proposals">
             <h3 class="step-heading">Frühbewertung und EWR-EFTA-Stellungnahmen</h3>
-            <p>Wenn die Kommission einen Gesetzgebungsvorschlag vorlegt, werden <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-challenges">potenzielle Herausforderungen für den EWR</a> von <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#efta-working-group-or-expert-group">EWR/EFTA-Arbeits- oder Expertengruppen</a> geprüft. Diese können der EU ihre Unterstützung oder ihre Bedenken während des gesamten Gesetzgebungsprozesses in Form von <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-efta-comments">EWR-EFTA-Stellungnahmen</a> zur Kenntnis bringen.</p>
+            <p>Wenn die Kommission einen Gesetzgebungsvorschlag vorlegt, werden <a class="tip tip-glossary" href="/de/glossary/#eea-challenges">potenzielle Herausforderungen für den EWR</a> von <a class="tip tip-glossary" href="/de/glossary/#efta-working-group-or-expert-group">EWR/EFTA-Arbeits- oder Expertengruppen</a> geprüft. Diese können der EU ihre Unterstützung oder ihre Bedenken während des gesamten Gesetzgebungsprozesses in Form von <a class="tip tip-glossary" href="/de/glossary/#eea-efta-comments">EWR-EFTA-Stellungnahmen</a> zur Kenntnis bringen.</p>
 
             <div class="step-details" id="details-1-2">
               <small class="sr-only muted italic serif">Weitere Informationen auf Englisch:</small>
@@ -246,7 +280,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s4p29" title="Verweise auf Dokument; Abschnitt 29-42">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s4p29" title="Verweise auf Dokument; Abschnitt 29-42">Weitere Informationen auf Englisch</a>
             </p>
           </section>
         </div>
@@ -268,7 +302,7 @@
           </div>
           <div class="col">
             <h3 class="step-heading">Prüfung des Rechtsakts durch Experten</h3>
-            <p><a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#efta-working-group-or-expert-group">EFTA-Arbeits- oder Expertengruppen</a> prüfen, ob der Rechtsakt <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-relevance">EWR-relevant</a> ist und Bestimmungen enthält, die aufgrund spezifischer nationaler Gegebenheiten oder für die Zwecke des EWR-Abkommens einer <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#adaptations-to-eu-acts">Anpassung</a> bedürfen.</p>
+            <p><a class="tip tip-glossary" href="/de/glossary/#efta-working-group-or-expert-group">EFTA-Arbeits- oder Expertengruppen</a> prüfen, ob der Rechtsakt <a class="tip tip-glossary" href="/de/glossary/#eea-relevance">EWR-relevant</a> ist und Bestimmungen enthält, die aufgrund spezifischer nationaler Gegebenheiten oder für die Zwecke des EWR-Abkommens einer <a class="tip tip-glossary" href="/de/glossary/#adaptations-to-eu-acts">Anpassung</a> bedürfen.</p>
 
             <div class="step-details" id="details-2-3">
               <small class="sr-only muted italic serif">Weitere Informationen auf Englisch:</small>
@@ -293,8 +327,8 @@
                 <h5>Zeitlicher Ablauf</h5>
                 <ul>
                   <li>Der Registrator des EFTA-Sekretariats identifiziert und registriert neue Rechtsakte <strong>binnen einer Woche</strong> nach ihrer Veröffentlichung.</li>
-                  <li>Im <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#standard-procedure">normalen Verfahren</a> haben die EWR-EFTA-Staaten <strong>16 Wochen</strong> Zeit zur Vorlage eines entsprechenden Standardformulars.</li>
-                  <li>Das <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#fast-track-procedure">beschleunigte Verfahren</a> endet mit der stillschweigenden Zustimmung nach einer Frist von <strong>sechs Wochen</strong>.</li>
+                  <li>Im <a class="tip tip-glossary" href="/de/glossary/#standard-procedure">normalen Verfahren</a> haben die EWR-EFTA-Staaten <strong>16 Wochen</strong> Zeit zur Vorlage eines entsprechenden Standardformulars.</li>
+                  <li>Das <a class="tip tip-glossary" href="/de/glossary/#fast-track-procedure">beschleunigte Verfahren</a> endet mit der stillschweigenden Zustimmung nach einer Frist von <strong>sechs Wochen</strong>.</li>
                 </ul>
               </div>
               <div class="step-detail detail-secretariat">
@@ -303,7 +337,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s5p43" title="Verweise auf Dokument; Abschnitt 43-50">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s5p43" title="Verweise auf Dokument; Abschnitt 43-50">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -350,21 +384,21 @@
                 <h5>Island</h5>
                 <p>Experten prüfen, ob der Rechtsakt EWR-relevant ist und ob Island Anpassungen benötigt. In manchen Fällen muss das Parlament konsultiert werden.</p>
                 <p>
-                  <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s5p56" title="Verweise auf Dokument; Abschnitt 56-61">Weitere Informationen auf Englisch</a>
+                  <a class="cursor-paragraph" href="/de/details#s5p56" title="Verweise auf Dokument; Abschnitt 56-61">Weitere Informationen auf Englisch</a>
                 </p>
               </div>
               <div class="step-detail detail-liechtenstein">
                 <h5>Liechtenstein</h5>
-                <p>Experten prüfen in Absprache mit der <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-coordination-unit-liechtenstein">Stabsstelle EWR</a>, ob der Rechsakt EWR-relevant ist und ob Liechtenstein Anpassungen benötigt.</p>
+                <p>Experten prüfen in Absprache mit der <a class="tip tip-glossary" href="/de/glossary/#eea-coordination-unit-liechtenstein">Stabsstelle EWR</a>, ob der Rechsakt EWR-relevant ist und ob Liechtenstein Anpassungen benötigt.</p>
                 <p>
-                  <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s5p65" title="Verweise auf Dokument; Abschnitt 63-65">Weitere Informationen auf Englisch</a>
+                  <a class="cursor-paragraph" href="/de/details#s5p65" title="Verweise auf Dokument; Abschnitt 63-65">Weitere Informationen auf Englisch</a>
                 </p>
               </div>
               <div class="step-detail detail-norway">
                 <h5>Norwegen</h5>
-                <p>Experten prüfen, ob der Rechtsakt EWR-relevant ist und ob Norwegen Anpassungen benötigt . Ein eigens dafür eingesetzter <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary#clearing-committee-norway">Sonderausschuss</a> gewährleistet die Zusammenarbeit über verschiedene Ministerien hinweg. Die Konsultation mit Interessengruppen erfolgt über die zuständige Direktion oder Einrichtung.</p>
+                <p>Experten prüfen, ob der Rechtsakt EWR-relevant ist und ob Norwegen Anpassungen benötigt . Ein eigens dafür eingesetzter <a class="tip tip-glossary" href="/de/glossary#clearing-committee-norway">Sonderausschuss</a> gewährleistet die Zusammenarbeit über verschiedene Ministerien hinweg. Die Konsultation mit Interessengruppen erfolgt über die zuständige Direktion oder Einrichtung.</p>
                 <p>
-                  <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s5p69" title="Verweise auf Dokument; Abschnitt 67-69">Weitere Informationen auf Englisch</a>
+                  <a class="cursor-paragraph" href="/de/details#s5p69" title="Verweise auf Dokument; Abschnitt 67-69">Weitere Informationen auf Englisch</a>
                 </p>
               </div>
             </div>
@@ -431,7 +465,7 @@
               </div>
               <div class="step-detail detail-secretariat">
                 <h5>EFTA-Sekretariat</h5>
-                <p>Das EFTA-Sekretariat erstellt <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-joint-committee-decision-jcd">Beschlüsse des Gemeinsamen EWR-Ausschusses</a> auf Grundlage der Rückmeldungen der nationalen Experten. Sobald alle drei EWR-EFTA-Staaten einen Beschlussentwurf genehmigt haben, kann er zur Begutachtung durch die EU an den <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#european-external-action-service-eeas">Europäischen Auswärtigen Dienst (EAD)</a> übermittelt werden. Sind <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#substantive-adaptations">substanzielle Anpassungen</a> angedacht, so können die Experten vor der formellen Übermittlung des Beschlussentwurfs informell mit der entsprechenden <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#commission-directorate-general">Generaldirektion (GD) der Kommission</a> Kontakt aufnehmen.</p>
+                <p>Das EFTA-Sekretariat erstellt <a class="tip tip-glossary" href="/de/glossary/#eea-joint-committee-decision-jcd">Beschlüsse des Gemeinsamen EWR-Ausschusses</a> auf Grundlage der Rückmeldungen der nationalen Experten. Sobald alle drei EWR-EFTA-Staaten einen Beschlussentwurf genehmigt haben, kann er zur Begutachtung durch die EU an den <a class="tip tip-glossary" href="/de/glossary/#european-external-action-service-eeas">Europäischen Auswärtigen Dienst (EAD)</a> übermittelt werden. Sind <a class="tip tip-glossary" href="/de/glossary/#substantive-adaptations">substanzielle Anpassungen</a> angedacht, so können die Experten vor der formellen Übermittlung des Beschlussentwurfs informell mit der entsprechenden <a class="tip tip-glossary" href="/de/glossary/#commission-directorate-general">Generaldirektion (GD) der Kommission</a> Kontakt aufnehmen.</p>
               </div>
               <div class="step-detail detail-iceland">
                 <h5>Island</h5>
@@ -447,7 +481,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s5p51" title="Verweise auf Dokument; Abschnitt 51-55, 62, 66, 70">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s5p51" title="Verweise auf Dokument; Abschnitt 51-55, 62, 66, 70">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -459,7 +493,7 @@
     <section class="section section-stage" id="3-the-eu-reviews-the-draft-decision">
       <h2 class="stage-heading">Die EU prüft und genehmigt den Beschlussentwurf</h2>
 
-      <p class="loud">Nach der Genehmigung des Beschlussentwurfs durch die EWR-EFTA-Staaten wird dieser vom EFTA-Sekretariat an den <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary#european-external-action-service-eeas" title="See definition">Europäischen Auswärtigen Dienst (EAD)</a> weitergeleitet. Der EAD koordiniert den EWR-Prozess aufseiten der EU.</p>
+      <p class="loud">Nach der Genehmigung des Beschlussentwurfs durch die EWR-EFTA-Staaten wird dieser vom EFTA-Sekretariat an den <a class="tip tip-glossary" href="/de/glossary#european-external-action-service-eeas" title="See definition">Europäischen Auswärtigen Dienst (EAD)</a> weitergeleitet. Der EAD koordiniert den EWR-Prozess aufseiten der EU.</p>
 
       <section class="section-step" id="3-6-the-commission-reviews-the-draft-decision">
         <div class="row">
@@ -474,7 +508,7 @@
           </div>
           <div class="col">
             <h3 class="step-heading">Europäische Kommission</h3>
-            <p>Der EAD leitet hinsichtlich des Beschlussentwurfs eine dienststellenübergreifende Konsultation mit den zuständigen <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#commission-directorate-general">Generaldirektionen der Kommission</a> ein. Enthält ein Beschlussentwurf keine <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary#substantive-adaptations" title="See definition">substanziellen Anpassungen</a> und dient nur der Ausweitung des Geltungsbereichs von EU-Recht auf den EWR, kann ihm der EAD im Namen der EU zustimmen, womit der Prüfvorgang endet. Fordert die EU Änderungen am Entwurf, werden Gespräche geführt, um eine Einigung zu erzielen.</p>
+            <p>Der EAD leitet hinsichtlich des Beschlussentwurfs eine dienststellenübergreifende Konsultation mit den zuständigen <a class="tip tip-glossary" href="/de/glossary/#commission-directorate-general">Generaldirektionen der Kommission</a> ein. Enthält ein Beschlussentwurf keine <a class="tip tip-glossary" href="/de/glossary#substantive-adaptations" title="See definition">substanziellen Anpassungen</a> und dient nur der Ausweitung des Geltungsbereichs von EU-Recht auf den EWR, kann ihm der EAD im Namen der EU zustimmen, womit der Prüfvorgang endet. Fordert die EU Änderungen am Entwurf, werden Gespräche geführt, um eine Einigung zu erzielen.</p>
 
             <div class="step-details" id="details-3-6">
               <small class="sr-only muted italic serif">Weitere Informationen auf Englisch:</small>
@@ -508,7 +542,7 @@
               </div>
               <div class="step-detail detail-eu">
                 <h5>Europäische Union</h5>
-                <p>Der EAD koordiniert den Übernahmevorgang in der EU. Dient ein Beschlussentwurf nur der Ausweitung des Geltungsbereichs von EU-Recht auf den EWR, kann ihm der EAD im Namen der Europäischen Union im <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-joint-committee">Gemeinsamen EWR-Ausschuss</a> zustimmen.</p>
+                <p>Der EAD koordiniert den Übernahmevorgang in der EU. Dient ein Beschlussentwurf nur der Ausweitung des Geltungsbereichs von EU-Recht auf den EWR, kann ihm der EAD im Namen der Europäischen Union im <a class="tip tip-glossary" href="/de/glossary/#eea-joint-committee">Gemeinsamen EWR-Ausschuss</a> zustimmen.</p>
               </div>
               <div class="step-detail detail-secretariat">
                 <h5>EFTA-Sekretariat</h5>
@@ -517,7 +551,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s6p73" title="Verweise auf Dokument; Abschnitt 71-77">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s6p73" title="Verweise auf Dokument; Abschnitt 71-77">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -566,7 +600,7 @@
               </div>
               <div class="step-detail detail-eu">
                 <h5>Europäische Union</h5>
-                <p>Sieht ein Entwurf für einen Beschluss des Gemeinsamen EWR-Ausschusses substanzielle Anpassungen vor, muss der Rat die Position der EU hinsichtlich des Entwurfs annehmen. Die Kommission legt einen Entwurf für einen Beschluss des Rates vor, in dessen Anhang sich der Entwurf des Beschlusses des Gemeinsamen EWR-Ausschusses befindet. Der Rat genehmigt diesen und erteilt dem EAD das Mandat, den Beschluss im Namen der EU zusammen mit den EWR-EFTA-Staaten im <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-joint-committee">Gemeinsamen EWR-Ausschuss</a> anzunehmen.</p>
+                <p>Sieht ein Entwurf für einen Beschluss des Gemeinsamen EWR-Ausschusses substanzielle Anpassungen vor, muss der Rat die Position der EU hinsichtlich des Entwurfs annehmen. Die Kommission legt einen Entwurf für einen Beschluss des Rates vor, in dessen Anhang sich der Entwurf des Beschlusses des Gemeinsamen EWR-Ausschusses befindet. Der Rat genehmigt diesen und erteilt dem EAD das Mandat, den Beschluss im Namen der EU zusammen mit den EWR-EFTA-Staaten im <a class="tip tip-glossary" href="/de/glossary/#eea-joint-committee">Gemeinsamen EWR-Ausschuss</a> anzunehmen.</p>
               </div>
               <div class="step-detail detail-secretariat">
                 <h5>EFTA-Sekretariat</h5>
@@ -574,7 +608,7 @@
               </div>
             </div>
             <p class="small text-center step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s6p73" title="Verweise auf Dokument; Abschnitt 73-79">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s6p73" title="Verweise auf Dokument; Abschnitt 73-79">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -584,7 +618,7 @@
     <section class="section section-stage" id="4-the-eea-joint-committee-adopts-the-decision-incorporating-the-act">
       <h2 class="stage-heading">Der Gemeinsame EWR-Ausschuss erlässt den Beschluss</h2>
 
-      <p class="loud">Nach Abschluss der Genehmigungsverfahren auf beiden Seiten erlässt der <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary#eea-joint-committee">Gemeinsame EWR-Ausschuss</a> den Beschluss zur Übernahme des Rechtsakts in das EWR-Abkommen.</p>
+      <p class="loud">Nach Abschluss der Genehmigungsverfahren auf beiden Seiten erlässt der <a class="tip tip-glossary" href="/de/glossary#eea-joint-committee">Gemeinsame EWR-Ausschuss</a> den Beschluss zur Übernahme des Rechtsakts in das EWR-Abkommen.</p>
 
       <section class="section-step" id="4-8-list-of-acts-ready-to-be-incorporated">
         <div class="row">
@@ -595,7 +629,7 @@
           </div>
           <div class="col">
             <h3 class="step-heading">Liste der zur Übernahme bereiten Rechtsakte</h3>
-            <p>Die EWR-EFTA-Staaten und die EU stellen eine <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">Liste mit Beschlussentwürfen</a> zusammen, die zur Annahme bereit sind, und setzen diese auf die Tagesordnung für die nächste Sitzung des Gemeinsamen EWR-Ausschusses.</p>
+            <p>Die EWR-EFTA-Staaten und die EU stellen eine <a class="tip tip-glossary" href="/de/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">Liste mit Beschlussentwürfen</a> zusammen, die zur Annahme bereit sind, und setzen diese auf die Tagesordnung für die nächste Sitzung des Gemeinsamen EWR-Ausschusses.</p>
 
             <div class="step-details" id="details-4-8">
               <small class="sr-only muted italic serif">Weitere Informationen auf Englisch:</small>
@@ -640,7 +674,7 @@
               <div class="step-detail detail-liechtenstein">
                 <h5>Liechtenstein</h5>
                 <p>Die Stabsstelle EWR übermittelt in Konsultation mit den Experten der EFTA-Arbeitsgruppen Bemerkungen zu der Liste der zur Übernahme bereiten Rechtsakte an das EFTA-Sekretariat. Darüber hinaus informiert sie die EWR/Schengen-Kommission des Landtags, die alle zur Aufnahme in das EWR-Abkommen vorgesehenen EU-Rechtsakte begutachtet.<p>
-                <p>Die Regierung fasst vor der Sitzung des Gemeinsamen EWR-Ausschusses einen Beschluss zur Kenntnisnahme der <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">Liste mit annahmebereiten Beschlussentwürfen</a>.</p>
+                <p>Die Regierung fasst vor der Sitzung des Gemeinsamen EWR-Ausschusses einen Beschluss zur Kenntnisnahme der <a class="tip tip-glossary" href="/de/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">Liste mit annahmebereiten Beschlussentwürfen</a>.</p>
               </div>
               <div class="step-detail detail-norway">
                 <h5>Norwegen</h5>
@@ -648,7 +682,7 @@
               </div>
             </div>
             <p class="text-center small step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s7p80" title="Verweise auf Dokument; Abschnitt 80-97">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s7p80" title="Verweise auf Dokument; Abschnitt 80-97">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -665,17 +699,17 @@
         </div>
         
         <h3 class="step-heading">Erlass des Beschlusses</h3>
-        <p>Der <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#eea-joint-committee">Gemeinsame EWR-Ausschuss</a> ist für die Verwaltung des EWR-Abkommens verantwortlich und tagt sechs- bis achtmal jährlich. Dieses Forum dient dem Meinungsaustausch zwischen der EU und den EWR-EFTA-Staaten und der einvernehmlichen Beschlussfassung zur Übernahme von EU-Rechtsakten in das EWR-Abkommen.</p>
+        <p>Der <a class="tip tip-glossary" href="/de/glossary/#eea-joint-committee">Gemeinsame EWR-Ausschuss</a> ist für die Verwaltung des EWR-Abkommens verantwortlich und tagt sechs- bis achtmal jährlich. Dieses Forum dient dem Meinungsaustausch zwischen der EU und den EWR-EFTA-Staaten und der einvernehmlichen Beschlussfassung zur Übernahme von EU-Rechtsakten in das EWR-Abkommen.</p>
 
         <p class="text-center small step-more">
-          <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s9p114" title="Verweise auf Dokument; Abschnitt 112-115">Weitere Informationen auf Englisch</a>
+          <a class="cursor-paragraph" href="/de/details#s9p114" title="Verweise auf Dokument; Abschnitt 112-115">Weitere Informationen auf Englisch</a>
         </p>
       </section>
     </section>
 
     <section class="section section-stage" id="5-entry-into-force-of-a-joint-committee-decision">
       <h2 class="stage-heading">Inkrafttreten des Beschlusses</h2>
-      <p class="loud">Beschlüsse treten in der Regel am Tag nach ihrer Annahme im Gemeinsamen EWR-Ausschuss in Kraft, es sei denn, sie unterliegen <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#constitutional-requirements">verfassungsrechtlichen Anforderungen</a>. Beim Inkrafttreten von Beschlüssen müssen die <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#annexes-and-protocols-to-the-eea-agreement">Anhänge oder Protokolle des EWR-Abkommens</a> entsprechend aktualisiert und die betreffenden Rechtsakte in das innerstaatliche Recht der EWR-EFTA-Staaten aufgenommen werden.</p>
+      <p class="loud">Beschlüsse treten in der Regel am Tag nach ihrer Annahme im Gemeinsamen EWR-Ausschuss in Kraft, es sei denn, sie unterliegen <a class="tip tip-glossary" href="/de/glossary/#constitutional-requirements">verfassungsrechtlichen Anforderungen</a>. Beim Inkrafttreten von Beschlüssen müssen die <a class="tip tip-glossary" href="/de/glossary/#annexes-and-protocols-to-the-eea-agreement">Anhänge oder Protokolle des EWR-Abkommens</a> entsprechend aktualisiert und die betreffenden Rechtsakte in das innerstaatliche Recht der EWR-EFTA-Staaten aufgenommen werden.</p>
 
       <section class="section-step" id="5-10-some-decisions-must-be-approved-by-the-national-parliaments">
         <div class="row">
@@ -690,7 +724,7 @@
           </div>
           <div class="col">
             <h3 class="step-heading">Erfüllung verfassungsrechtlicher Anforderungen</h3>
-            <p>Gemäss den Verfassungen der EWR-EFTA-Staaten erfordert ein Beschluss, der mit einer Änderung der nationalen Gesetzgebung einhergeht, vor seinem Inkrafttreten die Zustimmung der nationalen Parlamente. Ein Beschluss mit solchen <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#constitutional-requirements">verfassungsrechtlichen Anforderungen</a> tritt erst in Kraft, wenn die entsprechenden Anforderungen in allen drei EWR-EFTA-Staaten erfüllt sind.</p>
+            <p>Gemäss den Verfassungen der EWR-EFTA-Staaten erfordert ein Beschluss, der mit einer Änderung der nationalen Gesetzgebung einhergeht, vor seinem Inkrafttreten die Zustimmung der nationalen Parlamente. Ein Beschluss mit solchen <a class="tip tip-glossary" href="/de/glossary/#constitutional-requirements">verfassungsrechtlichen Anforderungen</a> tritt erst in Kraft, wenn die entsprechenden Anforderungen in allen drei EWR-EFTA-Staaten erfüllt sind.</p>
 
             <div class="step-details" id="details-5-10">
               <small class="sr-only muted italic serif">Weitere Informationen auf Englisch:</small>
@@ -738,7 +772,7 @@
               </div>
               <div class="step-detail detail-secretariat">
                 <h5>EFTA-Sekretariat</h5>
-                <p>Das EFTA-Sekretariat verfolgt das Inkrafttreten von Rechtsvorschriften im EWR und nimmt Meldungen im Zusammenhang mit der Erfüllung verfassungsrechtlicher Anforderungen entgegen. Sobald ein EWR-EFTA-Staat die Zustimmung seines nationalen Parlaments eingeholt hat, informiert er das EFTA-Sekretariat, das diese Information an <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#european-external-action-service-eeas">den Europäischen Auswärtigen Dienst (EAD)</a>, die anderen EWR-EFTA-Staaten und die EFTA-Überwachungsbehörde weiterleitet. Nachdem der letzte EWR-EFTA-Staat die Erfüllung der verfassungsrechtlichen Vorschriften gemeldet hat, kann der Beschluss des Gemeinsamen EWR-Ausschusses in Kraft treten.</p>
+                <p>Das EFTA-Sekretariat verfolgt das Inkrafttreten von Rechtsvorschriften im EWR und nimmt Meldungen im Zusammenhang mit der Erfüllung verfassungsrechtlicher Anforderungen entgegen. Sobald ein EWR-EFTA-Staat die Zustimmung seines nationalen Parlaments eingeholt hat, informiert er das EFTA-Sekretariat, das diese Information an <a class="tip tip-glossary" href="/de/glossary/#european-external-action-service-eeas">den Europäischen Auswärtigen Dienst (EAD)</a>, die anderen EWR-EFTA-Staaten und die EFTA-Überwachungsbehörde weiterleitet. Nachdem der letzte EWR-EFTA-Staat die Erfüllung der verfassungsrechtlichen Vorschriften gemeldet hat, kann der Beschluss des Gemeinsamen EWR-Ausschusses in Kraft treten.</p>
                 <p>Das EFTA-Sekretariat übernimmt die Übersetzung der Beschlüsse des Gemeinsamen EWR-Ausschusses in die isländische und norwegische Sprache und deren Veröffentlichung in der EWR-Beilage des Amtsblatts der Europäischen Union.</p>
               </div>
               <div class="step-detail detail-iceland">
@@ -756,7 +790,7 @@
             </div>
 
             <p class="text-center small step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s8p98" title="Verweise auf Dokument; Abschnitt 96-105">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s8p98" title="Verweise auf Dokument; Abschnitt 96-105">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -775,7 +809,7 @@
           </div>
           <div class="col">
             <h3 class="step-heading" style="position:relative">Die EWR-EFTA-Staaten sind zur Umsetzung übernommener Rechtsakte verpflichtet</h3>
-            <p>Rechtsakte, die in das EWR-Abkommen übernommen wurden und in Kraft getreten sind, müssen Eingang in die Rechtsordnungen der  EWR-EFTA-Staaten finden. <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#efta-surveillance-authority-esa">Die EFTA-Überwachungsbehörde</a> kontrolliert die Einhaltung der in das EWR-Abkommen übernommenen Rechtsvorschriften. <a class="tip tip-glossary" href="/efta_eea-procedure/de/glossary/#efta-court">Der EFTA-Gerichtshof</a> in Luxemburg ist das zuständige Gericht für Vertragsverletzungsverfahren gegen die drei EWR-EFTA-Staaten, wenn diese ihre Verpflichtungen gemäss EWR-Abkommen nicht einhalten.</p>
+            <p>Rechtsakte, die in das EWR-Abkommen übernommen wurden und in Kraft getreten sind, müssen Eingang in die Rechtsordnungen der  EWR-EFTA-Staaten finden. <a class="tip tip-glossary" href="/de/glossary/#efta-surveillance-authority-esa">Die EFTA-Überwachungsbehörde</a> kontrolliert die Einhaltung der in das EWR-Abkommen übernommenen Rechtsvorschriften. <a class="tip tip-glossary" href="/de/glossary/#efta-court">Der EFTA-Gerichtshof</a> in Luxemburg ist das zuständige Gericht für Vertragsverletzungsverfahren gegen die drei EWR-EFTA-Staaten, wenn diese ihre Verpflichtungen gemäss EWR-Abkommen nicht einhalten.</p>
 
             <div class="step-details" id="details-5-11">
               <small class="sr-only muted italic serif">Weitere Informationen auf Englisch:</small>
@@ -804,7 +838,7 @@
               </div>
             </div>
             <p class="text-center small step-more">
-              <a class="cursor-paragraph" href="/efta_eea-procedure/de/details#s2p4" title="Verweise auf Dokument; Abschnitt 4-7, 106">Weitere Informationen auf Englisch</a>
+              <a class="cursor-paragraph" href="/de/details#s2p4" title="Verweise auf Dokument; Abschnitt 4-7, 106">Weitere Informationen auf Englisch</a>
             </p>
           </div>
         </div>
@@ -842,9 +876,9 @@
 
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js" async></script>
 
-<script src="/efta_eea-procedure/de/js/index.js"></script>
-<script src="/efta_eea-procedure/de/js/easy-toggle-state.ie.min.js"></script>
-<script src="/efta_eea-procedure/de/js/in-view.min.js"></script>
+<script src="/de/js/index.js"></script>
+<script src="/de/js/easy-toggle-state.ie.min.js"></script>
+<script src="/de/js/in-view.min.js"></script>
 <script>
   (function() {
     document.addEventListener('DOMContentLoaded', function() {
@@ -867,7 +901,7 @@
     <div class="container">
       <div class="site-footer-inner">
         <a href="http://www.efta.int/" target="_blank">
-          <img src="/efta_eea-procedure/de/images/efta_logo.png" 
+          <img src="/de/images/efta_logo.png" 
                width=""
                alt="EFTA Logo"> 
           <br>
@@ -876,7 +910,8 @@
       </div>
     </div>
   </footer>
-
+  
+  <script src="/de/js/burger-menu.js"></script>
   <script>
     (function() {
 

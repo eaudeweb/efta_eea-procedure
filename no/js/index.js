@@ -4,7 +4,7 @@ var glossary;
 
   glossary = document.createElement('html');
   var request = new XMLHttpRequest();
-  request.open('GET', '/efta_eea-procedure/no/glossary/', true);
+  request.open('GET', '/no/glossary/', true);
 
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
