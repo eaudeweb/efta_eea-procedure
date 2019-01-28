@@ -56,9 +56,6 @@
 
 			.mobile-selected-page {
 			    display: block;
-			    word-break: break-all;
-			    overflow-wrap: break-word;
-/*			    overflow: hidden;*/
 			    text-align: left;
 					width: 75%;
     			white-space: normal;
@@ -110,8 +107,10 @@ body {
 	align-items: center;
 	background: transparent;
 	border: none;
-	.page-details & > span {
-		display: none;
+	> span {
+		@media(max-width: 362px) {
+			display: none;
+		}
 	}
 }
 
