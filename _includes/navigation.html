@@ -62,4 +62,9 @@
       </div>
     </div>
   </div>
+	  	<div class="navbar-options-mobile container">
+					<a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
+					<a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
+					<a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>{% translate global.glossary %}</a>
+      </div>
 </nav>

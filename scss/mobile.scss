@@ -1,14 +1,22 @@
+.navbar-options-mobile {
+	display: none!important;
+}
+
 @media (max-width: 599px) {
    
 	.navbar {
+		.navbar-options-mobile {
+					display: none;
+		}
 
 		.navbar-inner {
 			
 			justify-content: space-between;
 
+		
 			.navbar-options {
 
-				display: none;
+				display: none!important;
 
 /*				a.is-selected,*/
 				.languagePicker {
@@ -51,17 +59,15 @@
 			    overflow-wrap: break-word;
 /*			    overflow: hidden;*/
 			    text-align: left;
+					width: 75%;
+    			white-space: normal;
 			}
 		}
 	}
 
-	.full-height {
-		min-height: 180px;
-	}
-
 	.flex-box {
-		position: absolute;
-		top: 10rem;
+		// position: absolute;
+		// top: 10rem;
 		width: 100%;
 		display: flex !important;
 		flex-flow: column;
