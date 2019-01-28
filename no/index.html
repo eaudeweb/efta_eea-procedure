@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="no" class="page-home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How EU Law becomes EEA Law</title>
+  <meta name="description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas.">
+
+  <!-- og -->
+  <!-- see http://ogp.me/ -->
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="https://website.example" /> --> <!-- absolute path -->
+  <meta property="og:title" content="How EU Law becomes EEA Law" />
+  <meta property="og:description" content="The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas." />
+  <meta property="og:image" content="https://website.example/cover.png" /> <!-- absolute path -->
+
+  <!-- Favicon -->
+  <!-- use https://realfavicongenerator.net/ -->
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffbb1b">
+  <meta name="theme-color" content="#302845">-->
+
+  <link rel="stylesheet" href="/efta_eea-procedure/no/css/main.css">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-title">How EU Law becomes EEA Law</h1>
+  </header>
+
+  <div class="article-cover" onclick="scrollPastCover(this)">
+  <img src="/efta_eea-procedure/no/images/efta_illustration900x550-freedomOfMovements-no.png" 
+       srcset="/efta_eea-procedure/no/images/efta_illustration1200x733-freedomOfMovements-no.png 1200w,
+               /efta_eea-procedure/no/images/efta_illustration1800x1100-freedomOfMovements-no.png 1800w"
+       alt="The Freedom of Movement in the EEA">
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <button type="button" id="backButton" class="no-btn" hidden>
+        &larr;
+        <span class="sr">Back</span>
+      </button>
+      <script>
+        var lastLocation = localStorage.getItem('lastLocation');
+        if (lastLocation && lastLocation !== window.location.href && window.location.hash) {
+          var backButton = document.querySelector('#backButton');
+          backButton.removeAttribute('hidden');
+          backButton.onclick = function() { window.history.back() };
+        }
+        localStorage.setItem('lastLocation', window.location.href);
+      </script>
+
+      <!-- <div class="navbar-title">
+        <strong>How EU Law becomes EEA Law</strong>
+      </div> -->
+			<a href="http://www.efta.int" class="navbar-logo">
+				<img src="/efta_eea-procedure/no/images/efta_logo_hq.png" alt="EFTA Logo">
+			</a>
+      <a href="/efta_eea-procedure/no/" class="is-selected">Oversikt</a>
+      <a href="/efta_eea-procedure/no/details" >Prosedyren i detalj</a>
+      <a href="/efta_eea-procedure/no/glossary" >Ordliste</a>
+      
+      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
+          <option  value="/efta_eea-procedure/">English</option>
+          <option  value="/efta_eea-procedure/de/">Deutsch</option>
+          <option  value="/efta_eea-procedure/is/">Íslenska</option>
+          <option  selected  value="/efta_eea-procedure/no/">Norsk</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+  <article>
+    <header>
+      <h1 class="article-heading">Hvordan EU-rett blir EØS-rett</h1>
+
+      <p class="loud"><a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#agreement-on-the-european-economic-area-eea-agreement">Avtalen om Det europeiske økonomiske samarbeidsområde (EØS-avtalen)</a> gjør det mulig for Island, Liechtenstein og Norge (<a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-efta-states">EØS-EFTA-statene </a>) å delta i EUs indre marked. Avtalen dekker områdene fritt varebytte og fri bevegelighet for tjenester, kapital og personer, inneholder regler om konkurranse og statsstøtte og omfatter visse samarbeidsområder, f.eks. forbrukervern, miljø, folkehelse og utdanning. Dette sikrer et velfungerende indre marked.</p>
+      <p class="loud">For at en EU-rettsakt skal gjelde i EØS-EFTA-statene, må EØS-komiteen treffe en beslutning om å innlemme rettsakten i EØS-avtalen. Målet er å innlemme rettsaktene så snart som mulig etter at de har trådt i kraft i EU, for å sikre at samme regler gjelder i hele EØS.</p>
+    </header>
+
+    <!-- <h1 id="eea-process">The EEA Process</h1> -->
+
+    <section class="section section-stage" id="1-the-eea-efta-states-contribute-to-eu-decision-shaping">
+      <h2 class="stage-heading">EØS-EFTA-statene deltar i EUs regelverksutforming</h2>
+      <p class="loud">Når Europakommisjonen vurderer behovet for nytt regelverk for det indre marked, deltar eksperter fra EØS-EFTA-statene i prosessen. De bidrar med sin fagkunnskap og identifiserer mulige utfordringer for EØS-EFTA-statene.</p>
+
+      <div class="row">
+        <div class="col col-right">
+          <div class="media">
+            <img src="images/efta_illustration900x900-puzzle.png" alt="EFTA and EU fitting puzzle pieces">
+          </div>
+        </div>
+        <div class="col">
+          <section class="section-step" id="1-1-experts-from-eea-efta-states-influence-eu-decision-shaping">
+            <h3 class="step-heading">Deltakelse i EUs ekspertgrupper og komiteer</h3>
+            <p>Når Europakommisjonen utarbeider nytt regelverk, blir utkastet til regelverk drøftet i ekspertgrupper og komiteer der EØS-EFTA-statene deltar, men ikke har stemmerett.</p>
+
+            <div class="step-details" id="details-1-1">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#1-2-early-assessment-of-commission-proposals" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-general"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-general"></span>
+                      <span class="sr">Generelt</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-secretariat"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-iceland"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Island</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-liechtenstein"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-1 .detail-norway"
+                      data-toggle-group="details-1-1">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Norge</span>
+              </button>
+
+              <div class="step-detail detail-general">
+                <h5 class="sr-only">Generelt</h5>
+                <p>EØS-avtalen gir eksperter fra EØS-EFTA-statene rett til å delta i <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eu-commission-expert-groups">Kommisjonens ekspertgrupper</a>, <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eu-comitology-committees">komitologikomiteer</a> og <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eu-programme-committees">programkomiteer</a>. EØS-EFTA-statene kan fremme <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-efta-comments">EØS-EFTA-kommentarer</a> til initiativer og regelverksforslag overfor EUs institusjoner. EØS-EFTA-statene sender også <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#seconded-national-experts">nasjonale eksperter</a> til Kommisjonen.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>Når Kommisjonen legger fram EØS-relevante initiativer, informerer EFTA-sekretariatet EØS-EFTA-statene om dette.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Island</h5>
+                <p>På dette stadiet omfatter den nasjonale prosedyren på Island de ansvarlige fagdepartementene samt utenriksdepartementet, statsministerens kontor og den islandske EU-delegasjonen i Brussel. Utenriksdepartementet organiserer regelmessige høringer med interessegrupper og legger på anmodning fram saker for parlamentets utenrikskomité. Hver høst utarbeides det en prioriteringsliste for regjeringsbeslutninger.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>På dette stadiet omfatter den nasjonale prosedyren i Liechtenstein <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-coordination-unit-liechtenstein">EØS-koordineringsenheten</a>, som er den enheten som tar seg av EØS-saker, de relevante EØS-ekspertene i forvaltningen og en EØS-kontaktperson utnevnt av berørte parter innenfor hvert politikkområde. To ganger i året informerer EØS-koordineringsenheten regjeringen om viktige EØS-relevante initiativer og saker fra EU-siden.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Norge</h5>
+                <p>På dette stadiet omfatter den nasjonale prosedyren i Norge de ansvarlige fagdepartementene, relevante underliggende etater og virksomheter, Utenriksdepartementet (UD) og et spesialutvalg. To ganger i året informerer regjeringen Stortinget om viktige EØS-relevante initiativer og saker fra EU-siden.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s3p8" title="Procedure in detail; paragraphs 8-28">Mer informasjon på engelsk</a>
+            </p>
+          </section>
+
+          <section class="section-step" 
+                   id="1-2-early-assessment-of-commission-proposals">
+            <h3 class="step-heading">Tidlig vurdering og EØS-EFTA-kommentarer</h3>
+            <p>Når Kommisjonen offentliggjør et forslag, blir mulige <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-challenges">EØS-utfordringer</a> vurdert i <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#efta-working-group-or-expert-group">EFTAs arbeids- eller ekspertgrupper</a>. Gjennom hele EUs beslutningsprosess kan disse gruppene også gi innspill til EU-institusjonene i en <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-efta-comments">EØS-EFTA-kommentar</a>.</p>
+
+            <div class="step-details" id="details-1-2">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#2-the-eea-efta-states-establish-a-common-position-on-the-incorporation-of-an-act-into-the-eea-agreement" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-timeline"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tidsfrister</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-secretariat"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-iceland"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Island</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-liechtenstein"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-1-2 .detail-norway"
+                      data-toggle-group="details-1-2">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Norge</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tidsfrister</h5>
+                <p>Ekspertene i EFTAs arbeids- eller ekspertgrupper har en frist på seks uker til å gjøre en innledende vurdering av forslag fra Kommisjonen. De må fylle ut og returnere et eget skjema om forslaget til EFTA-sekretariatet.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>Når et forslag fra Kommisjonen blir offentliggjort, gjør EFTA-sekretariatet en foreløpig vurdering av mulige horisontale utfordringer og sender vurderingen til EØS-EFTA-ekspertene. Dersom ekspertene beslutter å utarbeide en EØS-EFTA-kommentar, koordinerer EFTA-sekretariatet utkastarbeidet mellom EØS-EFTA-statene.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Island</h5>
+                <p>Etter at forslaget er registrert i den islandske EØS-databasen, blir det vurdert av det ansvarlige departementet, som informerer EFTA-sekretariatet og de andre EØS-EFTA-statene om sin vurdering. Rettsakter som er underlagt forfatningsrettslige krav, blir identifisert så tidlig som mulig med tanke på oversettelse og høring i parlamentet.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Alle trinn i saksbehandlingen og regelverksutformingen, ansvarlige personer og tidsskjemaer blir registrert i Liechtensteins EØS-database. Den relevante myndigheten vurderer forslaget i samråd med EØS-koordineringsenheten og informerer EFTA-sekretariatet om resultatet av vurderingen.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Norge</h5>
+                <p>Alle EØS-relevante forslag blir registrert i EØS-notatbasen. Ansvarlig fagdepartement vurderer forslaget og informerer EFTA-sekretariatet om resultatet av vurderingen.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s4p29" title="Procedure in detail; paragraphs 29-42">Mer informasjon på engelsk</a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-stage" id="2-the-eea-efta-states-establish-a-common-position-on-the-incorporation-of-an-act-into-the-eea-agreement">
+      <h2 class="stage-heading">EØS-EFTA-statene blir enige om et utkast til beslutning om å innlemme en rettsakt</h2>
+
+
+      <p class="loud">Når EU har vedtatt en EØS-relevant rettsakt, starter EFTA-sekretariatet prosedyren for å innlemme den i EØS-avtalen. Etter drøftinger med eksperter blir EØS-EFTA-statene enige om et utkast til beslutning om å innlemme rettsakten.</p>
+
+      <section class="section-step" id="2-3-experts-assess-the-act">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media">
+              <img src="images/efta_illustration900x900-rubik.png" alt="EFTA Experts solve a rubik's cube">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Eksperter vurderer rettsakten</h3>
+            <p><a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#efta-working-group-or-expert-group">EFTAs arbeids- eller ekspertgrupper</a> vurderer om rettsakten er <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-relevance">EØS-relevant</a>, og om den inneholder bestemmelser som krever <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#adaptations-to-eu-acts">tilpasninger</a> på grunn av særlige nasjonale forhold eller for å ta hensyn til EØS-avtalen.</p>
+
+            <div class="step-details" id="details-2-3">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#2-4-national-procedures-in-each-eea-efta-state-for-clearing-acts" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-2-3 .detail-timeline"
+                      data-toggle-group="details-2-3">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tidsfrister</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-3 .detail-secretariat"
+                      data-toggle-group="details-2-3">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tidsfrister</h5>
+                <ul>
+                  <li>EFTA-sekretariatet identifiserer og registrerer kunngjorte rettsakter <strong>innen en uke</strong> etter at de er kunngjort.</li>
+                  <li><a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#standard-procedure">Standardprosedyre</a> – <strong>16 ukers</strong> frist for EØS-EFTA-statene til å sende inn standardskjema.</li>
+                  <li><a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#fast-track-procedure">Hurtigprosedyre</a> – stilltiende godkjenning etter <strong>seks uker</strong>.</li>
+                </ul>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>Når en ny rettsakt er kunngjort av EU, starter EFTA-sekretariatet prosedyren for innlemmelse i EØS-avtalen. Prosedyrene varierer avhengig av rettsaktens type og innhold. Uansett prosedyre må rettsakten gjennomgås og godkjennes av EØS-EFTA-statene.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s5p43" title="Procedure in detail; paragraphs 43-50">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="2-4-national-procedures-in-each-eea-efta-state-for-clearing-acts">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media">
+              <img src="images/efta_illustration900x600-crowdFlags.png" alt="EFTA MS crowds of people">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Nasjonale prosedyrer i EØS-EFTA-statene</h3>
+            <p>Når prosedyren for innlemmelse er påbegynt, starter de tre EØS-EFTA-statene sine nasjonale prosedyrer. Prosedyrene varierer fra land til land og avhengig av rettsaktens art.</p>
+
+            <div class="step-details" id="details-2-4">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#2-5-the-eea-efta-states-consolidate-their-positions-into-a-draft-decision-incorporating-the-act" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-is-active
+                      data-toggle-target="#details-2-4 .detail-iceland"
+                      data-toggle-group="details-2-4">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Island</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-4 .detail-liechtenstein"
+                      data-toggle-group="details-2-4">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-4 .detail-norway"
+                      data-toggle-group="details-2-4">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Norge</span>
+              </button>
+
+              <div class="step-detail detail-iceland">
+                <h5>Island</h5>
+                <p>Eksperter vurderer om rettsakten er EØS-relevant, og om Island vil ha behov for tilpasninger. I noen tilfeller er det nødvendig med en høring i parlamentet.</p>
+                <p>
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s5p56" title="Procedure in detail; paragraphs 56-64">Mer informasjon på engelsk</a>
+                </p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Eksperter vurderer i samråd med <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-coordination-unit-liechtenstein">EØS-koordineringsenheten</a> om rettsakten er EØS-relevant, og om Liechtenstein vil ha behov for tilpasninger.</p>
+                <p>
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s5p65" title="Procedure in detail; paragraphs 65-68">Mer informasjon på engelsk</a>
+                </p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Norge</h5>
+                <p>Eksperter vurderer om rettsakten er EØS-relevant, og om Norge vil ha behov for tilpasninger. Et <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary#clearing-committee-norway">spesialutvalg</a> sikrer samarbeid mellom departementene. Høring av berørte parter gjennomføres av den relevante etaten eller virksomheten.</p>
+                <p>
+                  <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s5p69" title="Procedure in detail; paragraphs 69-72">Mer informasjon på engelsk</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="2-5-the-eea-efta-states-consolidate-their-positions-into-a-draft-decision-incorporating-the-act">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media">
+              <img src="images/efta_illustration900x900-standingCommittee.png" alt="EFTA States consolidate decision">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Enighet om utkast til beslutning</h3>
+            <p>På grunnlag av tilbakemeldingene fra EØS-EFTA-statene utarbeider EFTA-sekretariatet et utkast til beslutning om å innlemme rettsakten i EØS-avtalen. Utkastet sendes til EØS-EFTA-statene for godkjenning.</p>
+
+            <div class="step-details" id="details-2-5">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#3-the-eu-reviews-the-draft-decision" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                    class="btn-round"
+                    data-toggle-class
+                    data-toggle-target="#details-2-5 .detail-timeline"
+                    data-toggle-group="details-2-5">
+                    <span class="sprite sprite-timeline"></span>
+                    <span class="sr">Tidsfrister</span>
+              </button>
+              <button type="button"
+                    data-toggle-class
+                    data-toggle-target="#details-2-5 .detail-secretariat"
+                    data-toggle-group="details-2-5">
+                    <span class="sprite sprite-secretariat"></span>
+                    <span class="sr">EFTA-sekretariatet</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-5 .detail-iceland"
+                      data-toggle-group="details-2-5">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Island</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-5 .detail-liechtenstein"
+                      data-toggle-group="details-2-5">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-2-5 .detail-norway"
+                      data-toggle-group="details-2-5">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Norge</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tidsfrister</h5>
+                <p>EFTA-sekretariatet har en frist på <strong>en uke</strong> til å utarbeide utkast til EØS-komitébeslutninger uten tilpasninger, og <strong>fire uker</strong> for EØS-komitébeslutninger med tilpasninger.</p>
+                <p>Godkjenning av utkast til EØS-komitébeslutninger på ekspertnivå (om nødvendig) – <strong>to ukers</strong> frist.</p>
+                <p>Godkjenning av utkast til EØS-komitébeslutninger på underkomiténivå – <strong>to ukers</strong> frist.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>EFTA-sekretariatet utarbeider utkast til <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-joint-committee-decision-jcd">EØS-komitébeslutninger</a> på grunnlag av tilbakemeldinger fra eksperter i EØS-EFTA-statene. Når alle de tre EØS-EFTA-statene har godkjent utkastet til EØS-komitébeslutning, er det klart til å sendes til <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#european-external-action-service-eeas">EUs utenrikstjeneste (EEAS)</a>, slik at det kan gjennomgås av EU. Når EØS-EFTA-statene ønsker å be om <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#substantive-adaptations">vesentlige tilpasninger</a>, kan ekspertene uformelt rådføre seg med det relevante <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#commission-directorate-general">generaldirektoratet (DG)</a> i Kommisjonen før de formelt sender et utkast til EØS-komitébeslutning.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Island</h5>
+                <p>På dette stadiet samarbeider fagdepartementene og utenriksdepartementet om å ferdigbehandle EØS-komitébeslutningen.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>På dette stadiet samarbeider ekspertene og EØS-koordineringsenheten i Liechtenstein om å ferdigbehandle EØS-komitébeslutningen.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Norge</h5>
+                <p>På dette stadiet har <a class="tip tip-glossary" href="/glossary/#clearing-committee-norway">spesialutvalget</a> allerede godkjent utkastet til EØS-komitébeslutning. Utkastet må derfor bare kontrolleres en siste gang av det ansvarlige fagdepartementet før Utenriksdepartementet kan gi det sin endelige godkjenning.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s5p51" title="Procedure in detail; paragraphs 51-55, 64, 68, 72">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </section>
+
+    <section class="section section-stage" id="3-the-eu-reviews-the-draft-decision">
+      <h2 class="stage-heading">EU reviderer og godkjenner utkastet til EØS-komitébeslutning</h2>
+
+      <p class="loud">Når EØS-EFTA-statene har godkjent utkastet til EØS-komitébeslutning, oversender EFTA-sekretariatet det til <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary#european-external-action-service-eeas" title="See definition">EUs utenrikstjeneste (EEAS)</a>. EEAS koordinerer EUs del av EØS-prosessen.</p>
+
+      <section class="section-step" id="3-6-the-commission-reviews-the-draft-decision">
+        <div class="row">
+          <div class="col">
+            <div class="media media-video">
+              <video width="480" height="480"
+                     poster="images/efta_illustration900x900-scale.png">
+                <source src="videos/efta_animation-scale.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x900-scale.png" alt="EFTA and EU equally balanced on a scale">
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Europakommisjonen</h3>
+            <p>EEAS sender utkastet til beslutning på høring i de relevante <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#commission-directorate-general">generaldirektoratene i Kommisjonen</a>. Dersom et utkast til EØS-komitébeslutning ikke inneholder <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary#substantive-adaptations" title="See definition">vesentlige tilpasninger</a> og bare utvider virkeområdet for EU-rettsakter til å omfatte EØS, kan EEAS vedta det på vegne av EU, og da avsluttes revisjonsprosessen på dette stadiet. Dersom EU ber om endringer av utkastet, blir det gjennomført drøftelser med sikte på å oppnå enighet.</p>
+
+            <div class="step-details" id="details-3-6">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#3-7-draft-decisions-that-contain-substantive-adaptations-or-budgetary-consequences-go-to-the-council-of-the-european-union" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-3-6 .detail-timeline"
+                      data-toggle-group="details-3-6">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tidsfrister</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-6 .detail-eu"
+                      data-toggle-group="details-3-6">
+                      <span class="sprite sprite-eu"></span>
+                      <span class="sr">EU</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-6 .detail-secretariat"
+                      data-toggle-group="details-3-6">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tidsfrister</h5>
+                <p>Det tar <strong>ca. tre uker</strong> å ferdigbehandle et utkast til EØS-komitébeslutning uten tilpasninger.</p>
+              </div>
+              <div class="step-detail detail-eu">
+                <h5>EU</h5>
+                <p>EEAS koordinerer innlemmelsesprosessen i EU. Dersom et utkast til EØS-komitébeslutning bare utvider virkeområdet for EU-regelverk til å omfatte EØS, kan EEAS, på vegne av Den europeiske union, vedta det i <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-joint-committee">EØS-komiteen</a>.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>Når EØS-EFTA-statene er blitt enige om et utkast til EØS-komitébeslutning, oversender EFTA-sekretariatet det til EUs utenrikstjeneste (EEAS).</p>
+                <p>Dersom utkastet til EØS-komitébeslutning må endres under drøftelsene med EU, koordinerer EFTA-sekretariatet drøftelsene på EFTA-siden og oppdaterer utkastet til EØS-komitébeslutning i samsvar med dette. EEAS koordinerer drøftelsene på EU-siden.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s6p73" title="Procedure in detail; paragraphs 73-79">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="3-7-draft-decisions-that-contain-substantive-adaptations-or-budgetary-consequences-go-to-the-council-of-the-european-union">
+        <div class="row">
+          <div class="col">
+            <div class="media">
+              <img src="images/efta_illustration900x900-draftJCD.png" alt="EU Commission reviews draft JCD">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Rådet for Den europeiske union</h3>
+            <p>Dersom utkastet til EØS-komitébeslutning inneholder vesentlige tilpasninger eller har budsjettmessige konsekvenser, må Rådet for Den europeiske union gi EEAS fullmakt til å vedta det.</p>
+
+            <div class="step-details" id="details-3-7">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#4-the-eea-joint-committee-adopts-the-decision-incorporating-the-act" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-3-7 .detail-timeline"
+                      data-toggle-group="details-3-7">
+                      <span class="sprite sprite-timeline"></span>
+                      <span class="sr">Tidsfrister</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-7 .detail-eu"
+                      data-toggle-group="details-3-7">
+                      <span class="sprite sprite-eu"></span>
+                      <span class="sr">EU</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-3-7 .detail-secretariat"
+                      data-toggle-group="details-3-7">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+
+              <div class="step-detail detail-timeline">
+                <h5>Tidsfrister</h5>
+                <p>Det tar <strong>ca. tre til seks måneder</strong> å ferdigbehandle et utkast til EØS-komitébeslutning med vesentlige tilpasninger.</p>
+              </div>
+              <div class="step-detail detail-eu">
+                <h5>EU</h5>
+                <p>Dersom et utkast til EØS-komitébeslutning inneholder vesentlige tilpasninger, må EUs standpunkt til utkastet vedtas av Rådet. Kommisjonen oversender et utkast til rådsbeslutning vedlagt utkastet til EØS-komitébeslutning. Rådet godkjenner det og gir EEAS fullmakt til å vedta EØS-komitébeslutningen på vegne av EU sammen med EØS-EFTA-statene i <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-joint-committee">EØS-komiteen</a>.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>Dersom utkastet til EØS-komitébeslutning må endres under drøftelsene med EU, koordinerer EFTA-sekretariatet drøftelsene på EFTA-siden og oppdaterer utkastet til EØS-komitébeslutning i samsvar med dette. EEAS koordinerer drøftelsene på EU-siden.</p>
+              </div>
+            </div>
+            <p class="small text-center step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s6p73" title="Procedure in detail; paragraphs 73-79">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section section-stage" id="4-the-eea-joint-committee-adopts-the-decision-incorporating-the-act">
+      <h2 class="stage-heading">EØS-komiteen vedtar beslutningen</h2>
+
+      <p class="loud">Når begge sider har fullført sin godkjenningsprosedyre, vedtar <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary#eea-joint-committee">EØS-komiteen</a> beslutningen som innlemmer rettsakten.</p>
+
+      <section class="section-step" id="4-8-list-of-acts-ready-to-be-incorporated">
+        <div class="row">
+          <div class="col">
+            <div class="media">
+              <img src="images/efta_illustration900x900-longList.png" alt="Draft JCD is added on the agenda of the next EEA Joint Committee meeting">
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Liste over rettsakter som er klare til å bli innlemmet</h3>
+            <p>EØS-EFTA-statene og EU blir enige om en <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#list-of-draft-joint-committee-decisions-ready-for-adoption-long-list">liste over utkast til EØS-komitébeslutninger</a> som er klare til å vedtas, og fører dem opp på dagsordenen til neste møte i EØS-komiteen.</p>
+
+            <div class="step-details" id="details-4-8">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#4-9-the-eea-joint-committee-adopts-the-decision" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                    data-toggle-class
+                    data-toggle-target="#details-4-8 .detail-secretariat"
+                    data-toggle-group="details-4-8">
+                    <span class="sprite sprite-secretariat"></span>
+                    <span class="sr">EFTA-sekretariatet</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-4-8 .detail-iceland"
+                      data-toggle-group="details-4-8">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Island</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-4-8 .detail-liechtenstein"
+                      data-toggle-group="details-4-8">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-4-8 .detail-norway"
+                      data-toggle-group="details-4-8">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Norge</span>
+              </button>
+
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>Før hvert møte i EØS-komiteen koordinerer EFTA-sekretariatet sammenstillingen av listen over rettsakter som er klare til å bli innlemmet i EØS-avtalen på møtet. På dette stadiet er også det islandske og norske utenriksdepartementet, den liechtensteinske EØS-koordineringsenheten og EEAS involvert.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Island</h5>
+                <p>Utenriksdepartementet har drøftelser med fagdepartementene og sender EFTA-sekretariatet kommentarer til listen over rettsakter som er klare til å bli innlemmet. Utenriksdepartementet informerer regjeringen om hvilke rettsakter som er klare til å bli innlemmet, og regjeringen gir sitt samtykke til å vedta de tilhørende EØS-komitébeslutningene. Visse EØS-komitébeslutninger som er av stor betydning, kan det være nødvendig å sende på høring i parlamentets utenrikskomité.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>Etter samråd med eksperter i EFTAs arbeidsgrupper sender EØS-koordineringsenheten EFTA-sekretariatet kommentarer til listen over rettsakter som er klare til å bli innlemmet. Den informerer også komiteen for EØS-saker i parlamentet, som gjennomgår alle EU-rettsakter som skal innlemmes i EØS-avtalen.<p>
+                <p>Regjeringen treffer en beslutning der den tar til etterretning listen over utkast til EØS-komitébeslutninger som er klare til godkjenning, før EØS-komiteens møte.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Norge</h5>
+                <p>Etter samråd med fagdepartementene sender Utenriksdepartementet EFTA-sekretariatet kommentarer til listen over rettsakter som er klare til å bli innlemmet. Før hvert møte i EØS-komiteen møter utenriksministeren i Stortingets europautvalg, som gir sin uttalelse om listen over rettsakter. Regjeringen kan ikke samtykke i å innlemme en rettsakt før den har mottatt tilbakemelding fra Europautvalget.</p>
+              </div>
+            </div>
+            <p class="text-center small step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s7p80" title="Procedure in detail; paragraphs 80-97">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="4-9-the-eea-joint-committee-adopts-the-decision">
+
+        <div class="media media-video">
+          <video width="720" height="450"
+                     poster="images/efta_illustration1440x900-JCD.png">
+            <source src="videos/efta_animation-JCD.mp4" type="video/mp4">
+            <img src="images/efta_illustration1440x900-JCD.png" alt="EEA Joint Committee Decision">
+          </video>
+        </div>
+        
+        <h3 class="step-heading">Vedtakelse av beslutningen</h3>
+        <p><a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#eea-joint-committee">EØS-komiteen</a> er ansvarlig for forvaltningen av EØS-avtalen og møtes seks til åtte ganger i året. I dette forumet utveksler EU og EØS-EFTA-statene synspunkter og treffer beslutninger ved enstemmighet om å innlemme EU-rettsakter i EØS-avtalen.</p>
+
+        <p class="text-center small step-more">
+          <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s9p114" title="Procedure in detail; paragraphs 114-117">Mer informasjon på engelsk</a>
+        </p>
+      </section>
+    </section>
+
+    <section class="section section-stage" id="5-entry-into-force-of-a-joint-committee-decision">
+      <h2 class="stage-heading">Ikrafttredelse av EØS-komitébeslutningen</h2>
+      <p class="loud">EØS-komitébeslutninger trer vanligvis i kraft dagen etter at de blir vedtatt i EØS-komiteen, med mindre det foreligger <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#constitutional-requirements">forfatningsrettslige krav</a>. Når beslutningene trer i kraft, blir <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#annexes-and-protocols-to-the-eea-agreement">vedleggene og/eller protokollene til EØS-avtalen</a> oppdatert i samsvar med dem, og de innlemmede rettsaktene må gjennomføres i nasjonal rett i EØS-EFTA-statene.</p>
+
+      <section class="section-step" id="5-10-some-decisions-must-be-approved-by-the-national-parliaments">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media media-video">
+              <video width="480" height="320"
+                     poster="images/efta_illustration900x600-parliament.png">
+                <source src="videos/efta_animation-parliament.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-parliament.png" alt="EFTA MS National Parliaments">
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading">Oppfyllelse av forfatningsrettslige krav</h3>
+            <p>I samsvar med forfatningen i EØS-EFTA-statene må en beslutning som medfører endringer i nasjonal rett, godkjennes i de nasjonale parlamentene før den kan tre i kraft. En beslutning med slike <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#constitutional-requirements">forfatningsrettslige krav</a> trer i kraft så snart kravene er oppfylt i alle tre EØS-EFTA-stater.</p>
+
+            <div class="step-details" id="details-5-10">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#5-11-the-eea-efta-states-are-obliged-to-implement-incorporated-acts" class="sr-only sr-only-focusable">Skip to next step</a>
+              <button type="button"
+                      class="btn-round"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-general"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-general"></span>
+                      <span class="sr">Generelt</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-secretariat"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-iceland"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-iceland"></span>
+                      <span class="sr">Island</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-liechtenstein"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-liechtenstein"></span>
+                      <span class="sr">Liechtenstein</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-10 .detail-norway"
+                      data-toggle-group="details-5-10">
+                      <span class="sprite sprite-norway"></span>
+                      <span class="sr">Norge</span>
+              </button>
+
+              <div class="step-detail detail-general">
+                <h5 class="sr-only">Generelt</h5>
+                <p>Dersom en EØS-komitébeslutning innlemmer en rettsakt som krever endringer i nasjonal rett i en EØS-EFTA-stat, må den godkjennes av parlamentet i den staten før den kan tre i kraft. Dette kalles ”forfatningsrettslige krav”, og slike krav meddeles av EØS-EFTA-statene i EØS-komiteen ved innlemmelse av en rettsakt. EØS-EFTA-statene har seks måneders frist til å søke godkjenning i det nasjonale parlamentet.</p>
+              </div>
+              <div class="step-detail detail-secretariat">
+                <h5>EFTA-sekretariatet</h5>
+                <p>EFTA-sekretariatet overvåker ikrafttredelsen av rettsakter i EØS og behandler meldinger om oppfyllelse av forfatningsrettslige krav. Så snart en EØS-EFTA-stat har fått godkjenning fra sitt parlament, melder den fra til EFTA-sekretariatet, som videresender denne informasjonen til EUs utenrikstjeneste (EEAS), de andre EØS-EFTA-statene og <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#efta-surveillance-authority-esa">EFTAs overvåkingsorgan (ESA)</a>. Når den siste EØS-EFTA-staten har meldt at de forfatningsrettslige kravene er oppfylt, kan EØS-komitébeslutningen tre i kraft.</p>
+                <p>EFTA-sekretariatet har ansvar for å oversette EØS-komitébeslutningene til islandsk og norsk og for å kunngjøre dem i EØS-tillegget.</p>
+              </div>
+              <div class="step-detail detail-iceland">
+                <h5>Island</h5>
+                <p>På Island gir parlamentet sitt samtykke til at EØS-komitébeslutningen trer i kraft, i form av et parlamentsvedtak.</p>
+              </div>
+              <div class="step-detail detail-liechtenstein">
+                <h5>Liechtenstein</h5>
+                <p>I Liechtenstein gir parlamentet sitt samtykke til at EØS-komitébeslutningen trer i kraft, på grunnlag av et særskilt lovforslag fra regjeringen. Etter at lovforslaget er vedtatt i parlamentet, følger en 30-dagers folkeavstemningsperiode før lovforslaget underskrives av fyrsten.</p>
+              </div>
+              <div class="step-detail detail-norway">
+                <h5>Norge</h5>
+                <p>I Norge gir Stortinget sitt samtykke til at EØS-komitébeslutningen trer i kraft, i form av en samtykkeproposisjon. I tillegg får Stortinget en lovproposisjon om å innarbeide rettsakten i norsk rett. Stortingets vedtak må sanksjoneres gjennom en kongelig resolusjon i statsråd.</p>
+              </div>
+            </div>
+
+            <p class="text-center small step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s8p98" title="Procedure in detail; paragraphs 98-107">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-step" id="5-11-the-eea-efta-states-are-obliged-to-implement-incorporated-acts">
+        <div class="row">
+          <div class="col col-right">
+            <div class="media media-video">
+              <video width="480" height="320"
+                     poster="images/efta_illustration900x600-constitutions.png">
+                <source src="videos/efta_animation-constitutions.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-constitutions.png" alt="EFTA MS Books of law">
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="step-heading" style="position:relative">EØS-EFTA-statene er forpliktet til å gjennomføre innlemmede rettsakter</h3>
+            <p>Rettsakter som er innlemmet i EØS-avtalen og har trådt i kraft, må gjennomføres i nasjonal rett i EØS-EFTA-statene. <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#efta-surveillance-authority-esa">EFTAs overvåkingsorgan</a> overvåker overholdelsen av det regelverket som er innlemmet i EØS-avtalen. <a class="tip tip-glossary" href="/efta_eea-procedure/no/glossary/#efta-court">EFTA-domstolen</a> i Luxembourg har domsmyndighet til å treffe avgjørelse i traktatbruddsaker anlagt mot de tre EØS-EFTA-statene på grunn av manglende overholdelse av deres forpliktelser etter EØS-avtalen.</p>
+
+            <div class="step-details" id="details-5-11">
+              <small class="sr-only muted italic serif">Mer informasjon på engelsk:</small>
+              <a href="#facts" class="sr-only sr-only-focusable">Skip</a>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-11 .detail-secretariat"
+                      data-toggle-group="details-5-11">
+                      <span class="sprite sprite-secretariat"></span>
+                      <span class="sr">EFTA-sekretariatet</span>
+              </button>
+              <button type="button"
+                      data-toggle-class
+                      data-toggle-target="#details-5-11 .detail-translation"
+                      data-toggle-group="details-5-11">
+                      <span class="sprite sprite-translation"></span>
+                      <span class="sr">Oversettelse</span>
+              </button>
+              <div class="step-detail detail-secretariat">
+              <h5>EFTA-sekretariatet</h5>
+                <p>Etter hvert møte i EØS-komiteen informerer EFTA-sekretariatet EFTAs overvåkingsorgan om ikrafttredelsen av EØS-komitébeslutningene.</p>
+              </div>
+              <div class="step-detail detail-translation">
+                <h5>Oversettelse</h5>
+                <p>Ansvaret for oversettelse til islandsk og norsk av rettsakter som innlemmes i EØS-avtalen, ligger hos Island og Norge. Liechtenstein bruker den tyske språkversjonen utarbeidet i EU.</p>
+              </div>
+            </div>
+            <p class="text-center small step-more">
+              <a class="cursor-paragraph" href="/efta_eea-procedure/no/details#s2p4" title="Procedure in detail; paragraphs 4-7, 108">Mer informasjon på engelsk</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <footer class="section section-facts" id="facts">
+      <h1 class="section-title">Nøkkeltall for Det europeiske økonomiske samarbeidsområde</h1>
+
+      <div class="numbers">
+
+        <div class="number">
+          <strong>517 774 665</strong> mennesker
+          <div class="number-description">
+            bor, jobber eller studerer i EØS
+            (Eurostat 2019)
+          </div>
+        </div>
+
+        <div class="number">
+          <strong>31</strong> land
+          <div class="number-description">28 EU-medlemsstater + Island, Liechtenstein og Norge</div>
+        </div>
+
+        <div class="number">
+          <strong>EUR 15,8 billioner</strong> beregnet BNP for 2017
+          <div class="number-description">Verdens nest største økonomi (Eurostat 2019)</div>
+        </div>
+      </div>
+    </footer>
+  </article>
+
+</main>
+
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js" async></script>
+
+<script src="/efta_eea-procedure/no/js/index.js"></script>
+<script src="/efta_eea-procedure/no/js/easy-toggle-state.ie.min.js"></script>
+<script src="/efta_eea-procedure/no/js/in-view.min.js"></script>
+<script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', function() {
+
+      inView('video').on('enter', function(video) {
+        console.log(video);
+        if (!video.getAttribute('data-played')) {
+          video.setAttribute('data-played', 'true');
+          video.play();
+        }
+      });
+
+    });
+  }())
+</script>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <a href="http://www.efta.int/" target="_blank">
+          <img src="/efta_eea-procedure/no/images/efta_logo.png" 
+               width=""
+               alt="EFTA Logo"> 
+          <br>
+          www.efta.int
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+
+      var navbar = document.querySelector('.navbar');
+
+      function offsetScroll() {
+        var view = document.scrollingElement || document.body;
+        view.scrollTop = view.scrollTop - navbar.clientHeight - 15;
+      }
+      function scrollHandle() {
+        window.removeEventListener('scroll', scrollHandle, false);
+        offsetScroll();
+      }
+      function hashHandle(event) {
+        window.addEventListener('scroll', scrollHandle, false);
+      }
+
+      window.addEventListener('DOMContentLoaded', hashHandle, false);
+      window.addEventListener('hashchange', function(event) {
+        offsetScroll();
+      }, false);
+
+    }())
+  </script>
+
+</body>
+</html>
