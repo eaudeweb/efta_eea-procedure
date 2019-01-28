@@ -4,8 +4,8 @@ description: >-
   The European Economic Area (EEA) Agreement enables Iceland, Liechtenstein and Norway (EEA EFTA States) to participate in the EU Internal Market. It covers the free movement of goods, services, capital and persons, competition and state aid rules, and certain horizontal and flanking areas.
 
 # GitHub Pages
-url: "https://eaudeweb.github.io"
-baseurl: "/efta_eea-procedure"
+# url: "https://eaudeweb.github.io"
+# baseurl: "/efta_eea-procedure"
 
 # design.eaudeweb.ro
 # url: "http://design.eaudeweb.ro"
@@ -16,8 +16,8 @@ baseurl: "/efta_eea-procedure"
 # baseurl: ""
 
 # EFTA production website
-# url: "http://eealaw.efta.int"
-# baseurl: ""
+url: "http://eealaw.efta.int"
+baseurl: ""
 
 plugins:
   - jekyll-multiple-languages-plugin
