@@ -1,6 +1,6 @@
 let burgerMenu = document.getElementById("menu-toggler");
 let burgerMenuContainer = document.querySelector(".navbar .container");
-let navbarOptions = document.querySelector(".navbar .navbar-options");
+let navbarOptions = document.querySelector(".navbar .navbar-options-mobile");
 
 
 burgerMenu.addEventListener('click', () => {
