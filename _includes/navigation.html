@@ -21,16 +21,50 @@
 			<a href="http://www.efta.int" class="navbar-logo">
 				<img src="{{ site.baseurl }}/images/efta_logo_hq.png" alt="EFTA Logo">
 			</a>
-      <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
-      <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
-      <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>{% translate global.glossary %}</a>
       
-      <select name="languagePicker" id="languagePicker" onchange="location = this.value">
+      <div class="mobile-selected-page">
+        <a href="{{ site.baseurl }}/" {% if page.url != '/' %}class="hidden"{% else %}class="highlight"{% endif %}>{% translate global.overview %}</a>
+        <a href="{{ site.baseurl }}/details" {% if page.url != '/details/' %}class="hidden"{% else %}class="highlight"{% endif %}>{% translate global.procedure %}</a>
+        <a href="{{ site.baseurl }}/glossary" {% if page.url != '/glossary/' %}class="hidden"{% else %}class="highlight"{% endif %}>{% translate global.glossary %}</a>
+      </div>
+      
+
+      <div class="navbar-options">
+        <a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
+        <a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
+        <a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>{% translate global.glossary %}</a>
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
           <option {% if site.lang == "en" %} selected {% endif %} value="{{site.baseurl_root}}{{page.url}}">English</option>
           <option {% if site.lang == "de" %} selected {% endif %} value="{{site.baseurl_root}}/de{{page.url}}">Deutsch</option>
           <option {% if site.lang == "is" %} selected {% endif %} value="{{site.baseurl_root}}/is{{page.url}}">Íslenska</option>
           <option {% if site.lang == "no" %} selected {% endif %} value="{{site.baseurl_root}}/no{{page.url}}">Norsk</option>
-      </select>
+        </select>
+      </div>
+
+      <div id="navbar-mobile">
+        <button id="menu-toggler">
+          <span>
+            MENU 
+          </span>
+          <svg height="16px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+          </svg>
+        </button>
+        
+        <span id="separator"></span>
+
+        <select name="languagePicker" class="languagePicker" onchange="location = this.value">
+          <option {% if site.lang == "en" %} selected {% endif %} value="{{site.baseurl_root}}{{page.url}}">EN</option>
+          <option {% if site.lang == "de" %} selected {% endif %} value="{{site.baseurl_root}}/de{{page.url}}">DE</option>
+          <option {% if site.lang == "is" %} selected {% endif %} value="{{site.baseurl_root}}/is{{page.url}}">IS</option>
+          <option {% if site.lang == "no" %} selected {% endif %} value="{{site.baseurl_root}}/no{{page.url}}">NO</option>
+        </select>
+      </div>
     </div>
   </div>
+	  	<div class="navbar-options-mobile container">
+					<a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="is-selected"{% endif %}>{% translate global.overview %}</a>
+					<a href="{{ site.baseurl }}/details" {% if page.url == '/details/' %}class="is-selected"{% endif %}>{% translate global.procedure %}</a>
+					<a href="{{ site.baseurl }}/glossary" {% if page.url == '/glossary/' %}class="is-selected"{% endif %}>{% translate global.glossary %}</a>
+      </div>
 </nav>
