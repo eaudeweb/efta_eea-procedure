@@ -54,7 +54,7 @@
     },
     {
         "id": "efta-surveillance-authority-esa",
-        "definition": "Die ESA überwacht die Einhaltung des EWR-Abkommens in Island, Liechtenstein und Norwegen und schützt die Rechte die EWR-Rechte von Einzelpersonen und Unternehmen.",
+        "definition": "Die ESA überwacht die Einhaltung des EWR-Abkommens in Island, Liechtenstein und Norwegen und schützt die EWR-Rechte von Einzelpersonen und Unternehmen.",
         "link": "http://www.eftasurv.int/",
         "name": "EFTA-Überwachungsbehörde (ESA)"
     },
@@ -75,7 +75,7 @@
     },
     {
         "id": "eea-efta-experts",
-        "definition": "Experten der EWR/EFTA-Staaten, die einer EFTA-Arbeits- oder Expertengruppe angehören und so einen Betrag zur Übernahme von EU-Rechtsakten in das EWR-Abkommen leisten.",
+        "definition": "Experten der EWR-EFTA-Staaten, die einer EFTA-Arbeits- oder Expertengruppe angehören und so einen Betrag zur Übernahme von EU-Rechtsakten in das EWR-Abkommen leisten.",
         "name": "EWR-EFTA-Experte"
     },
     {
@@ -85,12 +85,12 @@
     },
     {
         "id": "eea-efta-comments",
-        "definition": "Die EWR-EFTA-Staaten können sich in die Entscheidungsfindung in Bezug auf neues EU-Recht einbringen, indem sie  EWR-EFTA-Stellungnahmen zu wichtigen politischen Themen an die europäischen Institutionen übermitteln. Typische EWR-EFTA-Stellungnahmen betreffen Gesetzgebungsinitiativen der Kommission wie Grünbüchern oder Gesetzgebungsvorschläge. Sie beinhalten eine kurze Erläuterung und Vorschläge.",
+        "definition": "Die EWR-EFTA-Staaten können sich in die Entscheidungsfindung in Bezug auf neues EU-Recht einbringen, indem sie  EWR-EFTA-Stellungnahmen zu wichtigen politischen Themen an die europäischen Institutionen übermitteln. Typische EWR-EFTA-Stellungnahmen betreffen Gesetzgebungsinitiativen der Kommission wie Grünbücher oder Gesetzgebungsvorschläge. Sie beinhalten eine kurze Erläuterung und Vorschläge.",
         "name": "EWR-EFTA-Stellungnahmen"
     },
     {
         "id": "eea-challenges",
-        "definition": "Solche werden oft auch als horizontale Herausforderungen bezeichnet und können sich ergeben, wenn sich eine Bestimmung in einem Rechtsakt oder Gesetzgebungsvorschlag inhaltlich oder sturkturell auf EWR-Recht oder den institutionellen Rahmen des EWR auswirkt. EWR-Herausforderungen können z. B. im Zusammenhang mit von EU-Institutionen oder -Einrichtungen verhängten Bussgeldern, Verweisen auf strafrechtliche Sanktionen oder Bestimmungen, die Drittländer betreffen, stehen.",
+        "definition": "Solche werden oft auch als horizontale Herausforderungen bezeichnet und können sich ergeben, wenn sich eine Bestimmung in einem Rechtsakt oder Gesetzgebungsvorschlag inhaltlich oder strukturell auf EWR-Recht oder den institutionellen Rahmen des EWR auswirkt. EWR-Herausforderungen können z. B. im Zusammenhang mit von EU-Institutionen oder -Einrichtungen verhängten Bussgeldern, Verweisen auf strafrechtliche Sanktionen oder Bestimmungen, die Drittländer betreffen, stehen.",
         "name": "EWR-Herausforderungen"
     },
     {
@@ -126,7 +126,7 @@
     {
         "id": "list-of-draft-joint-committee-decisions-ready-for-adoption-long-list",
         "definition": "Die Liste enthält Entwürfe für Beschlüsse des Gemeinsamen EWR-Ausschusses, die bereits zur Bearbeitung und Stellungnahme an den Europäischen Auswärtigen Dienst (EAD) übermittelt wurden und als zur Annahme bereit erachtet werden.",
-        "name": "Liste mit Entwürfen für Beschlüsse des Gemeinsamen EWR-Ausschusses, die zur Annahme bereit sind (\"Long list\")"
+        "name": "Liste mit Entwürfen für Beschlüsse des Gemeinsamen EWR-Ausschusses, die zur Annahme bereit sind („Long list“)"
     },
     {
         "id": "standard-procedure",
@@ -135,7 +135,7 @@
     },
     {
         "id": "clearing-committee-norway",
-        "definition": "Ein eigens für EWR-Angelegenheiten eingesetzter Sonderausschuss („spesialutvalg“), derdie Zusammenarbeit der Ministerien in Norwegen unterstützt.",
+        "definition": "Ein eigens für EWR-Angelegenheiten eingesetzter Sonderausschuss („spesialutvalg“), der die Zusammenarbeit der Ministerien in Norwegen unterstützt.",
         "name": "Sonderausschuss (Norwegen)"
     },
     {
@@ -145,13 +145,13 @@
     },
     {
         "id": "standing-committee",
-        "definition": "Der Ständige Ausschuss der EFTA-Staaten dient als Forum, in welchem sich die EWR/EFTA-Staaten gegenseitig konsultiteren und zu einer gemeinsamen Haltung finden, bevor sie sich mit der EU im Gemeinsamen EWR-Ausschuss treffen. Er setzt sich aus den Botschaftern Islands, Liechtensteins und Norwegens bei der EU sowie Beobachtern der Schweiz und der EFTA-Überwachungsbehörde zusammen. Der Aufbau des Ausschusses besteht aus fünf Unterausschüssen (Subkomitees), welchen zahlreiche Arbeits- und Expertengruppen unterstehen. Vgl.",
+        "definition": "Der Ständige Ausschuss der EFTA-Staaten dient als Forum, in welchem sich die EWR-EFTA-Staaten gegenseitig konsultieren und zu einer gemeinsamen Haltung finden, bevor sie sich mit der EU im Gemeinsamen EWR-Ausschuss treffen. Er setzt sich aus den Botschaftern Islands, Liechtensteins und Norwegens bei der EU sowie Beobachtern der Schweiz und der EFTA-Überwachungsbehörde zusammen. Der Aufbau des Ausschusses besteht aus fünf Unterausschüssen (Subkomitees), welchen zahlreiche Arbeits- und Expertengruppen unterstehen.",
         "link": "http://www.efta.int/eea/eea-institutions/standing-committee",
         "name": "Ständiger Ausschuss"
     },
     {
         "id": "substantive-adaptations",
-        "definition": "Bei substanziellen Anpassungen handelt es sich um Abweichungen vom bzw. Änderungen der im Rechtsakt festgehaltenen Systeme oder Regelungen. Beispielsweise können substanzielle Anpassungen erforderlich sein, um die Vereinbarkeit eines Rechtsakts mit den verfassungsrechtlichen Grenzen der EWR-EFTA-Staaten und der Zwei-Pfeiler-Struktur des EWR-Abkommens zu gewährleisten. Sie unterscheiden sich von technischen Anpassungen, durch die der Teilnahme der EWR-EFTA-Staaten am Binnenmarkt Rechnung getragen wird, ohne dass sich dies auf den materiellen Inhalt der Rechtsvorschriften auswirkt.",
+        "definition": "Bei substanziellen Anpassungen handelt es sich um Abweichungen bzw. Änderungen der im Rechtsakt festgehaltenen Systeme oder Regelungen. Beispielsweise können substanzielle Anpassungen erforderlich sein, um die Vereinbarkeit eines Rechtsakts mit den verfassungsrechtlichen Grenzen der EWR-EFTA-Staaten und der Zwei-Pfeiler-Struktur des EWR-Abkommens zu gewährleisten. Sie unterscheiden sich von technischen Anpassungen, durch die der Teilnahme der EWR-EFTA-Staaten am Binnenmarkt Rechnung getragen wird, ohne dass sich dies auf den materiellen Inhalt der Rechtsvorschriften auswirkt.",
         "name": "Substanzielle Anpassungen"
     },
     {
