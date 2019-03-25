@@ -811,7 +811,7 @@ html[lang="no"] {
 
 .glossary {
   dt {
-    float: left;
+    display: inline;
     font-weight: 600;
     &::after {
       content: "—";
@@ -823,8 +823,14 @@ html[lang="no"] {
     animation: targetBlip 2s 1;
   }
   dd {
+    display: inline;
     margin-left: 0;
     margin-bottom: 1em;
+    &::after {
+      content: '';
+      display: block;
+      height: 2rem;
+    }
   }
   dd + dd {
     margin-bottom: 0;
