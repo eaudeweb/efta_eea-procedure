@@ -837,6 +837,38 @@ html[lang="no"] {
   }
 }
 
+// Header title
+
+.header-title {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: right;
+  font-size: 1.5vw;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  color: white;
+
+  span:nth-child(1) {
+    display: flex;
+    flex-flow: column;
+    margin-top: 4px;
+  }
+
+  span:nth-child(2) {
+    line-height: 1;
+
+    big {
+      font-size: 7vw;
+      font-weight: bold;
+      line-height: 1;
+    }
+  }
+}
+
 @import "details";
 @import "mobile";
 

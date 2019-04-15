@@ -5,6 +5,8 @@ global:
   download: Sækja PDF
   glossary: Orðskýringar
   documentOwner: <strong>EVRÓPSKA EFNAHAGSSVÆÐIÐ</strong> <br> STÖÐUGT NEFND EFTA-RÍKJANNA
+  header_title_1: <span>Þannig verða</span> <span>ESB-reglur að</span>
+  header_title_2: <big>EES</big>-reglum</span>
 langs:
   en: English
   de: Deutsch

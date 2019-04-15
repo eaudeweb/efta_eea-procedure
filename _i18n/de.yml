@@ -5,6 +5,8 @@ global:
   glossary: Glossar
   download: PDF Herunterladen
   documentOwner: <strong>EUROPÄISCHER WIRTSCHAFTSRAUM</strong> <br> STÄNDIGER AUSSCHUSS DER EFTA-STAATEN
+  header_title_1: <span>So wird</span> <span>EU-Recht zu</span>
+  header_title_2: <big>EWR</big>-Recht</span>
 langs:
   en: English
   de: Deutsch

@@ -5,6 +5,8 @@ global:
   glossary: Glossary
   download: Download PDF
   documentOwner: <strong>EUROPEAN ECONOMIC AREA</strong> <br> STANDING COMMITTEE OF THE EFTA STATES
+  header_title_1: <span>How EU Law</span> <span>becomes</span>
+  header_title_2: <big>EEA</big>Law</span>
 langs:
   en: English
   de: Deutsch

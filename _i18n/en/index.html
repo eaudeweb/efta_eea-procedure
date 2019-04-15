@@ -1,8 +1,26 @@
-<div class="article-cover" onclick="scrollPastCover(this)">
+<!-- <div class="article-cover" onclick="scrollPastCover(this)">
   <img src="{{ site.baseurl }}/images/efta_illustration900x550-freedomOfMovements.png" 
        srcset="{{ site.baseurl }}/images/efta_illustration1200x733-freedomOfMovements.png 1200w,
                {{ site.baseurl }}/images/efta_illustration1800x1100-freedomOfMovements.png 1800w"
        alt="The Freedom of Movement in the EEA">
+</div> -->
+
+<div class="media media-video article-cover" onclick="scrollPastCover(this)">
+  <div class="header-title">
+    <span>
+        {% translate global.header_title_1 %}
+    </span>
+    <span>
+        {% translate global.header_title_2 %}
+    </span>
+  </div>
+  <video id="test" muted width="480" height="480" 
+          poster="images/efta_illustration1800x1100-freedomOfMovements.png">
+    <source src="videos/efta_animation-freedom.mp4" type="video/mp4">
+    <img 
+        src="images/efta_illustration900x550-freedomOfMovements.png" 
+        alt="The Freedom of Movement in the EEA">
+  </video>
 </div>
 
 {% include navigation.html %}
@@ -24,8 +42,12 @@
 
       <div class="row">
         <div class="col col-right">
-          <div class="media">
-            <img src="images/efta_illustration900x900-puzzle.png" alt="EFTA and EU fitting puzzle pieces">
+          <div class="media media-video">
+            <video muted width="480" height="480"
+                    poster="images/efta_illustration900x900-puzzle.png">
+              <source src="videos/efta_animation-puzzle.mp4" type="video/mp4">
+              <img src="images/efta_illustration900x900-puzzle.png" alt="EFTA and EU fitting puzzle pieces">
+            </video>
           </div>
         </div>
         <div class="col">
@@ -182,8 +204,12 @@
       <section class="section-step" id="2-3-experts-assess-the-act">
         <div class="row">
           <div class="col col-right">
-            <div class="media">
-              <img src="images/efta_illustration900x900-rubik.png" alt="EFTA Experts solve a rubik's cube">
+            <div class="media media-video">
+              <video muted width="480" height="480"
+                      poster="images/efta_illustration900x900-rubik.png">
+                <source src="videos/efta_animation-rubik.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x900-rubik.png" alt="EFTA Experts solve a rubik's cube">
+              </video>
             </div>
           </div>
           <div class="col">
@@ -232,8 +258,12 @@
       <section class="section-step" id="2-4-national-procedures-in-each-eea-efta-state-for-clearing-acts">
         <div class="row">
           <div class="col col-right">
-            <div class="media">
-              <img src="images/efta_illustration900x600-crowdFlags.png" alt="EFTA MS crowds of people">
+            <div class="media media-video">
+              <video muted width="480" height="480"
+                      poster="images/efta_illustration900x600-crowdFlags.png">
+                <source src="videos/efta_animation-crowdFlags.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x600-crowdFlags.png" alt="EFTA MS crowds of people">
+              </video>
             </div>
           </div>
           <div class="col">
@@ -295,8 +325,12 @@
       <section class="section-step" id="2-5-the-eea-efta-states-consolidate-their-positions-into-a-draft-decision-incorporating-the-act">
         <div class="row">
           <div class="col col-right">
-            <div class="media">
-              <img src="images/efta_illustration900x900-standingCommittee.png" alt="EFTA States consolidate decision">
+            <div class="media media-video">
+              <video muted width="480" height="480"
+                      poster="images/efta_illustration900x900-standingCommittee.png">
+                <source src="videos/efta_animation-standingCommittee.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x900-standingCommittee.png" alt="EFTA States consolidate decision">
+              </video>
             </div>
           </div>
           <div class="col">
@@ -385,7 +419,7 @@
         <div class="row">
           <div class="col">
             <div class="media media-video">
-              <video width="480" height="480"
+              <video muted width="480" height="480"
                      poster="images/efta_illustration900x900-scale.png">
                 <source src="videos/efta_animation-scale.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x900-scale.png" alt="EFTA and EU equally balanced on a scale">
@@ -446,8 +480,12 @@
       <section class="section-step" id="3-7-draft-decisions-that-contain-substantive-adaptations-or-budgetary-consequences-go-to-the-council-of-the-european-union">
         <div class="row">
           <div class="col">
-            <div class="media">
-              <img src="images/efta_illustration900x900-draftJCD.png" alt="EU Commission reviews draft JCD">
+            <div class="media media-video">
+              <video muted width="480" height="480"
+                      poster="images/efta_illustration900x900-draftJCD.png">
+                <source src="videos/efta_animation-draftJCD.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x900-draftJCD.png" alt="EU Commission reviews draft JCD">
+              </video>
             </div>
           </div>
           <div class="col">
@@ -509,8 +547,12 @@
       <section class="section-step" id="4-8-list-of-acts-ready-to-be-incorporated">
         <div class="row">
           <div class="col">
-            <div class="media">
-              <img src="images/efta_illustration900x900-longList.png" alt="Draft JCD is added on the agenda of the next EEA Joint Committee meeting">
+            <div class="media media-video">
+              <video muted width="480" height="480"
+                      poster="images/efta_illustration900x900-longList.png">
+                <source src="videos/efta_animation-longList.mp4" type="video/mp4">
+                <img src="images/efta_illustration900x900-longList.png" alt="Draft JCD is added on the agenda of the next EEA Joint Committee meeting">
+              </video>
             </div>
           </div>
           <div class="col">
@@ -577,7 +619,7 @@
       <section class="section-step" id="4-9-the-eea-joint-committee-adopts-the-decision">
 
         <div class="media media-video">
-          <video width="720" height="450"
+          <video muted width="720" height="450"
                      poster="images/efta_illustration1440x900-JCD.png">
             <source src="videos/efta_animation-JCD.mp4" type="video/mp4">
             <img src="images/efta_illustration1440x900-JCD.png" alt="EEA Joint Committee Decision">
@@ -601,7 +643,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video width="480" height="320"
+              <video muted width="480" height="320"
                      poster="images/efta_illustration900x600-parliament.png">
                 <source src="videos/efta_animation-parliament.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x600-parliament.png" alt="EFTA MS National Parliaments">
@@ -686,7 +728,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video width="480" height="320"
+              <video muted width="480" height="320"
                      poster="images/efta_illustration900x600-constitutions.png">
                 <source src="videos/efta_animation-constitutions.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x600-constitutions.png" alt="EFTA MS Books of law">
@@ -769,13 +811,32 @@
 <script src="{{ site.baseurl }}/js/in-view.min.js"></script>
 <script>
   (function() {
-    document.addEventListener('DOMContentLoaded', function() {
+    let videos = document.getElementsByTagName("video");
+    let noOfVideos = videos.length;
 
+    for(let index = 0; index < noOfVideos; index++) {
+      videos[index].onended = function(event) {
+        event.target.setAttribute('data-played', 'true');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
       inView('video').on('enter', function(video) {
-        console.log(video);
         if (!video.getAttribute('data-played')) {
-          video.setAttribute('data-played', 'true');
-          video.play();
+          
+          if(video.readyState < 4) {
+            video.oncanplay = function() {
+              video.play();
+            }
+          } else {
+            video.play();
+          }
+        }
+      });
+
+      inView('video').on('exit', function(video) {
+        if (!video.getAttribute('data-played')) { 
+          video.pause();
         }
       });
 
