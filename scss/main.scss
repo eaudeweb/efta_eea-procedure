@@ -869,6 +869,19 @@ html[lang="no"] {
   }
 }
 
+@media (max-width: 900px) {
+  .header-title {
+    font-size: 2.5vw;
+    top: 6%;
+
+    span:nth-child(2) { 
+      big {
+        font-size: 10.5vw;
+      }
+    }
+  }
+}
+
 @import "details";
 @import "mobile";
 
