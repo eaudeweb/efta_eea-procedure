@@ -1,28 +1,4 @@
-<!-- <div class="article-cover" onclick="scrollPastCover(this)">
-  <img src="{{ site.baseurl }}/images/efta_illustration900x550-freedomOfMovements.png" 
-       srcset="{{ site.baseurl }}/images/efta_illustration1200x733-freedomOfMovements.png 1200w,
-               {{ site.baseurl }}/images/efta_illustration1800x1100-freedomOfMovements.png 1800w"
-       alt="The Freedom of Movement in the EEA">
-</div> -->
-
-<div class="media media-video article-cover" onclick="scrollPastCover(this)">
-  <div class="header-title">
-    <span>
-        {% translate global.header_title_1 %}
-    </span>
-    <span>
-        {% translate global.header_title_2 %}
-    </span>
-  </div>
-  <video id="test" muted width="480" height="480" 
-          poster="images/efta_illustration1800x1100-freedomOfMovements.png">
-    <source src="videos/efta_animation-freedom.mp4" type="video/mp4">
-    <img 
-        src="images/efta_illustration900x550-freedomOfMovements.png" 
-        alt="The Freedom of Movement in the EEA">
-  </video>
-</div>
-
+{% include header.html %}
 {% include navigation.html %}
 
 <main>
