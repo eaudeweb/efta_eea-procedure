@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col col-right">
           <div class="media media-video">
-            <video muted width="480" height="480"
+            <video muted playsinline preload="auto" width="480" height="480"
                     poster="images/efta_illustration900x900-puzzle.png">
               <source src="videos/efta_animation-puzzle.mp4" type="video/mp4">
               <img src="images/efta_illustration900x900-puzzle.png" alt="EFTA and EU fitting puzzle pieces">
@@ -181,7 +181,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video muted width="480" height="480"
+              <video muted playsinline preload="auto" width="480" height="480"
                       poster="images/efta_illustration900x900-rubik.png">
                 <source src="videos/efta_animation-rubik.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x900-rubik.png" alt="EFTA Experts solve a rubik's cube">
@@ -235,7 +235,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video muted width="480" height="480"
+              <video muted playsinline preload="auto" width="480" height="480"
                       poster="images/efta_illustration900x600-crowdFlags.png">
                 <source src="videos/efta_animation-crowdFlags.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x600-crowdFlags.png" alt="EFTA MS crowds of people">
@@ -302,7 +302,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video muted width="480" height="480"
+              <video muted playsinline preload="auto" width="480" height="480"
                       poster="images/efta_illustration900x900-standingCommittee.png">
                 <source src="videos/efta_animation-standingCommittee.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x900-standingCommittee.png" alt="EFTA States consolidate decision">
@@ -395,7 +395,7 @@
         <div class="row">
           <div class="col">
             <div class="media media-video">
-              <video muted width="480" height="480"
+              <video muted playsinline preload="auto" width="480" height="480"
                      poster="images/efta_illustration900x900-scale.png">
                 <source src="videos/efta_animation-scale.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x900-scale.png" alt="EFTA and EU equally balanced on a scale">
@@ -457,7 +457,7 @@
         <div class="row">
           <div class="col">
             <div class="media media-video">
-              <video muted width="480" height="480"
+              <video muted playsinline preload="auto" width="480" height="480"
                       poster="images/efta_illustration900x900-draftJCD.png">
                 <source src="videos/efta_animation-draftJCD.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x900-draftJCD.png" alt="EU Commission reviews draft JCD">
@@ -524,7 +524,7 @@
         <div class="row">
           <div class="col">
             <div class="media media-video">
-              <video muted width="480" height="480"
+              <video muted playsinline preload="auto" width="480" height="480"
                       poster="images/efta_illustration900x900-longList.png">
                 <source src="videos/efta_animation-longList.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x900-longList.png" alt="Draft JCD is added on the agenda of the next EEA Joint Committee meeting">
@@ -595,7 +595,7 @@
       <section class="section-step" id="4-9-the-eea-joint-committee-adopts-the-decision">
 
         <div class="media media-video">
-          <video muted width="720" height="450"
+          <video muted playsinline preload="auto" width="720" height="450"
                      poster="images/efta_illustration1440x900-JCD.png">
             <source src="videos/efta_animation-JCD.mp4" type="video/mp4">
             <img src="images/efta_illustration1440x900-JCD.png" alt="EEA Joint Committee Decision">
@@ -619,7 +619,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video muted width="480" height="320"
+              <video muted playsinline preload="auto" width="480" height="320"
                      poster="images/efta_illustration900x600-parliament.png">
                 <source src="videos/efta_animation-parliament.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x600-parliament.png" alt="EFTA MS National Parliaments">
@@ -704,7 +704,7 @@
         <div class="row">
           <div class="col col-right">
             <div class="media media-video">
-              <video muted width="480" height="320"
+              <video muted playsinline preload="auto" width="480" height="320"
                      poster="images/efta_illustration900x600-constitutions.png">
                 <source src="videos/efta_animation-constitutions.mp4" type="video/mp4">
                 <img src="images/efta_illustration900x600-constitutions.png" alt="EFTA MS Books of law">
@@ -780,42 +780,4 @@
 
 </main>
 
-<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js" async></script>
-
-<script src="{{ site.baseurl }}/js/index.js"></script>
-<script src="{{ site.baseurl }}/js/easy-toggle-state.ie.min.js"></script>
-<script src="{{ site.baseurl }}/js/in-view.min.js"></script>
-<script>
-  (function() {
-    let videos = document.getElementsByTagName("video");
-    let noOfVideos = videos.length;
-
-    for(let index = 0; index < noOfVideos; index++) {
-      videos[index].onended = function(event) {
-        event.target.setAttribute('data-played', 'true');
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      inView('video').on('enter', function(video) {
-        if (!video.getAttribute('data-played')) {
-          
-          if(video.readyState < 4) {
-            video.oncanplay = function() {
-              video.play();
-            }
-          } else {
-            video.play();
-          }
-        }
-      });
-
-      inView('video').on('exit', function(video) {
-        if (!video.getAttribute('data-played')) { 
-          video.pause();
-        }
-      });
-
-    });
-  }())
-</script>
+{% include scripts.html %}

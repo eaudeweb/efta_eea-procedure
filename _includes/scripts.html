@@ -1,0 +1,38 @@
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js" async></script>
+
+<script src="{{ site.baseurl }}/js/index.js"></script>
+<script src="{{ site.baseurl }}/js/easy-toggle-state.ie.min.js"></script>
+<script src="{{ site.baseurl }}/js/in-view.min.js"></script>
+<script>
+  (function() {
+    let videos = document.getElementsByTagName("video");
+    let noOfVideos = videos.length;
+
+    for(let index = 0; index < noOfVideos; index++) {
+      videos[index].onended = function(event) {
+        event.target.setAttribute('data-played', 'true');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      inView('video').on('enter', function(video) {
+        if (!video.getAttribute('data-played')) {
+          if(video.readyState < 4) {
+            video.oncanplaythrough = function(event) {
+              video.play();
+            }
+            video.load();
+          } else {
+            video.play();
+          }
+        }
+      });
+      inView('video').on('exit', function(video) {
+        if (!video.getAttribute('data-played')) { 
+          video.pause();
+        }
+      });
+
+    });
+  }())
+</script>
