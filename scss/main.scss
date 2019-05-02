@@ -813,9 +813,10 @@ html[lang="no"] {
   dt {
     display: inline;
     font-weight: 600;
+    white-space: nowrap;
     &::after {
       content: "—";
-      margin: 0 .5rem;
+      margin: 0 .3rem 0 0.5rem;
     }
   }
   dt:target,
