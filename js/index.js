@@ -1,3 +1,6 @@
+---
+---
+{% comment %} YAML block is necessary to process site.baseurl {% endcomment %}
 var glossary;
 
 (function() {
