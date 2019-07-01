@@ -3,6 +3,7 @@
 <script src="{{ site.baseurl }}/js/index.js"></script>
 <script src="{{ site.baseurl }}/js/easy-toggle-state.ie.min.js"></script>
 <script src="{{ site.baseurl }}/js/in-view.min.js"></script>
+<script src="{{ site.baseurl }}/js/can-autoplay.min.js"></script>
 <script>
   (function() {
     let videos = document.getElementsByTagName("video");
@@ -14,12 +15,44 @@
       }
     }
 
+    inView.threshold(0.5);
+
     document.addEventListener('DOMContentLoaded', function() {
+
+      canAutoplay.video({timeout: 1000, muted: true}).then(function(obj) {
+        if(obj.result === false){
+            console.warn('Autoplay not enabled, using placeholders instead', obj.error)
+
+            let videos = document.getElementsByTagName("video");
+            let noOfVideos = videos.length;
+
+            for(let index = 0; index < noOfVideos; index++) {
+              const video = videos[index]
+              let parts = video.poster.split('.')
+              const file_ext = parts.pop()
+              let poster = parts.join('.') + '_last.' + file_ext
+              video.poster = poster
+              video.querySelector('img').setAttribute('src', poster)
+              video.setAttribute('data-played', true)
+            }
+        }
+      });
+
       inView('video').on('enter', function(video) {
         if (!video.getAttribute('data-played')) {
           if(video.readyState < 4) {
             video.oncanplaythrough = function(event) {
-              video.play();
+              try {
+                video.play();
+              } catch(err) {
+                console.log(err)
+                let parts = video.poster.split('.')
+                const file_ext = parts.pop()
+                let poster = parts.join('.') + '_last.' + file_ext
+                video.poster = poster
+                video.querySelector('img').setAttribute('src', poster)
+                video.setAttribute('data-played', true)
+              }
             }
             video.load();
           } else {
