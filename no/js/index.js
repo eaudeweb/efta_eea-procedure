@@ -1,3 +1,4 @@
+
 var glossary;
 
 (function() {
